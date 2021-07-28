@@ -3,118 +3,67 @@
 <?= $this->section('content'); ?>
 
 <main>
-    <!-- Carousel -->
-    <div id="carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active test">
-                <img src="/assets/images/placeholder-1000x400.jpg" class="d-block w-100" alt="event1">
-                <div class="carousel-caption d-none d-md-block mb-2">
-                    <p>Nama & Keterangan Event</p>
-                    <button class="btn rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
-                </div>
-            </div>
-            <div class="carousel-item test">
-                <img src="/assets/images/placeholder-1000x400.jpg" class="d-block w-100" alt="event2">
-                <div class="carousel-caption d-none d-md-block mb-2">
-                    <p>Nama & Keterangan Event</p>
-                    <button class="btn rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
-                </div>
-            </div>
-            <div class="carousel-item test">
-                <img src="/assets/images/placeholder-1000x400.jpg" class="d-block w-100" alt="event3">
-                <div class="carousel-caption d-none d-md-block mb-2">
-                    <p>Nama & Keterangan Event</p>
-                    <button class="btn rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <!-- End of Carousel -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Daftar Event</h5>
-                </div>
-                <div class="modal-body">
-                    <form action="" method="post">
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="firstname">First Name</label>
-                                <input type="text" class="form-control" id="firstname">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="lastname">Last Name</label>
-                                <input type="text" class="form-control" id="lastname">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="username">Username</label>
-                            <input type="text" class="form-control" id="username">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="example@umn.ac.id">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
-                    <button type="button" class="btn btn-primary">Daftar</button>
-                </div>
-            </div>
+    <!-- Hero -->
+    <div class="jumbotron jumbotron-fluid hero mb-0 bg-dark-custom text-white" style="padding: 15vh 0;">
+        <div class="container text-center">
+            <img src="/assets/images/logo.png" class="" width="50%" alt="">
+            <h1 class="display-4">Welcome!</h1>
+            <p class="lead">Himpunan Mahasiswa Informatika</p>
         </div>
     </div>
-    <!-- End of Modal -->
+    <!-- End of Hero -->
 
-    <!-- Profile -->
-    <!-- <section id="about" class="about">
-        <div class="container text-center text-white pb-4">
-            <div class="row mb-4 pt-5">
+    <!-- News -->
+    <section id="news" class="news bg-primary-custom">
+        <div class="container py-5">
+            <div class="row mb-2 text-center text-white">
                 <div class="col">
-                    <h3>Profile</h3>
+                    <h3>News</h3>
                     <hr>
                 </div>
             </div>
             <div class="row mb-4">
                 <div class="col">
-                    <h5 class="font-weight-bold">Visi</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cupiditate explicabo ab soluta, ullam sequi laboriosam vel ea pariatur labore, atque porro, minus esse nam aperiam! Corporis quas aliquid laudantium.</p>
-                </div>
-                <div class="col">
-                    <h5 class="font-weight-bold">Misi</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto cumque id unde quod doloremque rem, consequuntur dignissimos suscipit vel in neque ab, sequi beatae, fuga laborum quidem nostrum temporibus repellendus.</p>
-                </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col">
-                    <h5 class="font-weight-bold">Susunan Himpunan</h5>
-                    <div style="background-color: aliceblue; height: 40vh;"></div>
+                    <div class="card bg-dark text-white">
+                        <img src="/assets/images/placeholder-1000x400.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row mb-4">
+                <div class="col-lg-6">
+                    <div class="card bg-dark text-white">
+                        <img src="/assets/images/placeholder-1000x400.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card bg-dark text-white">
+                        <img src="/assets/images/placeholder-1000x400.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col">
-                    <a href="/about" type="button" class="btn btn-block">View All</a>
+                    <button class="btn btn-warning-custom btn-block">View All <i class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
         </div>
-    </section> -->
-    <!-- End of Profile -->
+    </section>
+    <!-- End of News -->
 </main>
 
 <?= $this->endSection(); ?>

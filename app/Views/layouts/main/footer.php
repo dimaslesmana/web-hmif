@@ -23,7 +23,7 @@
                 <img src="/assets/images/logo.png" width="50%" alt="HMIF">
             </div>
         </div>
-        <hr>
+        <hr style="border-bottom: 1px solid var(--white);">
         <div class="row">
             <div class="col">
                 <p>&copy; HMIF 2021 &bull; All Rights Reserved</p>

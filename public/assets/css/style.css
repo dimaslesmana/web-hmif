@@ -2,51 +2,176 @@
   box-sizing: border-box;
 }
 
+:root {
+  --white: #ffffff;
+  --primary: #217bc4;
+  --secondary: #c2e3fc;
+  --warning: #fc7d03;
+  --dark: #1b262c;
+  --primary-hover: #1e6aa8;
+  --secondary-hover: #adcce4;
+  --warning-hover: #df6c00;
+  --dark-hover: #141c20;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 html, body {
-  background-color: #1b262c;
+  background-color: var(--dark);
 }
 
-.navbar .nav-item:hover {
-  border-bottom: 2px solid #217bc4;
+.bg-primary-custom, .btn-primary-custom {
+  background-color: var(--primary);
+  color: var(--white);
 }
 
-.navbar .nav-item.active {
-  border-bottom: 2px solid #217bc4;
+.bg-secondary-custom, .btn-secondary-custom {
+  background-color: var(--secondary);
 }
 
-/*** LANDING PAGE ***/
-.landing {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.bg-warning-custom, .btn-warning-custom {
+  background-color: var(--warning);
+  color: var(--white);
 }
 
-/*** HOME PAGE ***/
-.carousel {
-  margin-top: 10vh;
+.bg-dark-custom, .btn-dark-custom {
+  background-color: var(--dark);
+  color: var(--white);
 }
 
-.carousel .btn, .profile .btn {
-  background-color: #fc7d03;
-  color: #fff;
+.btn-primary-custom:hover {
+  background-color: var(--primary-hover);
+  color: var(--white);
 }
 
-.carousel .btn:hover, .profile .btn:hover {
-  background-color: #df6c00;
-  color: #fff;
+.btn-secondary-custom:hover {
+  background-color: var(--secondary-hover);
+}
+
+.btn-warning-custom:hover {
+  background-color: var(--warning-hover);
+  color: var(--white);
+}
+
+.btn-dark-custom:hover {
+  background-color: var(--dark-hover);
+  color: var(--white);
+}
+
+.navbar .nav-item.active, .navbar .nav-item:hover {
+  border-bottom: 2px solid var(--primary);
 }
 
 .modal .modal-header, .modal .modal-footer {
-  background-color: #c2e3fc;
+  background-color: var(--primary);
+  color: var(--white);
 }
 
-footer hr {
-  border-bottom: 1px solid #fff;
+.about hr, .news hr, .struktur-himpunan hr {
+  border-bottom: 3px solid var(--white);
+  width: 30%;
+}
+
+.nav-link {
+  color: var(--white);
+}
+
+.nav-link.active {
+  background-color: var(--warning) !important;
+  color: var(--white) !important;
+}
+
+.nav-link:hover {
+  color: var(--white);
+}
+
+.struktur-himpunan .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: scroll;
+}
+
+.struktur-himpunan .cardWrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  transform: translateZ(0);
+  overflow: visible;
+}
+
+.struktur-himpunan .card {
+  background-color: var(--dark);
+  border-radius: 18px;
+  width: 200px;
+  margin: 8px;
+}
+
+.struktur-himpunan .card-overlay {
+  position: relative;
+  transition: transform .1s ease-in-out;
+  padding: 8px;
+}
+
+.struktur-himpunan .card-overlay img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+  border-radius: 12px;
+}
+
+.struktur-himpunan .card-overlay .card-img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+}
+
+.struktur-himpunan .card .card-img-overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.struktur-himpunan .card-overlay .card-img-overlay .card-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.struktur-himpunan .card ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.struktur-himpunan .card ul li {
+  list-style: none;
+}
+
+.struktur-himpunan .card ul li a {
+  color: var(--secondary);
+}
+
+.struktur-himpunan .card ul li a .fab, .struktur-himpunan .card ul li a .far, .struktur-himpunan .card ul li a .fas {
+  font-size: 24px;
+}
+
+.struktur-himpunan .card ul li a:hover .fas, .struktur-himpunan .card ul li a:hover .fab {
+  transform: scale(1.1);
 }
 
 footer ul {
@@ -108,117 +233,6 @@ footer ul li:nth-child(3) a:hover .fab {
 
 footer ul li:nth-child(4) a:hover .fab {
   color: #00aced;
-}
-
-/*** ABOUT PAGE ***/
-.about {
-  background-color: #217bc4;
-}
-
-.about hr {
-  border-bottom: 3px solid #fff;
-  width: 30%;
-}
-
-.nav-link {
-  color: #fff;
-}
-
-.nav-link:hover {
-  color: #fff;
-}
-
-.about .wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  overflow-x: scroll;
-}
-
-.about .cardWrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  transform: translateZ(0);
-  overflow: visible;
-}
-
-.about .card {
-  background-color: #1b262c;
-  border-radius: 18px;
-  color: #fff;
-  width: 200px;
-  margin: 8px;
-}
-
-.about .card-overlay {
-  position: relative;
-  transition: transform .1s ease-in-out;
-  padding: 8px;
-}
-
-.about .card-overlay img {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  backface-visibility: hidden;
-  border-radius: 12px;
-}
-
-.about .card-overlay .card-img-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 12px;
-}
-
-.about .card .card-img-overlay:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.about .card-overlay .card-img-overlay .card-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.about .card ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-
-.about .card ul li {
-  list-style: none;
-}
-
-.about .card ul li a {
-  color: #c2e3fc;
-}
-
-.about .card ul li a .fab, .about .card ul li a .far, .about .card ul li a .fas {
-  font-size: 28px;
-}
-
-.about .card ul li a:hover .fas, .about .card ul li a:hover .fab {
-  transform: scale(1.1);
-}
-
-.nav-link.active {
-  background-color: #df6c00 !important;
-  color: #fff !important;
 }
 
 @media only screen and (max-width: 992px) {
