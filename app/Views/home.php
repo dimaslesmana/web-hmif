@@ -58,7 +58,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <button class="btn btn-warning-custom btn-block">View All <i class="fas fa-chevron-right"></i></button>
+                    <button class="btn btn-tertiary-custom btn-block">View All <i class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
         </div>

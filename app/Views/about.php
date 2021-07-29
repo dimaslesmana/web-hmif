@@ -145,16 +145,16 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-pr" role="tabpanel" aria-labelledby="v-pills-pr-tab">
-                            <img src="/assets/images/placeholder.png" width="300" alt="">
+                            <h3>Duplicate components from above</h3>
                         </div>
                         <div class="tab-pane fade" id="v-pills-kesma" role="tabpanel" aria-labelledby="v-pills-kesma-tab">
-                            <img src="/assets/images/placeholder.png" width="300" alt="">
+                            <h3>Duplicate components from above</h3>
                         </div>
                         <div class="tab-pane fade" id="v-pills-humaniora" role="tabpanel" aria-labelledby="v-pills-humaniora-tab">
-                            <img src="/assets/images/placeholder.png" width="300" alt="">
+                            <h3>Duplicate components from above</h3>
                         </div>
                         <div class="tab-pane fade" id="v-pills-itdev" role="tabpanel" aria-labelledby="v-pills-itdev-tab">
-                            <img src="/assets/images/placeholder.png" width="300" alt="">
+                            <h3>Duplicate components from above</h3>
                         </div>
                     </div>
                 </div>

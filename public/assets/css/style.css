@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * {
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 :root {
-  --white: #ffffff;
-  --primary: #217bc4;
-  --secondary: #c2e3fc;
-  --warning: #fc7d03;
-  --dark: #1b262c;
-  --primary-hover: #1e6aa8;
-  --secondary-hover: #adcce4;
-  --warning-hover: #df6c00;
+  --white: hsl(0, 0%, 100%);
+  --dark: hsl(201, 24%, 14%);
+  --light: hsl(0, 0%, 90%);
+  --primary: hsl(207, 71%, 45%);
+  --secondary: 	hsl(206, 91%, 87%);
+  --tertiary: hsl(29, 98%, 50%);
+  --primary-hover: hsl(207, 71%, 30%);
+  --secondary-hover: hsl(206, 91%, 72%);
+  --tertiary-hover: hsl(29, 98%, 35%);
   --dark-hover: #141c20;
 }
 
@@ -34,14 +35,18 @@ html, body {
   background-color: var(--secondary);
 }
 
-.bg-warning-custom, .btn-warning-custom {
-  background-color: var(--warning);
+.bg-tertiary-custom, .btn-tertiary-custom {
+  background-color: var(--tertiary);
   color: var(--white);
 }
 
-.bg-dark-custom, .btn-dark-custom {
+.bg-dark-custom {
   background-color: var(--dark);
   color: var(--white);
+}
+
+.bg-light-custom {
+  background-color: var(--light);
 }
 
 .btn-primary-custom:hover {
@@ -53,13 +58,8 @@ html, body {
   background-color: var(--secondary-hover);
 }
 
-.btn-warning-custom:hover {
-  background-color: var(--warning-hover);
-  color: var(--white);
-}
-
-.btn-dark-custom:hover {
-  background-color: var(--dark-hover);
+.btn-tertiary-custom:hover {
+  background-color: var(--tertiary-hover);
   color: var(--white);
 }
 
@@ -82,7 +82,7 @@ html, body {
 }
 
 .nav-link.active {
-  background-color: var(--warning) !important;
+  background-color: var(--tertiary) !important;
   color: var(--white) !important;
 }
 
@@ -166,7 +166,7 @@ html, body {
 }
 
 .struktur-himpunan .card ul li a {
-  color: var(--secondary);
+  color: var(--light);
 }
 
 .struktur-himpunan .card ul li a .fab, .struktur-himpunan .card ul li a .far, .struktur-himpunan .card ul li a .fas {

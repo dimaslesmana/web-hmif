@@ -51,21 +51,21 @@
                     <img src="/assets/images/placeholder-1000x400.jpg" class="d-block w-100" alt="event1">
                     <div class="carousel-caption d-none d-md-block mb-2">
                         <p>Nama & Keterangan Event</p>
-                        <button class="btn btn-warning-custom rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
+                        <button class="btn btn-tertiary-custom rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="/assets/images/placeholder-1000x400.jpg" class="d-block w-100" alt="event2">
                     <div class="carousel-caption d-none d-md-block mb-2">
                         <p>Nama & Keterangan Event</p>
-                        <button class="btn btn-warning-custom rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
+                        <button class="btn btn-tertiary-custom rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="/assets/images/placeholder-1000x400.jpg" class="d-block w-100" alt="event3">
                     <div class="carousel-caption d-none d-md-block mb-2">
                         <p>Nama & Keterangan Event</p>
-                        <button class="btn btn-warning-custom rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
+                        <button class="btn btn-tertiary-custom rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-dismiss="modal">Batal</button>
-                        <button type="button" class="btn btn-warning-custom">Daftar</button>
+                        <button type="button" class="btn btn-tertiary-custom">Daftar</button>
                     </div>
                 </div>
             </div>
