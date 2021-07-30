@@ -22,7 +22,7 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent scrolled">
             <div class="container">
                 <a class="navbar-brand" href="/">
                     <img src="/assets/images/logo.png" width="100" alt="HMIF">

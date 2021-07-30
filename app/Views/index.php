@@ -22,7 +22,7 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom">
             <div class="container">
                 <a class="navbar-brand" href="/">
                     <img src="/assets/images/logo.png" width="100" alt="HMIF">
@@ -110,7 +110,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-light" data-dismiss="modal">Batal</button>
+                        <button type="button" class="btn btn-light-custom" data-dismiss="modal">Batal</button>
                         <button type="button" class="btn btn-tertiary-custom">Daftar</button>
                     </div>
                 </div>
