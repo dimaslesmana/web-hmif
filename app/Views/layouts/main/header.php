@@ -34,7 +34,7 @@
                     <img src="/assets/images/logo.png" width="100" alt="HMIF">
                 </a>
                 <div class="d-flex" id="navbarNav">
-                    <div class="pr-2 mr-2" style="border-right: 2px solid;">
+                    <div class="nav-menu pr-2 mr-2">
                         <a class="btn" href="/home"><i class="fas fa-home"></i></a>
                         <a class="btn" href="/about"><i class="fas fa-users"></i></a>
                         <a class="btn" href="/contact"><i class="fas fa-address-book"></i></a>

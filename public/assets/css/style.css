@@ -127,7 +127,6 @@ a {
 .navbar {
   background-color: var(--light);
   box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
-  transition: background-color 500ms;
 }
 
 /* .navbar .nav-link {
@@ -141,7 +140,6 @@ a {
 
 .navbar .btn {
   font-size: 18px;
-  padding: 4px 8px 2px;
   border-radius: 10px;
   transition: color 500ms;
 }
@@ -165,7 +163,7 @@ a {
 
 .moon{
   position: absolute;
-  top: 10%;
+  top: 6px;
 }
 
 .moon-logo{
@@ -198,6 +196,7 @@ a {
 
 .jumbotron {
   padding: 15vh 0;
+  transition: background-color 500ms;
 }
 
 .about hr, .news hr, .struktur-himpunan hr {
@@ -383,6 +382,10 @@ footer ul li:nth-child(4) a:hover .fab {
   color: #00aced;
 }
 
+.nav-menu {
+  border-right: 2px solid;
+}
+
 @media only screen and (max-width: 992px) {
   #serum .row {
     text-align: center;
@@ -394,5 +397,39 @@ footer ul li:nth-child(4) a:hover .fab {
 
   footer {
     margin-top: 32px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .bg-menu-dark {
+    background-color: rgba(44, 60, 70, .8) !important;
+  }
+
+  .nav-menu {
+    position: fixed;
+    bottom: 22px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 6rem;
+    background-color: rgba(225, 227, 230, 0.8);
+    backdrop-filter: blur(6px);
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    min-width: 90%;
+    text-align: center;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+  }
+
+  .nav-menu .btn {
+    font-size: 28px;
+  }
+
+  footer {
+    padding-bottom: 18vh;
   }
 }

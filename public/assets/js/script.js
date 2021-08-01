@@ -15,6 +15,7 @@ $(document).ready(function() {
     const $button = $(".navbar .btn");
     const $background = $("body, .navbar, .jumbotron, .navWrapper, .card");
     const $hyperlink = $("a");
+    const $menu = $(".nav-menu");
 
     if(localStorage.getItem('isDark') === 'true') {
         $button.addClass("btn-dark-mode");
@@ -22,6 +23,7 @@ $(document).ready(function() {
         $darkSwitch.addClass("animate-moon");
         $background.addClass("bg-dark-custom");
         $hyperlink.addClass("text-white-custom");
+        $menu.addClass("bg-menu-dark");
     }
 
     $($switch).click(function() {
@@ -39,5 +41,8 @@ $(document).ready(function() {
         
         $hyperlink.toggleClass("text-white-custom");
         localStorage.setItem('isDark', $hyperlink.hasClass("text-white-custom"));
+
+        $menu.toggleClass("bg-menu-dark");
+        localStorage.setItem('isDark', $menu.hasClass("bg-menu-dark"));
     });
 });
