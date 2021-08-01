@@ -5,6 +5,10 @@ $(document).ready(function() {
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     }); */
 
+    $(document).ready(function() {
+        $(".preloader").fadeOut('slow');
+    });
+
     const $switch = $(".switch-wrapper");
     const $lightSwitch = $(".sun-logo");
     const $darkSwitch = $(".moon-logo");

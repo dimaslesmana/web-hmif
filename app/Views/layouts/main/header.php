@@ -20,6 +20,12 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="loading">
+            <img src="/assets/images/logo.png" width="200">
+        </div>
+    </div> 
+
     <header>
         <!-- Navbar -->
         <nav class="navbar fixed-top navbar-expand-lg">
@@ -27,14 +33,15 @@
                 <a class="navbar-brand" href="/">
                     <img src="/assets/images/logo.png" width="100" alt="HMIF">
                 </a>
-                <div class="justify-content-end" id="navbarNav">
+                <div class="d-flex" id="navbarNav">
+                    <div class="pr-2 mr-2" style="border-right: 2px solid;">
                         <a class="btn" href="/home"><i class="fas fa-home"></i></a>
                         <a class="btn" href="/about"><i class="fas fa-users"></i></a>
                         <a class="btn" href="/contact"><i class="fas fa-address-book"></i></a>
                         <?php if (session()->get('logged_in')) : ?>
                             <a class="btn" href="/dashboard"><i class="fas fa-wrench"></i></a>
                         <?php endif; ?>
-                    </ul>
+                    </div>
                     <button class="btn switch-wrapper">
                         <div class="sun sun-logo">
                             <i class="fas fa-sun"></i>
