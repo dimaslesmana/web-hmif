@@ -4,9 +4,9 @@
 
 <main>
     <!-- Hero -->
-    <div class="jumbotron jumbotron-fluid hero mb-0">
+    <div class="jumbotron jumbotron-fluid mb-0">
         <div class="container text-center">
-            <img src="/assets/images/logo.png" class="" width="50%" alt="">
+            <img src="/assets/images/logo.png" class="" width="300" alt="">
             <h1 class="display-4">Welcome!</h1>
             <p class="lead">Himpunan Mahasiswa Informatika</p>
         </div>
@@ -22,35 +22,35 @@
                     <hr>
                 </div>
             </div>
-            <div class="row mb-4">
-                <div class="col">
+            <div class="row">
+                <div class="col mb-4">
                     <div class="card bg-dark text-white">
                         <img src="/assets/images/placeholder-1000x400.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet.</p>
                             <p class="card-text">Last updated 3 mins ago</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row mb-4">
-                <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
                     <div class="card bg-dark text-white">
                         <img src="/assets/images/placeholder-1000x400.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet.</p>
                             <p class="card-text">Last updated 3 mins ago</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 mb-4">
                     <div class="card bg-dark text-white">
                         <img src="/assets/images/placeholder-1000x400.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet.</p>
                             <p class="card-text">Last updated 3 mins ago</p>
                         </div>
                     </div>

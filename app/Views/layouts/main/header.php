@@ -27,25 +27,12 @@
                 <a class="navbar-brand" href="/">
                     <img src="/assets/images/logo.png" width="100" alt="HMIF">
                 </a>
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav mr-2">
-                        <li class="nav-item mx-2">
-                            <a class="nav-link" href="/home">Home</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link" href="/about">About</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link" href="/contact">Contact</a>
-                        </li>
+                <div class="justify-content-end" id="navbarNav">
+                        <a class="btn" href="/home"><i class="fas fa-home"></i></a>
+                        <a class="btn" href="/about"><i class="fas fa-users"></i></a>
+                        <a class="btn" href="/contact"><i class="fas fa-address-book"></i></a>
                         <?php if (session()->get('logged_in')) : ?>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="/dashboard">Dashboard</a>
-                            </li>
+                            <a class="btn" href="/dashboard"><i class="fas fa-wrench"></i></a>
                         <?php endif; ?>
                     </ul>
                     <button class="btn switch-wrapper">

@@ -5,7 +5,7 @@
 <main>
     <!-- About Us -->
     <section id="about" class="about">
-        <div class="container" style="padding-top: 10vh;">
+        <div class="container">
             <div class="row mb-4 pt-5 text-center">
                 <div class="col">
                     <h3>About Us</h3>
@@ -145,16 +145,16 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-pr" role="tabpanel" aria-labelledby="v-pills-pr-tab">
-                            <h3>Duplicate components from above</h3>
+                            <h3>Duplicate components from above.</h3>
                         </div>
                         <div class="tab-pane fade" id="v-pills-kesma" role="tabpanel" aria-labelledby="v-pills-kesma-tab">
-                            <h3>Duplicate components from above</h3>
+                            <h3>Duplicate components from above.</h3>
                         </div>
                         <div class="tab-pane fade" id="v-pills-humaniora" role="tabpanel" aria-labelledby="v-pills-humaniora-tab">
-                            <h3>Duplicate components from above</h3>
+                            <h3>Duplicate components from above.</h3>
                         </div>
                         <div class="tab-pane fade" id="v-pills-itdev" role="tabpanel" aria-labelledby="v-pills-itdev-tab">
-                            <h3>Duplicate components from above</h3>
+                            <h3>Duplicate components from above.</h3>
                         </div>
                     </div>
                 </div>

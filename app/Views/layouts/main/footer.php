@@ -1,5 +1,5 @@
 <footer>
-    <div class="container text-center my-4">
+    <div class="container text-center">
         <div class="row">
             <div class="col-md-6 my-auto">
                 <h3>Contact Us</h3>
@@ -19,7 +19,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 my-4">
                 <img src="/assets/images/logo.png" width="50%" alt="HMIF">
             </div>
         </div>

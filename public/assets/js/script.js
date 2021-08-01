@@ -8,11 +8,12 @@ $(document).ready(function() {
     const $switch = $(".switch-wrapper");
     const $lightSwitch = $(".sun-logo");
     const $darkSwitch = $(".moon-logo");
+    const $button = $(".navbar .btn");
     const $background = $("body, .navbar, .jumbotron, .navWrapper, .card");
     const $hyperlink = $("a");
 
     if(localStorage.getItem('isDark') === 'true') {
-        $switch.addClass("switch-wrapper-dark");
+        $button.addClass("btn-dark-mode");
         $lightSwitch.addClass("animate-sun");
         $darkSwitch.addClass("animate-moon");
         $background.addClass("bg-dark-custom");
@@ -20,8 +21,8 @@ $(document).ready(function() {
     }
 
     $($switch).click(function() {
-        $(this).toggleClass("switch-wrapper-dark");
-        localStorage.setItem('isDark', $(this).hasClass("switch-wrapper-dark"));
+        $button.toggleClass("btn-dark-mode");
+        localStorage.setItem('isDark', $button.hasClass("btn-dark-mode"));
         
         $lightSwitch.toggleClass("animate-sun");
         localStorage.setItem('isDark', $lightSwitch.hasClass("animate-sun"));
