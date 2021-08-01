@@ -22,16 +22,17 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent scrolled">
+        <nav class="navbar fixed-top navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="/">
                     <img src="/assets/images/logo.png" width="100" alt="HMIF">
                 </a>
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav mr-2">
                         <li class="nav-item mx-2">
                             <a class="nav-link" href="/home">Home</a>
                         </li>
@@ -47,6 +48,14 @@
                             </li>
                         <?php endif; ?>
                     </ul>
+                    <button class="btn switch-wrapper">
+                        <div class="sun sun-logo">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="moon moon-logo">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </button>
                 </div>
             </div>
         </nav>

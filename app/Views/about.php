@@ -6,7 +6,7 @@
     <!-- About Us -->
     <section id="about" class="about">
         <div class="container" style="padding-top: 10vh;">
-            <div class="row mb-4 pt-5 text-center text-white">
+            <div class="row mb-4 pt-5 text-center">
                 <div class="col">
                     <h3>About Us</h3>
                     <hr>
@@ -25,7 +25,7 @@
                     <div class="tab-content" id="myTabContent">
                         <!-- HMIF -->
                         <div class="tab-pane fade show active" id="hmif" role="tabpanel" aria-labelledby="hmif-tab">
-                            <div class="container text-white pb-4">
+                            <div class="container pb-4">
                                 <div class="row mb-4 pt-5 text-justify">
                                     <div class="col-lg-6">
                                         <h5 class="font-weight-bold text-center">Visi</h5>
@@ -42,7 +42,7 @@
 
                         <!-- SERUM -->
                         <div class="tab-pane fade" id="serum" role="tabpanel" aria-labelledby="serum-tab">
-                            <div class="container text-white pb-4">
+                            <div class="container pb-4">
                                 <div class="row mb-4 pt-5">
                                     <div class="col-lg-3">
                                         <img src="/assets/images/placeholder.png" width="200" alt="logo serum">
@@ -64,14 +64,14 @@
 
     <section id="struktur-himpunan" class="struktur-himpunan bg-primary-custom">
         <div class="container py-5">
-            <div class="row mb-2 text-center text-white">
+            <div class="row mb-2 text-center">
                 <div class="col">
                     <h3>Struktur Himpunan</h3>
                     <hr>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-3 p-3 mx-3 my-1 bg-dark-custom" style="border-radius: 10px;">
+                <div class="col-lg-3 p-3 mx-3 my-1 navWrapper">
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <a class="nav-link active" id="v-pills-bph-tab" data-toggle="pill" href="#v-pills-bph" role="tab" aria-controls="v-pills-bph" aria-selected="true">Badan Pengurus Harian</a>
                         <a class="nav-link" id="v-pills-pr-tab" data-toggle="pill" href="#v-pills-pr" role="tab" aria-controls="v-pills-pr" aria-selected="false">Public Relation</a>
@@ -83,7 +83,7 @@
                 <div class="col-lg-8 my-1">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-bph" role="tabpanel" aria-labelledby="v-pills-bph-tab">
-                            <div class="wrapper">
+                            <div class="contentWrapper">
                                 <div class="cardWrapper">
                                     <div class="card">
                                         <div class="card-overlay bg-transparent text-white">

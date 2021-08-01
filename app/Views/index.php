@@ -22,16 +22,21 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="/">
                     <img src="/assets/images/logo.png" width="100" alt="HMIF">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <a href="/home" class="btn btn-primary-custom rounded-pill"><i class="fas fa-home"></i> Home</a>
+                <div class="justify-content-end" id="navbarNav">
+                    <a href="/home" class="btn btn-primary-custom rounded-pill mr-3"><i class="fas fa-home"></i> Home</a>
+                    <button class="btn switch-wrapper">
+                        <div class="sun sun-logo">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="moon moon-logo">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -120,7 +125,7 @@
     </main>
 
     <footer>
-        <div class="container text-center text-white my-4">
+        <div class="container text-center my-4">
             <div class="row">
                 <div class="col-md-6 my-auto">
                     <h3>Contact Us</h3>
@@ -159,6 +164,8 @@
     <script src="/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+    <!-- Script JS -->
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>

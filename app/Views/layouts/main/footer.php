@@ -1,5 +1,5 @@
 <footer>
-    <div class="container text-center text-white my-4">
+    <div class="container text-center my-4">
         <div class="row">
             <div class="col-md-6 my-auto">
                 <h3>Contact Us</h3>
@@ -23,7 +23,7 @@
                 <img src="/assets/images/logo.png" width="50%" alt="HMIF">
             </div>
         </div>
-        <hr style="border-bottom: 1px solid var(--white);">
+        <hr>
         <div class="row">
             <div class="col">
                 <p>&copy; HMIF 2021 &bull; All Rights Reserved</p>

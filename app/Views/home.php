@@ -4,7 +4,7 @@
 
 <main>
     <!-- Hero -->
-    <div class="jumbotron jumbotron-fluid hero mb-0 bg-dark-custom text-white" style="padding: 15vh 0;">
+    <div class="jumbotron jumbotron-fluid hero mb-0">
         <div class="container text-center">
             <img src="/assets/images/logo.png" class="" width="50%" alt="">
             <h1 class="display-4">Welcome!</h1>
