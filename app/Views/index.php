@@ -4,7 +4,7 @@
 
 <main>
     <!-- Carousel -->
-    <div id="carousel" class="carousel slide" data-ride="carousel">
+    <!-- <div id="carousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -13,21 +13,21 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="/assets/images/placeholder-1000x400.jpg" class="d-block w-100" alt="event1">
-                <div class="carousel-caption d-none d-md-block mb-2">
+                <div class="carousel-caption d-none d-block mb-2">
                     <p>Nama & Keterangan Event</p>
                     <button class="btn btn-tertiary-custom rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="/assets/images/placeholder-1000x400.jpg" class="d-block w-100" alt="event2">
-                <div class="carousel-caption d-none d-md-block mb-2">
+                <div class="carousel-caption d-none d-block mb-2">
                     <p>Nama & Keterangan Event</p>
                     <button class="btn btn-tertiary-custom rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="/assets/images/placeholder-1000x400.jpg" class="d-block w-100" alt="event3">
-                <div class="carousel-caption d-none d-md-block mb-2">
+                <div class="carousel-caption d-none d-block mb-2">
                     <p>Nama & Keterangan Event</p>
                     <button class="btn btn-tertiary-custom rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
                 </div>
@@ -41,8 +41,47 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+    </div> -->
     <!-- End of Carousel -->
+
+    <div class="owl-carousel owl-theme">
+        <div>
+            <div class="carousel-img-container">
+                <img src="/assets/images/placeholder-1000x400.jpg" alt="event1">
+            </div>
+            <div class="d-flex flex-wrap justify-content-between bg-primary-custom p-4">
+                <p class="my-auto">Nama & Keterangan Event</p>
+                <button class="btn btn-tertiary-custom rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
+            </div>
+        </div>
+        <div>
+            <div class="carousel-img-container">
+                <img src="/assets/images/placeholder-1000x400.jpg" alt="event1">
+            </div>
+            <div class="d-flex flex-wrap justify-content-between bg-primary-custom p-4">
+                <p class="my-auto">Nama & Keterangan Event</p>
+                <button class="btn btn-tertiary-custom rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
+            </div>
+        </div>
+        <div>
+            <div class="carousel-img-container">
+                <img src="/assets/images/placeholder-1000x400.jpg" alt="event1">
+            </div>
+            <div class="d-flex flex-wrap justify-content-between bg-primary-custom p-4">
+                <p class="my-auto">Nama & Keterangan Event</p>
+                <button class="btn btn-tertiary-custom rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
+            </div>
+        </div>
+        <div>
+            <div class="carousel-img-container">
+                <img src="/assets/images/placeholder-1000x400.jpg" alt="event1">
+            </div>
+            <div class="d-flex flex-wrap justify-content-between bg-primary-custom p-4">
+                <p class="my-auto">Nama & Keterangan Event</p>
+                <button class="btn btn-tertiary-custom rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">

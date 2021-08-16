@@ -5,8 +5,16 @@ $(document).ready(function() {
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     }); */
 
-    $(document).ready(function() {
-        $(".preloader").fadeOut('slow');
+    $(".preloader").fadeOut('slow');
+
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        margin: 10,
+        autoHeight: true,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
     });
 
     const $switch = $(".switch-wrapper");

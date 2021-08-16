@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="/assets/vendors/fontawesome-free/css/all.min.css">
     <!-- SweetAlert2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+    <!-- OwlCarousel2 -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/style.css">
 
@@ -24,7 +27,7 @@
         <div class="loading">
             <img src="/assets/images/logo.png" width="200">
         </div>
-    </div> 
+    </div>
 
     <header>
         <!-- Navbar -->
