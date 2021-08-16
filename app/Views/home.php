@@ -64,6 +64,33 @@
         </div>
     </section>
     <!-- End of News -->
+
+    <!-- Media Partner -->
+    <section id="media-partner" class="media-partner">
+        <div class="container py-5">
+            <div class="row mb-2 text-center">
+                <div class="col">
+                    <h3>Media Partner</h3>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <img src="/assets/images/placeholder.png" width="100%" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="/assets/images/placeholder.png" width="100%" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="/assets/images/placeholder.png" width="100%" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="/assets/images/placeholder.png" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Media Partner -->
 </main>
 
 <?= $this->endSection(); ?>
