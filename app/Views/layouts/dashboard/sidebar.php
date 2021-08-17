@@ -26,15 +26,9 @@
 
                 <li class="nav-header">Events</li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="/dashboard/events" class="nav-link">
                         <i class="nav-icon fas fa-list"></i>
-                        <p>Add Events</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-list"></i>
-                        <p>View Events</p>
+                        <p>Daftar Event</p>
                     </a>
                 </li>
 

@@ -15,10 +15,23 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- SweetAlert2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/assets/vendors/datatables/css/datatables.min.css">
+    <!-- flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.9/dist/flatpickr.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="/assets/css/adminlte.min.css">
 
     <title><?= $title; ?></title>
+
+    <!-- Custom CSS -->
+    <?php
+    if (!empty($custom_css)) {
+        foreach ($custom_css as $css) {
+            echo $css;
+        }
+    }
+    ?>
 </head>
 
 <body class="hold-transition sidebar-mini">
