@@ -43,66 +43,56 @@
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-bph" role="tabpanel" aria-labelledby="pills-bph-tab">
-                            <div class="nav-wrapper p-4">
-                                <div class="row mb-4">
-                                    <div class="col-12">
-                                        <h4>Nama Acara 1</h4>
+                            <div class="row mb-4">
+                                <div class="col-12">
+                                    <h4>Nama Acara 1</h4>
+                                </div>
+                                <div class="col-12 owl-carousel news-carousel owl-theme">
+                                    <div style="height: 30vh;">
+                                        <img class="img-thumbnail" src="/assets/images/placeholder-1000x400.jpg" style="height: 100%; object-fit: cover;" alt="">
                                     </div>
-                                    <div class="col-12 owl-carousel news-carousel owl-theme">
-                                        <div style="height: 30vh;">
-                                            <img class="img-thumbnail" src="/assets/images/placeholder-1000x400.jpg" style="height: 100%; object-fit: cover;" alt="">
-                                        </div>
-                                        <div style="height: 30vh;">
-                                            <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
-                                        </div>
-                                        <div style="height: 30vh;">
-                                            <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
-                                        </div>
-                                        <div style="height: 30vh;">
-                                            <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
-                                        </div>
+                                    <div style="height: 30vh;">
+                                        <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
+                                    </div>
+                                    <div style="height: 30vh;">
+                                        <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
+                                    </div>
+                                    <div style="height: 30vh;">
+                                        <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
                                     </div>
                                 </div>
-                                <div class="row mb-4">
-                                    <div class="col-12">
-                                        <h4>Nama Acara 2</h4>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-12">
+                                    <h4>Nama Acara 2</h4>
+                                </div>
+                                <div class="col-12 owl-carousel news-carousel owl-theme">
+                                    <div style="height: 30vh;">
+                                        <img class="img-thumbnail" src="/assets/images/placeholder-1000x400.jpg" style="height: 100%; object-fit: cover;" alt="">
                                     </div>
-                                    <div class="col-12 owl-carousel news-carousel owl-theme">
-                                        <div style="height: 30vh;">
-                                            <img class="img-thumbnail" src="/assets/images/placeholder-1000x400.jpg" style="height: 100%; object-fit: cover;" alt="">
-                                        </div>
-                                        <div style="height: 30vh;">
-                                            <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
-                                        </div>
-                                        <div style="height: 30vh;">
-                                            <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
-                                        </div>
-                                        <div style="height: 30vh;">
-                                            <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
-                                        </div>
+                                    <div style="height: 30vh;">
+                                        <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
+                                    </div>
+                                    <div style="height: 30vh;">
+                                        <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
+                                    </div>
+                                    <div style="height: 30vh;">
+                                        <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade bg-dark-custom" id="pills-pr" role="tabpanel" aria-labelledby="pills-pr-tab" style="border-radius: 10px;">
-                            <div class="nav-wrapper p-4">
-                                <h1>Duplicate components from above.</h1>
-                            </div>
+                        <div class="tab-pane fade" id="pills-pr" role="tabpanel" aria-labelledby="pills-pr-tab" style="border-radius: 10px;">
+                            <h1>Duplicate components from above.</h1>
                         </div>
                         <div class="tab-pane fade" id="pills-kesma" role="tabpanel" aria-labelledby="pills-kesma-tab">
-                            <div class="nav-wrapper p-4">
-                                <h1>Duplicate components from above.</h1>
-                            </div>
+                            <h1>Duplicate components from above.</h1>
                         </div>
                         <div class="tab-pane fade" id="pills-itdev" role="tabpanel" aria-labelledby="pills-itdev-tab">
-                            <div class="nav-wrapper p-4">
-                                <h1>Duplicate components from above.</h1>
-                            </div>
+                            <h1>Duplicate components from above.</h1>
                         </div>
                         <div class="tab-pane fade" id="pills-humaniora" role="tabpanel" aria-labelledby="pills-humaniora-tab">
-                            <div class="nav-wrapper p-4">
-                                <h1>Duplicate components from above.</h1>
-                            </div>
+                            <h1>Duplicate components from above.</h1>
                         </div>
                     </div>
                 </div>
@@ -116,21 +106,27 @@
         <div class="container py-5">
             <div class="row mb-2 text-center">
                 <div class="col">
-                    <h3>Media Partner</h3>
+                    <h3>Media Partners</h3>
                     <hr>
                 </div>
             </div>
             <div class="row">
-                <div class="col-3">
+                <div class="col-2">
                     <img src="/assets/images/placeholder.png" width="100%" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-2">
                     <img src="/assets/images/placeholder.png" width="100%" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-2">
                     <img src="/assets/images/placeholder.png" width="100%" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-2">
+                    <img src="/assets/images/placeholder.png" width="100%" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="/assets/images/placeholder.png" width="100%" alt="">
+                </div>
+                <div class="col-2">
                     <img src="/assets/images/placeholder.png" width="100%" alt="">
                 </div>
             </div>
