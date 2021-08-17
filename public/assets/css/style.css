@@ -8,12 +8,12 @@
 :root {
   --white: hsl(0, 0%, 100%);
   --dark: hsl(201, 24%, 14%);
-  --light:hsl(210, 15%, 95%);
+  --light: hsl(210, 15%, 95%);
   --primary: hsl(207, 71%, 45%);
-  --secondary: 	hsl(206, 91%, 87%);
+  --secondary: hsl(206, 91%, 87%);
   --tertiary: hsl(29, 98%, 50%);
   --dark-hover: hsl(201, 24%, 9%);
-  --light-hover:hsl(210, 15%, 90%);
+  --light-hover: hsl(210, 15%, 90%);
   --primary-hover: hsl(207, 71%, 40%);
   --secondary-hover: hsl(206, 91%, 82%);
   --tertiary-hover: hsl(29, 98%, 45%);
@@ -21,6 +21,22 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--tertiary) var(--light);
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--light);
+  border-radius: 5px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--tertiary);
+  border-radius: 5px;
 }
 
 body {
@@ -32,26 +48,31 @@ body {
   color: var(--white) !important;
 }
 
-.bg-primary-custom, .btn-primary-custom {
+.bg-primary-custom,
+.btn-primary-custom {
   background-color: var(--primary) !important;
   color: var(--white) !important;
 }
 
-.bg-secondary-custom, .btn-secondary-custom {
+.bg-secondary-custom,
+.btn-secondary-custom {
   background-color: var(--secondary) !important;
 }
 
-.bg-tertiary-custom, .btn-tertiary-custom {
+.bg-tertiary-custom,
+.btn-tertiary-custom {
   background-color: var(--tertiary) !important;
   color: var(--white) !important;
 }
 
-.bg-dark-custom, .btn-dark-custom {
+.bg-dark-custom,
+.btn-dark-custom {
   background-color: var(--dark) !important;
   color: var(--white) !important;
 }
 
-.bg-light-custom, .btn-light-custom {
+.bg-light-custom,
+.btn-light-custom {
   background-color: var(--light) !important;
 }
 
@@ -85,7 +106,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: linear-gradient(145deg, rgba(30,109,174,1) 50%, rgba(167,215,251,1) 200%);
+  background: linear-gradient(145deg, rgba(30, 109, 174, 1) 50%, rgba(167, 215, 251, 1) 200%);
   display: grid;
 }
 
@@ -103,15 +124,15 @@ body {
 
 @keyframes loader {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
 
   50% {
-      transform: scale(1.2);
+    transform: scale(1.2);
   }
-  
+
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -156,40 +177,43 @@ a {
   position: relative;
 }
 
-.sun, .moon{
+.sun,
+.moon {
   width: fit-content;
   height: fit-content;
 }
 
-.moon{
+.moon {
   position: absolute;
   top: 6px;
 }
 
-.moon-logo{
+.moon-logo {
   opacity: 0;
   color: var(--light);
   transform: translateY(20%) rotateZ(50deg);
   transition: all 300ms;
 }
-.sun-logo{
+
+.sun-logo {
   opacity: 1;
   color: var(--dark);
   transform: translateY(0) rotateZ(0deg);
   transition: all 300ms;
 }
 
-.animate-sun{
+.animate-sun {
   opacity: 0;
   transform: translateY(20%) rotateZ(100deg);
 }
 
-.animate-moon{
+.animate-moon {
   opacity: 1;
   transform: translateY(0%) rotateZ(0deg);
 }
 
-.modal .modal-header, .modal .modal-footer {
+.modal .modal-header,
+.modal .modal-footer {
   background-color: var(--primary);
   color: var(--white);
 }
@@ -199,7 +223,10 @@ a {
   transition: background-color 500ms;
 }
 
-.about hr, .news hr, .struktur-himpunan hr {
+.about hr,
+.news hr,
+.media-partner hr,
+.struktur-himpunan hr {
   border-bottom: 3px solid;
   width: 310px;
 }
@@ -217,24 +244,49 @@ a {
   color: var(--white) !important;
 }
 
-.navWrapper .nav-link.active {
+.nav-wrapper .nav-link.active {
   background-color: var(--tertiary) !important;
   color: var(--white) !important;
 }
 
-.struktur-himpunan .navWrapper {
+.nav-wrapper {
   background-color: var(--light);
   border-radius: 10px;
   transition: background-color 500ms;
 }
 
-.struktur-himpunan .contentWrapper {
+.news .img-news-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  transform: translateZ(0);
+  overflow: visible;
+  border-radius: 10px;
+}
+
+.struktur-himpunan .content-wrapper {
   display: flex;
   flex-wrap: wrap;
   overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--tertiary) var(--light);
 }
 
-.struktur-himpunan .cardWrapper {
+.struktur-himpunan .content-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.struktur-himpunan .content-wrapper::-webkit-scrollbar-track {
+  background: var(--light);
+  border-radius: 5px;
+}
+
+.struktur-himpunan .content-wrapper::-webkit-scrollbar-thumb {
+  background: var(--tertiary);
+  border-radius: 5px;
+}
+
+.struktur-himpunan .card-wrapper {
   display: flex;
   flex-wrap: nowrap;
   transform: translateZ(0);
@@ -309,15 +361,19 @@ a {
   color: var(--light);
 }
 
-.struktur-himpunan .card ul li a .fab, .struktur-himpunan .card ul li a .far, .struktur-himpunan .card ul li a .fas {
+.struktur-himpunan .card ul li a .fab,
+.struktur-himpunan .card ul li a .far,
+.struktur-himpunan .card ul li a .fas {
   font-size: 24px;
 }
 
-.struktur-himpunan .card ul li a:hover .fas, .struktur-himpunan .card ul li a:hover .fab {
+.struktur-himpunan .card ul li a:hover .fas,
+.struktur-himpunan .card ul li a:hover .fab {
   transform: scale(1.1);
 }
 
-footer hr, .contact hr {
+footer hr,
+.contact hr {
   border-bottom: 1px solid;
 }
 
@@ -344,17 +400,19 @@ footer ul li a {
   padding: 6px;
   box-sizing: border-box;
   text-decoration: none;
-  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   background: linear-gradient(0deg, #ddd, #fff);
   transition: .5s;
 }
 
 footer ul li a:hover {
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  text-decoration:none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
 }
 
-footer ul li a .fab, footer ul li a .far, footer ul li a .fas {
+footer ul li a .fab,
+footer ul li a .far,
+footer ul li a .fas {
   width: 100%;
   height: 100%;
   display: block;
@@ -405,6 +463,15 @@ footer ul li:nth-child(4) a:hover .fab {
     background-color: rgba(44, 60, 70, .8) !important;
   }
 
+  .carousel-img-container {
+    height: 50vh;
+  }
+
+  .carousel-img-container img {
+    height: 100%;
+    object-fit: cover;
+  }
+
   .nav-menu {
     position: fixed;
     bottom: 22px;
@@ -421,7 +488,7 @@ footer ul li:nth-child(4) a:hover .fab {
     margin: 0 !important;
     padding: 0 !important;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
   }
 

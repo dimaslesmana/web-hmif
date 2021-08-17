@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-3 p-3 mx-3 my-1 navWrapper">
+                <div class="col-lg-3 p-3 mx-3 my-1 nav-wrapper">
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <a class="nav-link active" id="v-pills-bph-tab" data-toggle="pill" href="#v-pills-bph" role="tab" aria-controls="v-pills-bph" aria-selected="true">Badan Pengurus Harian</a>
                         <a class="nav-link" id="v-pills-pr-tab" data-toggle="pill" href="#v-pills-pr" role="tab" aria-controls="v-pills-pr" aria-selected="false">Public Relation</a>
@@ -83,8 +83,8 @@
                 <div class="col-lg-8 my-1">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-bph" role="tabpanel" aria-labelledby="v-pills-bph-tab">
-                            <div class="contentWrapper">
-                                <div class="cardWrapper">
+                            <div class="content-wrapper">
+                                <div class="card-wrapper">
                                     <div class="card">
                                         <div class="card-overlay bg-transparent text-white">
                                             <img src="/assets/images/placeholder.png" class="card-img" alt="profile1">

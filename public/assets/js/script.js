@@ -5,15 +5,33 @@ $(document).ready(function() {
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     }); */
 
-    $(document).ready(function() {
-        $(".preloader").fadeOut('slow');
+    $(".preloader").fadeOut('slow');
+
+    $("#landing-carousel").owlCarousel({
+        items: 1,
+        margin: 10,
+        autoHeight: true,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+    });
+
+    $(".news-carousel").owlCarousel({
+        items: 4,
+        margin: 10,
+        autoWidth:true,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
     });
 
     const $switch = $(".switch-wrapper");
     const $lightSwitch = $(".sun-logo");
     const $darkSwitch = $(".moon-logo");
     const $button = $(".navbar .btn");
-    const $background = $("body, .navbar, .jumbotron, .navWrapper, .card");
+    const $background = $("body, .navbar, .jumbotron, .nav-wrapper, .card");
     const $hyperlink = $("a");
     const $menu = $(".nav-menu");
 

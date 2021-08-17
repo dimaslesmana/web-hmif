@@ -38,6 +38,8 @@
 <script src="/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- SweetAlert2 -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+<!-- OwlCarousel2 -->
+<script src="/assets/js/owl.carousel.min.js"></script>
 <!-- Script JS -->
 <script src="/assets/js/script.js"></script>
 </body>
