@@ -21,6 +21,22 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--tertiary) var(--light);
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--light);
+  border-radius: 5px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--tertiary);
+  border-radius: 5px;
 }
 
 body {
@@ -251,8 +267,24 @@ a {
   display: flex;
   flex-wrap: wrap;
   overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--tertiary) var(--light);
 }
 
+.struktur-himpunan .content-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.struktur-himpunan .content-wrapper::-webkit-scrollbar-track {
+  background: var(--light);
+  border-radius: 5px;
+}
+
+.struktur-himpunan .content-wrapper::-webkit-scrollbar-thumb {
+  background: var(--tertiary);
+  border-radius: 5px;
+}
 
 .struktur-himpunan .card-wrapper {
   display: flex;
