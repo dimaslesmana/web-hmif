@@ -24,7 +24,7 @@
             </div>
             <div class="row">
                 <div class="col mb-4">
-                    <ul class="nav nav-pills nav-justified nav-wrapper p-2 mb-3" id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills flex-column flex-lg-row nav-justified nav-wrapper p-2 mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <a class="nav-link active" id="pills-bph-tab" data-toggle="pill" href="#pills-bph" role="tab" aria-controls="pills-bph" aria-selected="true">BPH</a>
                         </li>
@@ -111,26 +111,15 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-2">
-                    <img src="/assets/images/placeholder.png" width="100%" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="/assets/images/placeholder.png" width="100%" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="/assets/images/placeholder.png" width="100%" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="/assets/images/placeholder.png" width="100%" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="/assets/images/placeholder.png" width="100%" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="/assets/images/placeholder.png" width="100%" alt="">
+                <div class="col text-center">
+                    <img class="m-2" src="/assets/images/placeholder.png" style="max-width: 120px;" alt="">
+                    <img class="m-2" src="/assets/images/placeholder.png" style="max-width: 120px;" alt="">
+                    <img class="m-2" src="/assets/images/placeholder.png" style="max-width: 120px;" alt="">
+                    <img class="m-2" src="/assets/images/placeholder.png" style="max-width: 120px;" alt="">
+                    <img class="m-2" src="/assets/images/placeholder.png" style="max-width: 120px;" alt="">
+                    <img class="m-2" src="/assets/images/placeholder.png" style="max-width: 120px;" alt="">
                 </div>
             </div>
-        </div>
     </section>
     <!-- End of Media Partner -->
 </main>
