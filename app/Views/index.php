@@ -44,7 +44,7 @@
     </div> -->
     <!-- End of Carousel -->
 
-    <div class="owl-carousel owl-theme">
+    <div class="owl-carousel owl-theme" id="landing-carousel">
         <div>
             <div class="carousel-img-container">
                 <img src="/assets/images/placeholder-1000x400.jpg" alt="event1">

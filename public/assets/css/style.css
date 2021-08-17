@@ -228,24 +228,33 @@ a {
   color: var(--white) !important;
 }
 
-.navWrapper .nav-link.active {
+.nav-wrapper .nav-link.active {
   background-color: var(--tertiary) !important;
   color: var(--white) !important;
 }
 
-.struktur-himpunan .navWrapper {
+.nav-wrapper {
   background-color: var(--light);
   border-radius: 10px;
   transition: background-color 500ms;
 }
 
-.struktur-himpunan .contentWrapper {
+.news .img-news-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  transform: translateZ(0);
+  overflow: visible;
+  border-radius: 10px;
+}
+
+.struktur-himpunan .content-wrapper {
   display: flex;
   flex-wrap: wrap;
   overflow-x: scroll;
 }
 
-.struktur-himpunan .cardWrapper {
+
+.struktur-himpunan .card-wrapper {
   display: flex;
   flex-wrap: nowrap;
   transform: translateZ(0);
