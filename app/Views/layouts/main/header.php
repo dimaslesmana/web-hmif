@@ -38,9 +38,18 @@
                 </a>
                 <div class="d-flex" id="navbarNav">
                     <div class="nav-menu pr-2 mr-2">
-                        <a class="btn" href="/home"><i class="fas fa-home"></i></a>
-                        <a class="btn" href="/about"><i class="fas fa-users"></i></a>
-                        <a class="btn" href="/contact"><i class="fas fa-address-book"></i></a>
+                        <a class="btn <?php if ($request->uri->getSegment(1) === 'home') echo 'text-tertiary-custom'; ?>" href="/home">
+                            <i class="fas fa-home"></i>
+                            <small style="font-size: 1rem;">Home</small>
+                        </a>
+                        <a class="btn <?php if ($request->uri->getSegment(1) === 'about') echo 'text-tertiary-custom'; ?>" href="/about">
+                            <i class="fas fa-users"></i>
+                            <small style="font-size: 1rem;">About</small>
+                        </a>
+                        <a class="btn <?php if ($request->uri->getSegment(1) === 'contact') echo 'text-tertiary-custom'; ?>" href="/contact">
+                            <i class="fas fa-address-book"></i>
+                            <small style="font-size: 1rem;">Contact</small>
+                        </a>
                         <?php if (session()->get('logged_in')) : ?>
                             <a class="btn" href="/dashboard"><i class="fas fa-wrench"></i></a>
                         <?php endif; ?>
