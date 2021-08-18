@@ -225,6 +225,7 @@ a {
 
 .about hr,
 .news hr,
+.contact hr,
 .media-partner hr,
 .struktur-himpunan hr {
   border-bottom: 3px solid;
@@ -372,8 +373,7 @@ a {
   transform: scale(1.1);
 }
 
-footer hr,
-.contact hr {
+footer hr {
   border-bottom: 1px solid;
 }
 
