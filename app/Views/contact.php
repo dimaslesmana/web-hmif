@@ -3,9 +3,9 @@
 <?= $this->section('content'); ?>
 
 <main>
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="row mb-4 pt-5 text-center">
+    <section id="contact" class="contact bg-primary-custom">
+        <div class="container py-5">
+            <div class="row text-center">
                 <div class="col">
                     <h3>Contact Us</h3>
                     <hr>
@@ -36,7 +36,7 @@
                             <label for="message">Message</label>
                             <textarea class="form-control" id="message" rows="7" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary-custom">Submit</button>
+                        <button type="submit" class="btn btn-tertiary-custom">Submit</button>
                     </form>
                 </div>
             </div>
