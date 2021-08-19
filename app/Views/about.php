@@ -45,10 +45,10 @@
                             <div class="container pb-4">
                                 <div class="row mb-4 pt-5">
                                     <div class="col-lg-3">
-                                        <img src="/assets/images/placeholder.png" width="200" alt="logo serum">
+                                        <img src="/assets/images/serum-logo.png" width="200" alt="logo serum" style="margin-top: -32px;">
                                     </div>
                                     <div class="col-lg-9 text-justify">
-                                        <h5 class="font-weight-bold text-center">Tujuan</h5>
+                                        <h5 class="font-weight-bold">Tujuan</h5>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto cumque id unde quod doloremque rem, consequuntur dignissimos suscipit vel in neque ab, sequi beatae, fuga laborum quidem nostrum temporibus repellendus.</p>
                                     </div>
                                 </div>
@@ -89,7 +89,7 @@
                                         <div class="card-overlay bg-transparent text-white">
                                             <img src="/assets/images/placeholder.png" class="card-img" alt="profile1">
                                             <div class="card-img-overlay">
-                                                <p class="card-title">Nama - Jabatan</p>
+                                                <p class="card-title">Click to show detail</p>
                                             </div>
                                         </div>
                                         <div class="card-body text-center">
@@ -103,7 +103,7 @@
                                         <div class="card-overlay bg-transparent text-white">
                                             <img src="/assets/images/placeholder.png" class="card-img" alt="profile2">
                                             <div class="card-img-overlay">
-                                                <p class="card-title">Nama - Jabatan</p>
+                                                <p class="card-title">Click to show detail</p>
                                             </div>
                                         </div>
                                         <div class="card-body text-center">
@@ -117,7 +117,7 @@
                                         <div class="card-overlay bg-transparent text-white">
                                             <img src="/assets/images/placeholder.png" class="card-img" alt="profile3">
                                             <div class="card-img-overlay">
-                                                <p class="card-title">Nama - Jabatan</p>
+                                                <p class="card-title">Click to show detail</p>
                                             </div>
                                         </div>
                                         <div class="card-body text-center">
@@ -131,7 +131,7 @@
                                         <div class="card-overlay bg-transparent text-white">
                                             <img src="/assets/images/placeholder.png" class="card-img" alt="profile4">
                                             <div class="card-img-overlay">
-                                                <p class="card-title">Nama - Jabatan</p>
+                                                <p class="card-title">Click to show detail</p>
                                             </div>
                                         </div>
                                         <div class="card-body text-center">

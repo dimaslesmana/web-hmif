@@ -48,6 +48,14 @@ body {
   color: var(--white) !important;
 }
 
+.text-dark-custom {
+  color: var(--dark) !important;
+}
+
+.text-tertiary-custom {
+  color: var(--tertiary) !important;
+}
+
 .bg-primary-custom,
 .btn-primary-custom {
   background-color: var(--primary) !important;
@@ -150,19 +158,14 @@ a {
   box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
 }
 
-/* .navbar .nav-link {
-  border: 2px solid transparent;
-}
-
-.navbar .nav-link:hover {
-  border-bottom: 2px solid var(--tertiary);
-  color: var(--tertiary) !important;
-} */
-
 .navbar .btn {
   font-size: 18px;
   border-radius: 10px;
   transition: color 500ms;
+}
+
+.navbar .nav-menu i {
+  display: none;
 }
 
 .navbar .btn:hover {
@@ -225,6 +228,7 @@ a {
 
 .about hr,
 .news hr,
+.contact hr,
 .media-partner hr,
 .struktur-himpunan hr {
   border-bottom: 3px solid;
@@ -326,7 +330,7 @@ a {
   height: 100%;
   width: 100%;
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, .5);
   border-radius: 12px;
 }
 
@@ -372,8 +376,7 @@ a {
   transform: scale(1.1);
 }
 
-footer hr,
-.contact hr {
+footer hr {
   border-bottom: 1px solid;
 }
 
@@ -400,13 +403,13 @@ footer ul li a {
   padding: 6px;
   box-sizing: border-box;
   text-decoration: none;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
   background: linear-gradient(0deg, #ddd, #fff);
   transition: .5s;
 }
 
 footer ul li a:hover {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
   text-decoration: none;
 }
 
@@ -459,6 +462,17 @@ footer ul li:nth-child(4) a:hover .fab {
 }
 
 @media only screen and (max-width: 576px) {
+  .navbar .nav-menu a {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+  }
+
+  .navbar .nav-menu i {
+    display: inline;
+    margin-bottom: 4px;
+  }
+
   .bg-menu-dark {
     background-color: rgba(44, 60, 70, .8) !important;
   }
@@ -478,8 +492,9 @@ footer ul li:nth-child(4) a:hover .fab {
     left: 50%;
     transform: translate(-50%);
     height: 6rem;
-    background-color: rgba(225, 227, 230, 0.8);
+    background-color: rgba(225, 227, 230, .8);
     backdrop-filter: blur(6px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
     padding: 12px;
     border-radius: 20px;
     border: none;

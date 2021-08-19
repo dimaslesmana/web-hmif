@@ -4,11 +4,12 @@ namespace App\Controllers;
 
 class Dashboard extends BaseController
 {
-	public function index()
-	{
+    public function index()
+    {
         $data = [
             'title' => 'HMIF - Dashboard',
             'sidebar_title' => 'HMIF',
+            'request' => $this->request,
         ];
 
 		return view('dashboard/index', $data);
@@ -20,6 +21,7 @@ class Dashboard extends BaseController
             'title' => 'HMIF - Daftar Event',
             'sidebar_title' => 'HMIF',
             'events' => $this->eventPostModel->getEvents(),
+            'request' => $this->request,
         ];
 
         return view('dashboard/events', $data);
@@ -32,6 +34,7 @@ class Dashboard extends BaseController
             'sidebar_title' => 'HMIF',
             'validation' => $this->validation,
             'event_categories' => $this->eventCategoryModel->getCategories(),
+            'request' => $this->request,
             'custom_js' => [
 				view('custom-js/ckeditor'),
 			],
