@@ -8,6 +8,8 @@ class Events extends BaseController
     {
         $data = [
             'title' => "HMIF UMN | Events",
+            'events' => $this->eventPostModel->getEvents(),
+            'request' => $this->request,
         ];
 
         return view('events/index', $data);
@@ -27,6 +29,7 @@ class Events extends BaseController
         $data = [
             'title' => "HMIF UMN | Event - {$event['event_title']}",
             'event' => $event,
+            'request' => $this->request,
         ];
 
         return view('events/details', $data);

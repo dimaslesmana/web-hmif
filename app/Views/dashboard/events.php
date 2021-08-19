@@ -36,6 +36,7 @@
                                         <th>Tanggal & Waktu Selesai</th>
                                         <th>Link Google Form</th>
                                         <th>Poster</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -53,7 +54,22 @@
                                                     <img src="/assets/images/event-poster/<?= $event['event_poster']; ?>" class="img-fluid mb-2" alt="<?= $event['event_title']; ?>" width="250" />
                                                 </a>
                                             </td>
-
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-info">Manage</button>
+                                                    <button type="button" class="btn btn-info dropdown-toggle dropdown-hover dropdown-icon" data-toggle="dropdown">
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                    </button>
+                                                    <div class="dropdown-menu" role="menu">
+                                                        <a href="/dashboard/events/edit/<?= $event['event_id']; ?>" class="btn btn-sm btn-warning btn-block"><i class="fas fa-edit"></i></a>
+                                                        <form action="/dashboard/events/delete/<?= $event['event_id']; ?>" method="post" class="dropdown-item">
+                                                            <?= csrf_field(); ?>
+                                                            <input type="hidden" name="_method" value="DELETE">
+                                                            <button type="submit" class="btn btn-sm btn-danger btn-block" onclick="return confirm('Are you sure?');"><i class="fas fa-trash"></i></button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
@@ -67,6 +83,7 @@
                                         <th>Tanggal & Waktu Selesai</th>
                                         <th>Link Google Form</th>
                                         <th>Poster</th>
+                                        <th>Action</th>
                                     </tr>
                                 </tfoot>
                             </table>

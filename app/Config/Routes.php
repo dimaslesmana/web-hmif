@@ -42,6 +42,8 @@ $routes->group('auth', function ($routes) {
 $routes->group('dashboard', ['filter' => 'authentication'], function ($routes) {
 	$routes->get('events/add', 'Dashboard::addEventsView');
 	$routes->post('events/add', 'Dashboard::addEvent');
+	$routes->post('events/edit/submit', 'Dashboard::updateEvent');
+	$routes->get('events/edit/(:num)', 'Dashboard::editEventsView/$1');
 	$routes->get('events', 'Dashboard::eventsView');
 	$routes->get('/', 'Dashboard::index');
 	$routes->addRedirect('(:any)', 'dashboard');

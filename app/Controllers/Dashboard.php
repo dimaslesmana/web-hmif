@@ -12,8 +12,8 @@ class Dashboard extends BaseController
             'request' => $this->request,
         ];
 
-		return view('dashboard/index', $data);
-	}
+        return view('dashboard/index', $data);
+    }
 
     public function eventsView()
     {
@@ -36,11 +36,37 @@ class Dashboard extends BaseController
             'event_categories' => $this->eventCategoryModel->getCategories(),
             'request' => $this->request,
             'custom_js' => [
-				view('custom-js/ckeditor'),
-			],
+                view('custom-js/ckeditor'),
+            ],
         ];
 
         return view('dashboard/events-new', $data);
+    }
+
+    public function editEventsView($eventId = null)
+    {
+        if (empty($eventId)) {
+            return redirect()->to('/dashboard/events');
+        }
+
+        $event = $this->eventPostModel->getEventById($eventId);
+        if (empty($event)) {
+            return redirect()->to('/dashboard/events');
+        }
+
+        $data = [
+            'title' => 'HMIF - Edit Event',
+            'sidebar_title' => 'HMIF',
+            'validation' => $this->validation,
+            'event' => $event,
+            'event_categories' => $this->eventCategoryModel->getCategories(),
+            'request' => $this->request,
+            'custom_js' => [
+                view('custom-js/ckeditor'),
+            ],
+        ];
+
+        return view('dashboard/events-edit', $data);
     }
 
     /**
@@ -90,15 +116,15 @@ class Dashboard extends BaseController
                 'rules' => 'max_size[event_poster,3072]|is_image[event_poster]|mime_in[event_poster,image/png,image/jpg,image/jpeg]',
                 'errors' => [
                     'max_size' => 'Image size is too large. Max 3 MB',
-					'is_image' => 'Please choose an image',
-					'mime_in' => 'Please choose an image',
+                    'is_image' => 'Please choose an image',
+                    'mime_in' => 'Please choose an image',
                 ]
             ],
         ];
 
         if (!$this->validate($formRules)) {
-			return redirect()->to('/dashboard/events/add')->withInput();
-		}
+            return redirect()->to('/dashboard/events/add')->withInput();
+        }
 
         // Handle poster image
         $image = $this->request->getFile('event_poster');
@@ -124,6 +150,95 @@ class Dashboard extends BaseController
         ];
 
         $this->eventPostModel->insertNewPost($data);
+
+        return redirect()->to('/dashboard/events');
+    }
+
+    /**
+     * * Handle edit event request
+     */
+    public function updateEvent()
+    {
+        $formRules = [
+            'event_title' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'This field is required',
+                ]
+            ],
+            'event_categories' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'This field is required',
+                ]
+            ],
+            'event_body' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'This field is required',
+                ]
+            ],
+            'event_start_date' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'This field is required',
+                ]
+            ],
+            'event_end_date' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'This field is required',
+                ]
+            ],
+            'event_form_link' => [
+                'rules' => 'required|valid_url',
+                'errors' => [
+                    'required' => 'This field is required',
+                    'valid_url' => 'Please enter a valid url',
+                ]
+            ],
+            'event_poster' => [
+                'rules' => 'max_size[event_poster,3072]|is_image[event_poster]|mime_in[event_poster,image/png,image/jpg,image/jpeg]',
+                'errors' => [
+                    'max_size' => 'Image size is too large. Max 3 MB',
+                    'is_image' => 'Please choose an image',
+                    'mime_in' => 'Please choose an image',
+                ]
+            ],
+        ];
+
+        if (!$this->validate($formRules)) {
+            return redirect()->to('/dashboard/events/edit/' . $this->request->getPost('event_id'))->withInput();
+        }
+
+        // Handle poster image
+        $image = $this->request->getFile('event_poster');
+        $oldImage = $this->request->getPost('old_poster_image');
+
+        if ($image->getError() == 4) {
+            // no image uploaded
+            $imageName = $oldImage;
+        } else {
+            $imageName = $image->getRandomName();
+            $image->move('assets/images/event-poster', $imageName);
+
+            if (strpos($oldImage, 'placeholder') === false) {
+				unlink('assets/images/event-poster/' . $oldImage);
+			}
+        }
+
+        // Data
+        $data = [
+            'event_title' => htmlspecialchars($this->request->getPost('event_title'), ENT_QUOTES, 'UTF-8'),
+            'event_category' => htmlspecialchars($this->request->getPost('event_categories'), ENT_QUOTES, 'UTF-8'),
+            'event_body' => htmlspecialchars($this->request->getPost('event_body'), ENT_QUOTES, 'UTF-8'),
+            'event_start_date' => htmlspecialchars($this->request->getPost('event_start_date'), ENT_QUOTES, 'UTF-8'),
+            'event_end_date' => htmlspecialchars($this->request->getPost('event_end_date'), ENT_QUOTES, 'UTF-8'),
+            'event_form_link' => htmlspecialchars($this->request->getPost('event_form_link'), ENT_QUOTES, 'UTF-8'),
+            'event_poster' => $imageName,
+        ];
+
+        $this->eventPostModel->updatePost(htmlspecialchars($this->request->getPost('event_id'), ENT_QUOTES, 'UTF-8'), $data);
 
         return redirect()->to('/dashboard/events');
     }

@@ -15,21 +15,29 @@ class EventPostModel extends Model
         return $this->save($data);
     }
 
+    public function updatePost($eventId, $data)
+    {
+        $builder = $this->table('event_posts');
+        $builder->set($data);
+        $builder->where('event_id', $eventId);
+        $builder->update();
+    }
+
     public function getEvents()
     {
         /**
-         * SELECT event_id, event_title, ec.category_name, event_body, event_start_date, event_end_date, event_form_link, event_poster, updated_at
+         * SELECT event_id, event_title, ec.id AS event_category_id, ec.category_name, event_body, event_start_date, event_end_date, event_form_link, event_poster, updated_at
          * FROM event_posts ep
          * INNER JOIN event_categories ec ON ep.event_category = ec.id;
          */
-        return $this->select('event_id, event_title, event_categories.category_name, event_body, event_start_date, event_end_date, event_form_link, event_poster, updated_at')
+        return $this->select('event_id, event_title, event_categories.id AS event_category_id, event_categories.category_name, event_body, event_start_date, event_end_date, event_form_link, event_poster, updated_at')
             ->join('event_categories', 'event_posts.event_category = event_categories.id')
             ->findAll();
     }
 
     public function getEventById($eventId)
     {
-        return $this->select('event_id, event_title, event_categories.category_name, event_body, event_start_date, event_end_date, event_form_link, event_poster, updated_at')
+        return $this->select('event_id, event_title, event_categories.id AS event_category_id, event_categories.category_name, event_body, event_start_date, event_end_date, event_form_link, event_poster, updated_at')
             ->join('event_categories', 'event_posts.event_category = event_categories.id')
             ->where(['event_id' => $eventId])
             ->first();
