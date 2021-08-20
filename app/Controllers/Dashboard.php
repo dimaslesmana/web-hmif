@@ -72,7 +72,7 @@ class Dashboard extends BaseController
     /**
      * * Handle add new event request
      */
-    public function addEvent()
+    public function insertEvent()
     {
         $formRules = [
             'event_title' => [
@@ -207,8 +207,16 @@ class Dashboard extends BaseController
             ],
         ];
 
+        $eventId = htmlspecialchars($this->request->getPost('event_id'), ENT_QUOTES, 'UTF-8');
+
         if (!$this->validate($formRules)) {
-            return redirect()->to('/dashboard/events/edit/' . $this->request->getPost('event_id'))->withInput();
+            return redirect()->to('/dashboard/events/edit/' . $eventId)->withInput();
+        }
+
+        $event = $this->eventPostModel->getEventById($eventId);
+
+        if (is_null($event)) {
+            return redirect()->to('/dashboard/events');
         }
 
         // Handle poster image
@@ -223,12 +231,15 @@ class Dashboard extends BaseController
             $image->move('assets/images/event-poster', $imageName);
 
             if (strpos($oldImage, 'placeholder') === false) {
-				unlink('assets/images/event-poster/' . $oldImage);
-			}
+                // delete image if not using placeholder
+                unlink('assets/images/event-poster/' . $oldImage);
+            }
         }
 
         // Data
         $data = [
+            'id' => $event['id'],
+            'event_id' => $eventId,
             'event_title' => htmlspecialchars($this->request->getPost('event_title'), ENT_QUOTES, 'UTF-8'),
             'event_category' => htmlspecialchars($this->request->getPost('event_categories'), ENT_QUOTES, 'UTF-8'),
             'event_body' => htmlspecialchars($this->request->getPost('event_body'), ENT_QUOTES, 'UTF-8'),
@@ -238,7 +249,32 @@ class Dashboard extends BaseController
             'event_poster' => $imageName,
         ];
 
-        $this->eventPostModel->updatePost(htmlspecialchars($this->request->getPost('event_id'), ENT_QUOTES, 'UTF-8'), $data);
+        $this->eventPostModel->updatePost($data);
+
+        return redirect()->to('/dashboard/events');
+    }
+
+    /**
+     * * Handle delete event request
+     */
+    public function deleteEvent($eventId = null)
+    {
+        if (empty($eventId)) {
+            return redirect()->to('/dashboard/events');
+        }
+
+        $event = $this->eventPostModel->getEventById($eventId);
+
+        if (is_null($event)) {
+            return redirect()->to('/dashboard/events');
+        }
+
+        if (strpos($event['event_poster'], 'placeholder') === false) {
+            // delete image if not using placeholder
+            unlink('assets/images/event-poster/' . $event['event_poster']);
+        }
+
+        $this->eventPostModel->deleteEvent($event['id']);
 
         return redirect()->to('/dashboard/events');
     }
