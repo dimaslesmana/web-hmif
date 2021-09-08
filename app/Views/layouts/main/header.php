@@ -50,10 +50,14 @@
                             <i class="fas fa-address-book"></i>
                             <small style="font-size: 1rem;">Contact</small>
                         </a>
-                        <?php if (session()->get('logged_in')) : ?>
-                            <a class="btn" href="/dashboard"><i class="fas fa-wrench"></i></a>
-                        <?php endif; ?>
+                        <a class="btn <?php if ($request->uri->getSegment(1) === 'events') echo 'text-tertiary-custom'; ?>" href="/events">
+                            <i class="fas fa-bell"></i>
+                            <small style="font-size: 1rem;">Events</small>
+                        </a>
                     </div>
+                    <?php if (session()->get('logged_in')) : ?>
+                        <a class="btn" href="/dashboard"><i class="fas fa-wrench"></i></a>
+                    <?php endif; ?>
                     <button class="btn switch-wrapper">
                         <div class="sun sun-logo">
                             <i class="fas fa-sun"></i>

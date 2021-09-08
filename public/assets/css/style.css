@@ -30,8 +30,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background: var(--light);
-  border-radius: 5px;
+  background: var(--light-hover);
 }
 
 html::-webkit-scrollbar-thumb {
@@ -229,6 +228,7 @@ a {
 .about hr,
 .news hr,
 .contact hr,
+.event hr,
 .media-partner hr,
 .struktur-himpunan hr {
   border-bottom: 3px solid;
@@ -271,9 +271,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   overflow-x: scroll;
-  scroll-behavior: smooth;
-  scrollbar-width: thin;
-  scrollbar-color: var(--tertiary) var(--light);
 }
 
 .struktur-himpunan .content-wrapper::-webkit-scrollbar {
@@ -281,7 +278,7 @@ a {
 }
 
 .struktur-himpunan .content-wrapper::-webkit-scrollbar-track {
-  background: var(--light);
+  background: var(--light-hover);
   border-radius: 5px;
 }
 
@@ -374,6 +371,36 @@ a {
 .struktur-himpunan .card ul li a:hover .fas,
 .struktur-himpunan .card ul li a:hover .fab {
   transform: scale(1.1);
+}
+
+.event {
+  background-color: var(--primary);
+}
+
+.event-card-container {
+  height: 70vh;
+  padding: 0 24px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.event-card-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.event-card-container::-webkit-scrollbar-track {
+  background: var(--light-hover);
+  border-radius: 5px;
+}
+
+.event-card-container::-webkit-scrollbar-thumb {
+  background: var(--tertiary);
+  border-radius: 5px;
+}
+
+.event-card-container .card {
+  background-color: var(--light);
+  transition: background-color 500ms;
 }
 
 footer hr {
@@ -509,6 +536,11 @@ footer ul li:nth-child(4) a:hover .fab {
 
   .nav-menu .btn {
     font-size: 28px;
+  }
+
+  .event-card-container .card .row .col-sm-6 {
+    text-align: center !important;
+    margin-bottom: 12px;
   }
 
   footer {
