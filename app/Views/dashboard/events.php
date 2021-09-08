@@ -19,8 +19,7 @@
                 <div class="col-lg-12">
                     <div class="card card-default">
                         <div class="card-header">
-                            <h3 class="card-title">Daftar Event</h3>
-                            <div class="card-tools">
+                            <div class="card-tools mr-0">
                                 <a href="/dashboard/events/add" class="btn btn-primary"><i class="fas fa-plus"></i> Event baru</a>
                             </div>
                         </div>
@@ -55,17 +54,18 @@
                                                 </a>
                                             </td>
                                             <td>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-info">Manage</button>
-                                                    <button type="button" class="btn btn-info dropdown-toggle dropdown-hover dropdown-icon" data-toggle="dropdown">
-                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                <div class="btn-group btn-block">
+                                                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Manage
                                                     </button>
-                                                    <div class="dropdown-menu" role="menu">
-                                                        <a href="/dashboard/events/edit/<?= $event['event_id']; ?>" class="btn btn-sm btn-warning btn-block"><i class="fas fa-edit"></i></a>
+                                                    <div class="dropdown-menu">
+                                                        <div class="dropdown-item">
+                                                            <a class="btn btn-warning btn-block" href="/dashboard/events/edit/<?= $event['event_id']; ?>"><i class="fas fa-edit"></i></a>
+                                                        </div>
                                                         <form action="/dashboard/events/delete/<?= $event['event_id']; ?>" method="post" class="dropdown-item">
                                                             <?= csrf_field(); ?>
                                                             <input type="hidden" name="_method" value="DELETE">
-                                                            <button type="submit" class="btn btn-sm btn-danger btn-block" onclick="return confirm('Are you sure?');"><i class="fas fa-trash"></i></button>
+                                                            <button type="submit" class="btn btn-danger btn-block" onclick="return confirm('Are you sure?');"><i class="fas fa-trash"></i></button>
                                                         </form>
                                                     </div>
                                                 </div>
