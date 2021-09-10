@@ -12,11 +12,11 @@
   --primary: hsl(207, 71%, 45%);
   --secondary: hsl(206, 91%, 87%);
   --tertiary: hsl(29, 98%, 50%);
-  --dark-hover: hsl(201, 24%, 9%);
-  --light-hover: hsl(210, 15%, 90%);
-  --primary-hover: hsl(207, 71%, 40%);
-  --secondary-hover: hsl(206, 91%, 82%);
-  --tertiary-hover: hsl(29, 98%, 45%);
+  --dark-second: hsl(201, 24%, 9%);
+  --light-second: hsl(210, 15%, 90%);
+  --primary-second: hsl(207, 71%, 40%);
+  --secondary-second: hsl(206, 91%, 82%);
+  --tertiary-second: hsl(29, 98%, 45%);
 }
 
 html {
@@ -30,7 +30,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background: var(--light-hover);
+  background: var(--light-second);
 }
 
 html::-webkit-scrollbar-thumb {
@@ -84,26 +84,26 @@ body {
 }
 
 .btn-primary-custom:hover {
-  background-color: var(--primary-hover) !important;
+  background-color: var(--primary-second) !important;
   color: var(--white) !important;
 }
 
 .btn-secondary-custom:hover {
-  background-color: var(--secondary-hover) !important;
+  background-color: var(--secondary-second) !important;
 }
 
 .btn-tertiary-custom:hover {
-  background-color: var(--tertiary-hover) !important;
+  background-color: var(--tertiary-second) !important;
   color: var(--white) !important;
 }
 
 .btn-dark-custom:hover {
-  background-color: var(--dark-hover) !important;
+  background-color: var(--dark-second) !important;
   color: var(--white) !important;
 }
 
 .btn-light-custom:hover {
-  background-color: var(--light-hover) !important;
+  background-color: var(--light-second) !important;
 }
 
 .preloader {
@@ -168,11 +168,11 @@ a {
 }
 
 .navbar .btn:hover {
-  background-color: var(--light-hover);
+  background-color: var(--light-second);
 }
 
 .navbar .btn-dark-mode:hover {
-  background-color: var(--dark-hover);
+  background-color: var(--dark-second);
 }
 
 .switch-wrapper {
@@ -278,7 +278,7 @@ a {
 }
 
 .struktur-himpunan .content-wrapper::-webkit-scrollbar-track {
-  background: var(--light-hover);
+  background: var(--light-second);
   border-radius: 5px;
 }
 
@@ -389,7 +389,7 @@ a {
 }
 
 .event-card-container::-webkit-scrollbar-track {
-  background: var(--light-hover);
+  background: var(--light-second);
   border-radius: 5px;
 }
 

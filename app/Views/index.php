@@ -11,7 +11,7 @@
             </div>
             <div class="d-flex flex-wrap justify-content-between bg-primary-custom p-4">
                 <p class="my-auto">Nama & Keterangan Event</p>
-                <button class="btn btn-tertiary-custom rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
+                <a class="btn btn-tertiary-custom rounded-pill" href="#">Register Now</a>
             </div>
         </div>
         <div>
@@ -20,7 +20,7 @@
             </div>
             <div class="d-flex flex-wrap justify-content-between bg-primary-custom p-4">
                 <p class="my-auto">Nama & Keterangan Event</p>
-                <button class="btn btn-tertiary-custom rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
+                <a class="btn btn-tertiary-custom rounded-pill" href="#">Register Now</a>
             </div>
         </div>
         <div>
@@ -29,7 +29,7 @@
             </div>
             <div class="d-flex flex-wrap justify-content-between bg-primary-custom p-4">
                 <p class="my-auto">Nama & Keterangan Event</p>
-                <button class="btn btn-tertiary-custom rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
+                <a class="btn btn-tertiary-custom rounded-pill" href="#">Register Now</a>
             </div>
         </div>
         <div>
@@ -38,14 +38,14 @@
             </div>
             <div class="d-flex flex-wrap justify-content-between bg-primary-custom p-4">
                 <p class="my-auto">Nama & Keterangan Event</p>
-                <button class="btn btn-tertiary-custom rounded-pill" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
+                <a class="btn btn-tertiary-custom rounded-pill" href="#">Register Now</a>
             </div>
         </div>
     </div>
     <!-- End of Carousel -->
 
     <!-- Modal -->
-    <div class="modal fade text-dark-custom" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <!-- <div class="modal fade text-dark-custom" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <form action="" method="post">
@@ -79,7 +79,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End of Modal -->
 </main>
 
