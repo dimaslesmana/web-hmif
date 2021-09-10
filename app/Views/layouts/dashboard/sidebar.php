@@ -16,11 +16,19 @@
 
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                <li class="nav-header">HOME</li>
+                <li class="nav-header">Home</li>
                 <li class="nav-item">
                     <a href="/dashboard" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>Dashboard</p>
+                    </a>
+                </li>
+
+                <li class="nav-header">Organisasi</li>
+                <li class="nav-item">
+                    <a href="/dashboard/member" class="nav-link">
+                        <i class="nav-icon fas fa-list"></i>
+                        <p>Daftar Anggota</p>
                     </a>
                 </li>
 
@@ -32,7 +40,7 @@
                     </a>
                 </li>
 
-                <li class="nav-header">MISC</li>
+                <li class="nav-header">Misc</li>
                 <li class="nav-item">
                     <a href="/auth/logout" class="nav-link">
                         <i class="nav-icon fas fa-sign-out-alt text-danger"></i>
