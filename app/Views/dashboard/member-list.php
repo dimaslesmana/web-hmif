@@ -7,7 +7,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-12">
-                    <h1>Daftar Event</h1>
+                    <h1>Daftar Anggota</h1>
                 </div>
             </div>
         </div>
@@ -20,7 +20,7 @@
                     <div class="card card-default">
                         <div class="card-header">
                             <div class="card-tools mr-0">
-                                <a href="/dashboard/events/add" class="btn btn-primary"><i class="fas fa-plus"></i> Event baru</a>
+                                <a href="/dashboard/member/add" class="btn btn-primary"><i class="fas fa-plus"></i> Anggota baru</a>
                             </div>
                         </div>
                         <div class="card-body">
@@ -29,29 +29,33 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>ID</th>
-                                            <th>Nama / Judul</th>
-                                            <th>Kategori</th>
-                                            <th>Tanggal & Waktu Mulai</th>
-                                            <th>Tanggal & Waktu Selesai</th>
-                                            <th>Link Google Form</th>
-                                            <th>Poster</th>
+                                            <th>Nama</th>
+                                            <th>Jurusan</th>
+                                            <th>Divisi</th>
+                                            <th>Jabatan</th>
+                                            <th>Angkatan</th>
+                                            <th>Email</th>
+                                            <th>ID LINE</th>
+                                            <th>Tipe</th>
+                                            <th>Foto</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php foreach ($events as $key => $event) : ?>
+                                        <?php foreach ($members as $key => $m) : ?>
                                             <tr>
                                                 <td><?= $key + 1; ?></td>
-                                                <td><?= $event['event_id']; ?></td>
-                                                <td><a href="/events/<?= $event['event_id']; ?>" target="_blank"><?= $event['event_title']; ?></a></td>
-                                                <td><?= $event['category_name']; ?></td>
-                                                <td><?= $event['event_start_date']; ?></td>
-                                                <td><?= $event['event_end_date']; ?></td>
-                                                <td><a href="<?= $event['event_form_link']; ?>" target="_blank">Click here</a></td>
+                                                <td><?= $m['member_name']; ?></td>
+                                                <td><?= $m['member_major']; ?></td>
+                                                <td><?= $m['division_name']; ?></td>
+                                                <td><?= $m['member_position']; ?></td>
+                                                <td><?= $m['member_year']; ?></td>
+                                                <td><?= $m['member_email']; ?></td>
+                                                <td><?= $m['member_line']; ?></td>
+                                                <td><?= $m['member_type']; ?></td>
                                                 <td>
-                                                    <a href="/assets/images/event-poster/<?= $event['event_poster']; ?>">
-                                                        <img src="/assets/images/event-poster/<?= $event['event_poster']; ?>" class="img-fluid mb-2" alt="<?= $event['event_title']; ?>" width="250" />
+                                                    <a href="/assets/images/anggota/<?= $m['member_image']; ?>">
+                                                        <img src="/assets/images/anggota/<?= $m['member_image']; ?>" class="img-fluid mb-2" alt="<?= $m['member_name']; ?>" width="250" />
                                                     </a>
                                                 </td>
                                                 <td>
@@ -61,9 +65,9 @@
                                                         </button>
                                                         <div class="dropdown-menu">
                                                             <div class="dropdown-item">
-                                                                <a class="btn btn-warning btn-block" href="/dashboard/events/edit/<?= $event['event_id']; ?>"><i class="fas fa-edit"></i></a>
+                                                                <a class="btn btn-warning btn-block" href="/dashboard/member/edit/<?= $m['id']; ?>"><i class="fas fa-edit"></i></a>
                                                             </div>
-                                                            <form action="/dashboard/events/delete/<?= $event['event_id']; ?>" method="post" class="dropdown-item">
+                                                            <form action="/dashboard/member/delete/<?= $m['id']; ?>" method="post" class="dropdown-item">
                                                                 <?= csrf_field(); ?>
                                                                 <input type="hidden" name="_method" value="DELETE">
                                                                 <button type="submit" class="btn btn-danger btn-block" onclick="return confirm('Are you sure?');"><i class="fas fa-trash"></i></button>
@@ -77,13 +81,15 @@
                                     <tfoot>
                                         <tr>
                                             <th>#</th>
-                                            <th>ID</th>
-                                            <th>Nama / Judul</th>
-                                            <th>Kategori</th>
-                                            <th>Tanggal & Waktu Mulai</th>
-                                            <th>Tanggal & Waktu Selesai</th>
-                                            <th>Link Google Form</th>
-                                            <th>Poster</th>
+                                            <th>Nama</th>
+                                            <th>Jurusan</th>
+                                            <th>Divisi</th>
+                                            <th>Jabatan</th>
+                                            <th>Angkatan</th>
+                                            <th>Email</th>
+                                            <th>ID LINE</th>
+                                            <th>Tipe</th>
+                                            <th>Foto</th>
                                             <th>Action</th>
                                         </tr>
                                     </tfoot>

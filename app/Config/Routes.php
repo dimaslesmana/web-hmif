@@ -40,6 +40,12 @@ $routes->group('auth', function ($routes) {
 });
 
 $routes->group('dashboard', ['filter' => 'authentication'], function ($routes) {
+	$routes->get('member/add', 'Dashboard::addMemberView');
+	$routes->post('member/add', 'Dashboard::insertMember');
+	$routes->post('member/edit/submit', 'Dashboard::updateMember');
+	$routes->get('member/edit/(:num)', 'Dashboard::editMemberView/$1');
+	$routes->delete('member/delete/(:num)', 'Dashboard::deleteMember/$1');
+	$routes->get('member', 'Dashboard::memberView');
 	$routes->get('events/add', 'Dashboard::addEventsView');
 	$routes->post('events/add', 'Dashboard::insertEvent');
 	$routes->post('events/edit/submit', 'Dashboard::updateEvent');
