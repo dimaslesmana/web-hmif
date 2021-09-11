@@ -42,6 +42,13 @@
 <script src="/assets/js/owl.carousel.min.js"></script>
 <!-- Script JS -->
 <script src="/assets/js/script.js"></script>
+<?php
+if (!empty($custom_js)) {
+    foreach ($custom_js as $js) {
+        echo $js;
+    }
+}
+?>
 </body>
 
 </html>
