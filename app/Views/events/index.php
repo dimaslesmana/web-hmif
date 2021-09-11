@@ -15,8 +15,8 @@
             <div class="row">
                 <div class="col">
                     <div class="event-card-container">
-                        <div class="card my-4">
-                            <div class="row no-gutters">
+                        <div class="card my-4" style="border-radius: 15px;">
+                            <div class="row no-gutters p-3">
                                 <div class="col-md-2">
                                     <img src="/assets/images/placeholder.png" width="100%" alt="event poster">
                                 </div>
@@ -40,19 +40,19 @@
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <div class="row align-items-center">
+                                <div class="row align-items-center p-2">
                                     <div class="col-sm-6">
                                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                     </div>
                                     <div class="col-sm-6 text-right">
                                         <button class="btn btn-primary-custom">Detail</button>
-                                        <button class="btn btn-tertiary-custom">Daftar</button>
+                                        <button class="btn btn-tertiary-custom">Register</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card my-4">
-                            <div class="row no-gutters">
+                        <div class="card my-4" style="border-radius: 15px;">
+                            <div class="row no-gutters p-3">
                                 <div class="col-md-2">
                                     <img src="/assets/images/placeholder.png" width="100%" alt="event poster">
                                 </div>
@@ -76,19 +76,19 @@
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <div class="row align-items-center">
+                                <div class="row align-items-center p-2">
                                     <div class="col-sm-6">
                                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                     </div>
                                     <div class="col-sm-6 text-right">
                                         <button class="btn btn-primary-custom">Detail</button>
-                                        <button class="btn btn-tertiary-custom">Daftar</button>
+                                        <button class="btn btn-tertiary-custom">Register</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card my-4">
-                            <div class="row no-gutters">
+                        <div class="card my-4" style="border-radius: 15px;">
+                            <div class="row no-gutters p-3">
                                 <div class="col-md-2">
                                     <img src="/assets/images/placeholder.png" width="100%" alt="event poster">
                                 </div>
@@ -112,13 +112,13 @@
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <div class="row align-items-center">
+                                <div class="row align-items-center p-2">
                                     <div class="col-sm-6">
                                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                     </div>
                                     <div class="col-sm-6 text-right">
                                         <button class="btn btn-primary-custom">Detail</button>
-                                        <button class="btn btn-tertiary-custom">Daftar</button>
+                                        <button class="btn btn-tertiary-custom">Register</button>
                                     </div>
                                 </div>
                             </div>
