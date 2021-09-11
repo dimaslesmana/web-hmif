@@ -294,6 +294,7 @@ a {
   transform: translateZ(0);
   overflow: visible;
   border-radius: 10px;
+  padding: 12px;
 }
 
 .struktur-himpunan .card {
@@ -301,7 +302,11 @@ a {
   width: 300px;
   margin: 8px;
   background-color: var(--light);
-  transition: background-color 500ms;
+  transition: background-color 500ms, transform 100ms;
+}
+
+.struktur-himpunan .card:hover {
+  transform: scale(1.05);
 }
 
 .struktur-himpunan .card-overlay {

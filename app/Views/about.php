@@ -96,13 +96,13 @@
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
                                                     <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(207, 71%, 45%);">
-                                                    <div class="card-img-overlay" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal">
+                                                    <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(207, 71%, 45%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#exampleModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -116,13 +116,13 @@
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
                                                     <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(226, 38%, 38%);">
-                                                    <div class="card-img-overlay" data-toggle="modal" data-target="#exampleModal">
+                                                    <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(226, 38%, 38%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#exampleModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -142,13 +142,13 @@
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
                                                     <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(207, 71%, 45%);">
-                                                    <div class="card-img-overlay" data-toggle="modal" data-target="#exampleModal">
+                                                    <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(207, 71%, 45%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#exampleModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -162,13 +162,13 @@
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
                                                     <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(226, 38%, 38%);">
-                                                    <div class="card-img-overlay" data-toggle="modal" data-target="#exampleModal">
+                                                    <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(226, 38%, 38%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#exampleModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -188,13 +188,13 @@
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
                                                     <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(207, 71%, 45%);">
-                                                    <div class="card-img-overlay" data-toggle="modal" data-target="#exampleModal">
+                                                    <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(207, 71%, 45%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#exampleModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -208,13 +208,13 @@
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
                                                     <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(226, 38%, 38%);">
-                                                    <div class="card-img-overlay" data-toggle="modal" data-target="#exampleModal">
+                                                    <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(226, 38%, 38%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#exampleModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -234,13 +234,13 @@
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
                                                     <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(207, 71%, 45%);">
-                                                    <div class="card-img-overlay" data-toggle="modal" data-target="#exampleModal">
+                                                    <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(207, 71%, 45%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#exampleModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -254,13 +254,13 @@
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
                                                     <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(226, 38%, 38%);">
-                                                    <div class="card-img-overlay" data-toggle="modal" data-target="#exampleModal">
+                                                    <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(226, 38%, 38%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#exampleModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -280,13 +280,13 @@
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
                                                     <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(207, 71%, 45%);">
-                                                    <div class="card-img-overlay" data-toggle="modal" data-target="#exampleModal">
+                                                    <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(207, 71%, 45%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#exampleModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -300,13 +300,13 @@
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
                                                     <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(226, 38%, 38%);">
-                                                    <div class="card-img-overlay" data-toggle="modal" data-target="#exampleModal">
+                                                    <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(226, 38%, 38%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#exampleModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -326,18 +326,22 @@
     <!-- End of Struktur Himpunan -->
 
     <!-- Member Detail -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="memberModal" data-backdrop="static" tabindex="-1" aria-labelledby="memberModalType" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Divisi</h5>
+                    <h5 class="modal-title" id="memberModalType"></h5>
                 </div>
-                <div class="modal-body bg-tertiary-custom">
-                    <p>Foto</p>
-                    <p>Nama</p>
-                    <p>Jabatan</p>
-                    <p>Jurusan</p>
-                    <p>Angkatan</p>
+                <div class="modal-body bg-dark-custom text-center">
+                    <img id="memberModalImage" class="img-thumbnail my-4" src="" alt="" width="50%">
+                    <h5>Nama</h5>
+                    <p id="memberModalName"></p>
+                    <h5>Jabatan</h5>
+                    <p id="memberModalPosition"></p>
+                    <h5>Jurusan</h5>
+                    <p id="memberModalMajor"></p>
+                    <h5>Angkatan</h5>
+                    <p id="memberModalYear"></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-light-custom" data-dismiss="modal">Close</button>
