@@ -44,6 +44,13 @@
 <script src="https://cdn.jsdelivr.net/gh/ycodetech/horizontal-timeline-2.0@2/JavaScript/horizontal_timeline.2.0.min.js"></script>
 <!-- Script JS -->
 <script src="/assets/js/script.js"></script>
+<?php
+if (!empty($custom_js)) {
+    foreach ($custom_js as $js) {
+        echo $js;
+    }
+}
+?>
 </body>
 
 </html>

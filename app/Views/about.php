@@ -102,7 +102,7 @@
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(207, 71%, 45%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -122,7 +122,7 @@
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(226, 38%, 38%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -148,7 +148,7 @@
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(207, 71%, 45%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -168,7 +168,7 @@
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(226, 38%, 38%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -194,7 +194,7 @@
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(207, 71%, 45%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -214,7 +214,7 @@
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(226, 38%, 38%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -240,7 +240,7 @@
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(207, 71%, 45%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -260,7 +260,7 @@
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(226, 38%, 38%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -286,7 +286,7 @@
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(207, 71%, 45%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>
@@ -306,7 +306,7 @@
                                                 </div>
                                                 <div class="card-body text-center">
                                                     <p class="font-weight-bold" style="background-color: hsl(226, 38%, 38%); border-radius: 10px"><?= $m['member_type'] ?></p>
-                                                    <p class="card-title"><a href="#" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
+                                                    <p class="card-title"><a href="#" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal"><?= $m['member_name'] ?></a></p>
                                                     <ul>
                                                         <li class="mx-2"><a href="mailto:<?= $m['member_email'] ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                                         <li class="mx-2"><a href="https://liff.line.me/1645278921-kWRPP32q?accountId=<?= $m['member_line'] ?>&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a></li>

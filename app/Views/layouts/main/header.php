@@ -20,6 +20,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ycodetech/horizontal-timeline-2.0@2/css/horizontal_timeline.2.0.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/style.css">
+    <?php
+    if (!empty($custom_css)) {
+        foreach ($custom_css as $css) {
+            echo $css;
+        }
+    }
+    ?>
 
     <title><?= $title; ?></title>
 </head>
@@ -55,6 +62,10 @@
                         <a class="btn <?php if ($request->uri->getSegment(1) === 'events') echo 'text-tertiary-custom'; ?>" href="/events">
                             <i class="fas fa-bell"></i>
                             <small style="font-size: 1rem;">Events</small>
+                        </a>
+                        <a class="btn <?php if ($request->uri->getSegment(1) === 'calendar') echo 'text-tertiary-custom'; ?>" href="/calendar">
+                            <i class="fas fa-bell"></i>
+                            <small style="font-size: 1rem;">Calendar</small>
                         </a>
                     </div>
                     <?php if (session()->get('logged_in')) : ?>
