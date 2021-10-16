@@ -5,13 +5,13 @@
 <main>
     <section id="contact" class="contact bg-primary-custom">
         <div class="container py-5">
-            <div class="row text-center">
+            <div class="row text-center mb-2">
                 <div class="col">
                     <h3>Contact Us</h3>
                     <hr>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mb-2">
                 <div class="col">
                     <form action="#" method="post">
                         <div class="form-row">
