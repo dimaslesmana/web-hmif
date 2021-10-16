@@ -114,7 +114,11 @@ body {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: linear-gradient(145deg, rgba(30, 109, 174, 1) 50%, rgba(167, 215, 251, 1) 200%);
+  background: linear-gradient(
+    145deg,
+    rgba(30, 109, 174, 1) 50%,
+    rgba(167, 215, 251, 1) 200%
+  );
   display: grid;
 }
 
@@ -124,8 +128,8 @@ body {
 }
 
 .preloader img {
-  background-color: rgba(27, 38, 44, .5);
-  box-shadow: 0 3px 1rem rgba(0, 0, 0, .2);
+  background-color: rgba(27, 38, 44, 0.5);
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   padding: 18px;
 }
@@ -155,7 +159,7 @@ a {
 
 .navbar {
   background-color: var(--light);
-  box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
 }
 
 .navbar .btn {
@@ -215,6 +219,27 @@ a {
   transform: translateY(0%) rotateZ(0deg);
 }
 
+.horizontal-timeline .filling-line {
+  background-color: var(--secondary);
+}
+
+.horizontal-timeline a {
+  color: var(--white) !important;
+}
+
+.horizontal-timeline a.selected::after {
+  background-color: var(--tertiary) !important;
+}
+
+.horizontal-timeline a.older-event::after {
+  background-color: var(--tertiary-second) !important;
+}
+
+.horizontal-timeline .events-content ol li {
+  padding: 36px 0 24px;
+  box-shadow: 0 4px 1rem rgba(0, 0, 0, 0.3);
+}
+
 .modal .modal-header,
 .modal .modal-footer {
   background-color: var(--primary);
@@ -230,6 +255,7 @@ a {
 .news hr,
 .contact hr,
 .event hr,
+.timeline hr,
 .media-partner hr,
 .struktur-himpunan hr {
   border-bottom: 3px solid;
@@ -311,7 +337,7 @@ a {
 
 .struktur-himpunan .card-overlay {
   position: relative;
-  transition: transform .1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
   padding: 8px;
 }
 
@@ -333,7 +359,7 @@ a {
   height: 100%;
   width: 100%;
   opacity: 0;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 18px;
 }
 
@@ -436,13 +462,13 @@ footer ul li a {
   padding: 6px;
   box-sizing: border-box;
   text-decoration: none;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   background: linear-gradient(0deg, #ddd, #fff);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 footer ul li a:hover {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   text-decoration: none;
 }
 
@@ -457,7 +483,7 @@ footer ul li a .fas {
   line-height: calc(60px - 12px);
   font-size: 24px;
   color: #262626;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 footer ul li:nth-child(1) a:hover .fas {
@@ -469,7 +495,7 @@ footer ul li:nth-child(2) a:hover .fab {
 }
 
 footer ul li:nth-child(3) a:hover .fab {
-  color: #00B300;
+  color: #00b300;
 }
 
 footer ul li:nth-child(4) a:hover .fab {
@@ -478,6 +504,18 @@ footer ul li:nth-child(4) a:hover .fab {
 
 .nav-menu {
   border-right: 2px solid;
+}
+
+@media only screen and (max-width: 1100px) {
+  .horizontal-timeline .timeline {
+    padding-bottom: 0 !important;
+  }
+
+  .horizontal-timeline .timeline-navigation#leftNav,
+  .horizontal-timeline .timeline-navigation#rightNav {
+    display: block !important;
+    top: 3px !important;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -507,7 +545,7 @@ footer ul li:nth-child(4) a:hover .fab {
   }
 
   .bg-menu-dark {
-    background-color: rgba(44, 60, 70, .8) !important;
+    background-color: rgba(44, 60, 70, 0.8) !important;
   }
 
   .carousel-img-container {
@@ -525,9 +563,9 @@ footer ul li:nth-child(4) a:hover .fab {
     left: 50%;
     transform: translate(-50%);
     height: 6rem;
-    background-color: rgba(225, 227, 230, .8);
+    background-color: rgba(225, 227, 230, 0.8);
     backdrop-filter: blur(6px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     padding: 12px;
     border-radius: 20px;
     border: none;

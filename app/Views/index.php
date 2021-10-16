@@ -9,7 +9,7 @@
             <div class="carousel-img-container">
                 <img src="/assets/images/placeholder-1000x400.jpg" alt="event1">
             </div>
-            <div class="d-flex flex-wrap justify-content-between bg-primary-custom p-4">
+            <div class="d-flex flex-wrap justify-content-between p-4">
                 <p class="my-auto">Nama & Keterangan Event</p>
                 <a class="btn btn-tertiary-custom rounded-pill" href="#">Register Now</a>
             </div>
@@ -18,7 +18,7 @@
             <div class="carousel-img-container">
                 <img src="/assets/images/placeholder-1000x400.jpg" alt="event1">
             </div>
-            <div class="d-flex flex-wrap justify-content-between bg-primary-custom p-4">
+            <div class="d-flex flex-wrap justify-content-between p-4">
                 <p class="my-auto">Nama & Keterangan Event</p>
                 <a class="btn btn-tertiary-custom rounded-pill" href="#">Register Now</a>
             </div>
@@ -27,7 +27,7 @@
             <div class="carousel-img-container">
                 <img src="/assets/images/placeholder-1000x400.jpg" alt="event1">
             </div>
-            <div class="d-flex flex-wrap justify-content-between bg-primary-custom p-4">
+            <div class="d-flex flex-wrap justify-content-between p-4">
                 <p class="my-auto">Nama & Keterangan Event</p>
                 <a class="btn btn-tertiary-custom rounded-pill" href="#">Register Now</a>
             </div>
@@ -36,7 +36,7 @@
             <div class="carousel-img-container">
                 <img src="/assets/images/placeholder-1000x400.jpg" alt="event1">
             </div>
-            <div class="d-flex flex-wrap justify-content-between bg-primary-custom p-4">
+            <div class="d-flex flex-wrap justify-content-between p-4">
                 <p class="my-auto">Nama & Keterangan Event</p>
                 <a class="btn btn-tertiary-custom rounded-pill" href="#">Register Now</a>
             </div>
@@ -44,43 +44,48 @@
     </div>
     <!-- End of Carousel -->
 
-    <!-- Modal -->
-    <!-- <div class="modal fade text-dark-custom" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <form action="" method="post">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Daftar Event</h5>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="firstname">First Name</label>
-                                <input type="text" class="form-control" id="firstname" required>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="lastname">Last Name</label>
-                                <input type="text" class="form-control" id="lastname" required>
-                            </div>
+    <!-- Timeline -->
+    <section id="timeline" class="timeline bg-primary-custom">
+        <div class="container py-5">
+            <div class="row mb-2 text-center">
+                <div class="col">
+                    <h3>Timeline</h3>
+                    <hr>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <div class="horizontal-timeline" id="timeline-hmif">
+                        <div class="events-content">
+                            <ol style="list-style: none;">
+                                <li class="selected bg-tertiary-custom" data-horizontal-timeline='{"date": "16/10/2021", "customDisplay": "Sabtu<br>16 Oktober"}'>
+                                    <h2>Timeline 1</h2>
+                                    <p>Keterangan</p>
+                                </li>
+                                <li class="bg-tertiary-custom" data-horizontal-timeline='{"date": "17/10/2021", "customDisplay": "Minggu<br>17 Oktober"}'>
+                                    <h2>Timeline 2</h2>
+                                    <p>Keterangan</p>
+                                </li>
+                                <li class="bg-tertiary-custom" data-horizontal-timeline='{"date": "18/10/2021", "customDisplay": "Senin<br>18 Oktober"}'>
+                                    <h2>Timeline 3</h2>
+                                    <p>Keterangan</p>
+                                </li>
+                                <li class="bg-tertiary-custom" data-horizontal-timeline='{"date": "19/10/2021", "customDisplay": "Selasa<br>19 Oktober"}'>
+                                    <h2>Timeline 4</h2>
+                                    <p>Keterangan</p>
+                                </li>
+                                <li class="bg-tertiary-custom" data-horizontal-timeline='{"date": "20/10/2021", "customDisplay": "Rabu<br>20 Oktober"}'>
+                                    <h2>Timeline 5</h2>
+                                    <p>Keterangan</p>
+                                </li>
+                            </ol>
                         </div>
-                        <div class="form-group">
-                            <label for="username">Username</label>
-                            <input type="text" class="form-control" id="username" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="example@umn.ac.id" required>
-                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-light-custom" data-dismiss="modal">Batal</button>
-                        <button type="submit" class="btn btn-tertiary-custom">Daftar</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
-    </div> -->
-    <!-- End of Modal -->
+    </section>
+    <!-- End of Timeline -->
 </main>
 
 <?= $this->endSection(); ?>
