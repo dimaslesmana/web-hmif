@@ -33,7 +33,6 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col">
-
                                                     <p class="card-text">Event Start Date: <?= strftime("%A, %e %B %Y - %H:%M", strtotime($event['event_start_date'])); ?></p>
                                                     <p class="card-text">Event End Date: <?= strftime("%A, %e %B %Y - %H:%M", strtotime($event['event_end_date'])); ?></p>
                                                 </div>
