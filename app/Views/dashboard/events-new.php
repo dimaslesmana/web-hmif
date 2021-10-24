@@ -63,7 +63,7 @@
                             <div class="col-6">
                                 <div class="form-group">
                                     <label for="event_start_date">Tanggal & Waktu Mulai</label>
-                                    <input type="text" name="event_start_date" id="event_start_date" class="form-control<?= ($validation->hasError('event_start_date')) ? ' is-invalid' : ''; ?>" placeholder="Masukkan tanggal & waktu mulai" data-datepicker required>
+                                    <input type="text" name="event_start_date" id="event_start_date" class="form-control<?= ($validation->hasError('event_start_date')) ? ' is-invalid' : ''; ?>" placeholder="Masukkan tanggal & waktu mulai" data-datetimepicker required>
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('event_start_date'); ?>
                                     </div>
@@ -72,7 +72,7 @@
                             <div class="col-6">
                                 <div class="form-group">
                                     <label for="event_end_date">Tanggal & Waktu Selesai</label>
-                                    <input type="text" name="event_end_date" id="event_end_date" class="form-control<?= ($validation->hasError('event_end_date')) ? ' is-invalid' : ''; ?>" placeholder="Masukkan tanggal & waktu selesai" data-datepicker required>
+                                    <input type="text" name="event_end_date" id="event_end_date" class="form-control<?= ($validation->hasError('event_end_date')) ? ' is-invalid' : ''; ?>" placeholder="Masukkan tanggal & waktu selesai" data-datetimepicker required>
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('event_end_date'); ?>
                                     </div>

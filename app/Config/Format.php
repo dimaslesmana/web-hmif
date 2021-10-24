@@ -26,6 +26,7 @@ class Format extends BaseConfig
 		'application/json',
 		'application/xml', // machine-readable XML
 		'text/xml', // human-readable XML
+		'text/plain',
 	];
 
 	/**

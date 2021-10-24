@@ -279,6 +279,219 @@ class Dashboard extends BaseController
         return redirect()->to('/dashboard/events');
     }
 
+    public function eventNewsView()
+    {
+        $data = [
+            'title' => 'HMIF - Dashboard | Event News',
+            'sidebar_title' => 'HMIF',
+            'validation' => $this->validation,
+            'request' => $this->request,
+            'events_news' => $this->eventNewsModel->getAllEventNews(),
+        ];
+
+        foreach ($data['events_news'] as $idx => $item) {
+            $data['events_news'][$idx]['event_photos'] = explode(',', $item['event_photos']);
+        }
+
+        return view('dashboard/events-news', $data);
+    }
+
+    public function addEventNewsView()
+    {
+        $data = [
+            'title' => 'HMIF - Dashboard | Tambah Event News',
+            'sidebar_title' => 'HMIF',
+            'validation' => $this->validation,
+            'request' => $this->request,
+            'divisions' => $this->memberDivisionModel->getAllDivisi(),
+            'custom_js' => [
+                view('custom-js/events-news-new'),
+            ],
+        ];
+
+        return view('dashboard/events-news-new', $data);
+    }
+
+    public function editEventNewsView($id = null)
+    {
+        if (empty($id)) {
+            return redirect()->to('/dashboard/events-news');
+        }
+
+        $eventNews = $this->eventNewsModel->getEventNewsById($id);
+        if (empty($eventNews)) {
+            return redirect()->to('/dashboard/events-news');
+        }
+
+        $eventNews['event_photos'] = explode(',', $eventNews['event_photos']);
+
+        $data = [
+            'title' => 'HMIF - Dashboard | Edit Event News',
+            'sidebar_title' => 'HMIF',
+            'request' => $this->request,
+            'validation' => $this->validation,
+            'divisions' => $this->memberDivisionModel->getAllDivisi(),
+            'event_news' => $eventNews,
+            'custom_js' => [
+                view('custom-js/events-news-edit'),
+            ],
+        ];
+
+        return view('dashboard/events-news-edit', $data);
+    }
+
+    /**
+     * * Handle add new event news request
+     */
+    public function insertEventNews()
+    {
+        $formRules = [
+            'event_name' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'This field is required',
+                ]
+            ],
+            'event_description' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'This field is required',
+                ]
+            ],
+            'event_date' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'This field is required',
+                ]
+            ],
+            'event_division' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'This field is required',
+                ]
+            ],
+        ];
+
+        if (!$this->validate($formRules)) {
+            return redirect()->to('/dashboard/events-news/add')->withInput();
+        }
+
+        // Data
+        $data = [];
+        $eventNewsId = random_string('alnum', 5);
+        $eventName = htmlspecialchars($this->request->getPost('event_name'), ENT_QUOTES, 'UTF-8');
+        $eventDescription = htmlspecialchars($this->request->getPost('event_description'), ENT_QUOTES, 'UTF-8');
+        $eventDate = htmlspecialchars($this->request->getPost('event_date'), ENT_QUOTES, 'UTF-8');
+        $event_division = htmlspecialchars($this->request->getPost('event_division'), ENT_QUOTES, 'UTF-8');
+
+        foreach ($this->request->getPost('event_photo[]') as $photo) {
+            array_push($data, [
+                'event_news_id' => $eventNewsId,
+                'event_name' => $eventName,
+                'event_description' => $eventDescription,
+                'event_date' => $eventDate,
+                'event_division' => $event_division,
+                'event_photo' => $photo,
+            ]);
+        }
+
+        $this->eventNewsModel->insertNewsBatch($data);
+
+        return redirect()->to('/dashboard/events-news');
+    }
+
+    /**
+     * * Handle edit event news request
+     */
+    public function updateEventNews()
+    {
+        $formRules = [
+            'event_name' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'This field is required',
+                ]
+            ],
+            'event_description' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'This field is required',
+                ]
+            ],
+            'event_date' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'This field is required',
+                ]
+            ],
+            'event_division' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'This field is required',
+                ]
+            ],
+        ];
+
+        $eventNewsId = htmlspecialchars($this->request->getPost('event_news_id'), ENT_QUOTES, 'UTF-8');
+
+        if (!$this->validate($formRules)) {
+            return redirect()->to('/dashboard/events-news/edit/' . $eventNewsId)->withInput();
+        }
+
+        $event_news = $this->eventNewsModel->getEventNewsById($eventNewsId);
+        if (is_null($event_news)) {
+            return redirect()->to('/dashboard/events-news');
+        }
+
+        $this->eventNewsModel->deleteEventNewsById($eventNewsId);
+
+        // Data
+        $data = [];
+        $eventName = htmlspecialchars($this->request->getPost('event_name'), ENT_QUOTES, 'UTF-8');
+        $eventDescription = htmlspecialchars($this->request->getPost('event_description'), ENT_QUOTES, 'UTF-8');
+        $eventDate = htmlspecialchars($this->request->getPost('event_date'), ENT_QUOTES, 'UTF-8');
+        $event_division = htmlspecialchars($this->request->getPost('event_division'), ENT_QUOTES, 'UTF-8');
+
+        foreach ($this->request->getPost('event_photo[]') as $photo) {
+            array_push($data, [
+                'event_news_id' => $eventNewsId,
+                'event_name' => $eventName,
+                'event_description' => $eventDescription,
+                'event_date' => $eventDate,
+                'event_division' => $event_division,
+                'event_photo' => $photo,
+            ]);
+        }
+
+        $this->eventNewsModel->insertNewsBatch($data);
+
+        return redirect()->to('/dashboard/events-news');
+    }
+
+    /**
+     * * Handle delete event news request
+     */
+    public function deleteEventNews($eventNewsId = null)
+    {
+        if (empty($eventNewsId)) {
+            return redirect()->to('/dashboard/events-news');
+        }
+
+        $eventNews = $this->eventNewsModel->getEventNewsById($eventNewsId);
+        if (empty($eventNews)) {
+            return redirect()->to('/dashboard/events-news');
+        }
+
+        $eventPhotos = explode(',', $eventNews['event_photos']);
+        foreach ($eventPhotos as $photo) {
+            unlink('assets/images/event-news/' . $photo);
+        }
+
+        $this->eventNewsModel->deleteEventNewsById($eventNewsId);
+
+        return redirect()->to('/dashboard/events-news');
+    }
+
     public function memberView()
     {
         $data = [

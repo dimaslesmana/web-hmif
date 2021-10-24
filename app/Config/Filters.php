@@ -31,7 +31,10 @@ class Filters extends BaseConfig
 	public $globals = [
 		'before' => [
 			// 'honeypot',
-			'csrf',
+			'csrf' => ['except' => [
+				'dashboard/multiple-image-upload/upload',
+				'dashboard/multiple-image-upload/delete',
+			]],
 		],
 		'after'  => [
 			'toolbar',

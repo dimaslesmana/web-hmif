@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="/assets/vendors/datatables/css/datatables.min.css">
     <!-- flatpickr -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.9/dist/flatpickr.min.css">
+    <!-- FilePond -->
+    <link rel="stylesheet" href="https://unpkg.com/filepond@^4/dist/filepond.css">
+    <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css">
+
     <!-- Theme style -->
     <link rel="stylesheet" href="/assets/css/adminlte.min.css">
 
