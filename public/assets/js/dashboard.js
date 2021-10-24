@@ -16,10 +16,15 @@ $(function () {
   // * Custom file input
   bsCustomFileInput.init();
 
-  // * Datepicker
-  flatpickr(document.querySelectorAll('[data-datepicker]'), {
+  // * Datetime picker
+  flatpickr(document.querySelectorAll('[data-datetimepicker]'), {
     enableTime: true,
     time_24hr: true,
     dateFormat: "Y-m-d H:i",
+  });
+
+  // * Date only picker
+  flatpickr(document.querySelectorAll('[data-datepicker]'), {
+    dateFormat: "Y-m-d",
   });
 });

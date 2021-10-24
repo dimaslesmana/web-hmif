@@ -46,12 +46,24 @@ $routes->group('dashboard', ['filter' => 'authentication'], function ($routes) {
 	$routes->get('member/edit/(:num)', 'Dashboard::editMemberView/$1');
 	$routes->delete('member/delete/(:num)', 'Dashboard::deleteMember/$1');
 	$routes->get('member', 'Dashboard::memberView');
+
 	$routes->get('events/add', 'Dashboard::addEventsView');
 	$routes->post('events/add', 'Dashboard::insertEvent');
-	$routes->post('events/edit/submit', 'Dashboard::updateEvent');
 	$routes->get('events/edit/(:num)', 'Dashboard::editEventsView/$1');
+	$routes->post('events/edit/submit', 'Dashboard::updateEvent');
 	$routes->delete('events/delete/(:num)', 'Dashboard::deleteEvent/$1');
 	$routes->get('events', 'Dashboard::eventsView');
+
+	$routes->get('events-news/add', 'Dashboard::addEventNewsView');
+	$routes->post('events-news/add', 'Dashboard::insertEventNews');
+	$routes->get('events-news/edit/(:any)', 'Dashboard::editEventNewsView/$1');
+	$routes->post('events-news/edit/submit', 'Dashboard::updateEventNews');
+	$routes->delete('events-news/delete/(:any)', 'Dashboard::deleteEventNews/$1');
+	$routes->get('events-news', 'Dashboard::eventNewsView');
+
+	$routes->post('multiple-image-upload/upload', 'MultipleImageUpload::upload');
+	$routes->delete('multiple-image-upload/delete/(:any)', 'MultipleImageUpload::delete/$1');
+
 	$routes->get('/', 'Dashboard::index');
 	$routes->addRedirect('(:any)', 'dashboard');
 });

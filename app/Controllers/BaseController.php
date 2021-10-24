@@ -55,6 +55,7 @@ class BaseController extends Controller
 		$this->memberListModel = new \App\Models\MemberListModel();
 		$this->memberDivisionModel = new \App\Models\MemberDivisionModel();
 		$this->eventPostModel = new \App\Models\EventPostModel();
+		$this->eventNewsModel = new \App\Models\EventNewsModel();
 		$this->eventCategoryModel = new \App\Models\EventCategoryModel();
 	}
 }

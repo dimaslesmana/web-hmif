@@ -39,6 +39,12 @@
                         <p>Daftar Event</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="/dashboard/events-news" class="nav-link">
+                        <i class="nav-icon fas fa-list"></i>
+                        <p>Daftar Event News</p>
+                    </a>
+                </li>
 
                 <li class="nav-header">Misc</li>
                 <li class="nav-item">

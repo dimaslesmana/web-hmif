@@ -15,7 +15,7 @@ class Security extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $tokenName = 'csrf_hmif';
+	public $tokenName = 'csrf_token_hmif';
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -37,7 +37,7 @@ class Security extends BaseConfig
 	 *
 	 * @var string
 	 */
-	 public $cookieName = 'csrf_cookie_name';
+	 public $cookieName = 'csrf_cookie_hmif';
 
 	/**
 	 * --------------------------------------------------------------------------
