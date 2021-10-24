@@ -58,26 +58,11 @@
                     <div class="horizontal-timeline" id="timeline-hmif">
                         <div class="events-content">
                             <ol style="list-style: none;">
-                                <li class="selected bg-tertiary-custom" data-horizontal-timeline='{"date": "16/10/2021", "customDisplay": "Sabtu<br>16 Oktober"}'>
-                                    <h2>Timeline 1</h2>
-                                    <p>Keterangan</p>
-                                </li>
-                                <li class="bg-tertiary-custom" data-horizontal-timeline='{"date": "17/10/2021", "customDisplay": "Minggu<br>17 Oktober"}'>
-                                    <h2>Timeline 2</h2>
-                                    <p>Keterangan</p>
-                                </li>
-                                <li class="bg-tertiary-custom" data-horizontal-timeline='{"date": "18/10/2021", "customDisplay": "Senin<br>18 Oktober"}'>
-                                    <h2>Timeline 3</h2>
-                                    <p>Keterangan</p>
-                                </li>
-                                <li class="bg-tertiary-custom" data-horizontal-timeline='{"date": "19/10/2021", "customDisplay": "Selasa<br>19 Oktober"}'>
-                                    <h2>Timeline 4</h2>
-                                    <p>Keterangan</p>
-                                </li>
-                                <li class="bg-tertiary-custom" data-horizontal-timeline='{"date": "20/10/2021", "customDisplay": "Rabu<br>20 Oktober"}'>
-                                    <h2>Timeline 5</h2>
-                                    <p>Keterangan</p>
-                                </li>
+                                <?php foreach ($events as $event) : ?>
+                                    <li class="bg-tertiary-custom" data-horizontal-timeline='{"date": "<?= strftime("%d/%m/%YT%H:%M", strtotime($event['event_start_date'])); ?>", "customDisplay": "<?= strftime("%A<br>%e %B", strtotime($event['event_start_date'])); ?>"}'>
+                                        <h2><?= $event['event_title']; ?></h2>
+                                    </li>
+                                <?php endforeach; ?>
                             </ol>
                         </div>
                     </div>

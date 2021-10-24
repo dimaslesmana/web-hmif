@@ -27,7 +27,7 @@ $(document).ready(function () {
 
   // Timeline
   $('#timeline-hmif').horizontalTimeline({
-    dateDisplay: 'dayMonth',
+    dateDisplay: 'dateTime',
     desktopDateIntervals: 250,
     tabletDateIntervals: 200,
     mobileDateIntervals: 150,
