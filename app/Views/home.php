@@ -35,64 +35,101 @@
                             <a class="nav-link" id="pills-kesma-tab" data-toggle="pill" href="#pills-kesma" role="tab" aria-controls="pills-kesma" aria-selected="false">Kesma</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="pills-itdev-tab" data-toggle="pill" href="#pills-itdev" role="tab" aria-controls="pills-itdev" aria-selected="false">IT Dev</a>
+                            <a class="nav-link" id="pills-humaniora-tab" data-toggle="pill" href="#pills-humaniora" role="tab" aria-controls="pills-humaniora" aria-selected="false">Humaniora</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="pills-humaniora-tab" data-toggle="pill" href="#pills-humaniora" role="tab" aria-controls="pills-humaniora" aria-selected="false">Humaniora</a>
+                            <a class="nav-link" id="pills-itdev-tab" data-toggle="pill" href="#pills-itdev" role="tab" aria-controls="pills-itdev" aria-selected="false">IT Dev</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-bph" role="tabpanel" aria-labelledby="pills-bph-tab">
-                            <div class="row mb-4">
-                                <div class="col-12">
-                                    <h4>Nama Acara 1</h4>
-                                </div>
-                                <div class="col-12 owl-carousel news-carousel owl-theme">
-                                    <div style="height: 30vh;">
-                                        <img class="img-thumbnail" src="/assets/images/placeholder-1000x400.jpg" style="height: 100%; object-fit: cover;" alt="">
+                            <?php foreach ($event_news_bph as $item) : ?>
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h4><?= $item['event_name']; ?></h4>
                                     </div>
-                                    <div style="height: 30vh;">
-                                        <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
-                                    </div>
-                                    <div style="height: 30vh;">
-                                        <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
-                                    </div>
-                                    <div style="height: 30vh;">
-                                        <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
+
+                                    <div class="col-12 owl-carousel news-carousel owl-theme">
+                                        <?php foreach ($item['event_photos'] as $photo) : ?>
+                                            <div style="height: 30vh;">
+                                                <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" style="height: 100%; object-fit: cover;" alt="<?= $item['event_name']; ?>">
+                                            </div>
+                                        <?php endforeach; ?>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row mb-4">
-                                <div class="col-12">
-                                    <h4>Nama Acara 2</h4>
-                                </div>
-                                <div class="col-12 owl-carousel news-carousel owl-theme">
-                                    <div style="height: 30vh;">
-                                        <img class="img-thumbnail" src="/assets/images/placeholder-1000x400.jpg" style="height: 100%; object-fit: cover;" alt="">
-                                    </div>
-                                    <div style="height: 30vh;">
-                                        <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
-                                    </div>
-                                    <div style="height: 30vh;">
-                                        <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
-                                    </div>
-                                    <div style="height: 30vh;">
-                                        <img class="img-thumbnail" src="/assets/images/placeholder.png" style="height: 100%; object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                            </div>
+                            <?php endforeach; ?>
                         </div>
+
                         <div class="tab-pane fade" id="pills-pr" role="tabpanel" aria-labelledby="pills-pr-tab" style="border-radius: 10px;">
-                            <h1>Duplicate components from above.</h1>
+                            <?php foreach ($event_news_pr as $item) : ?>
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h4><?= $item['event_name']; ?></h4>
+                                    </div>
+
+                                    <div class="col-12 owl-carousel news-carousel owl-theme">
+                                        <?php foreach ($item['event_photos'] as $photo) : ?>
+                                            <div style="height: 30vh;">
+                                                <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" style="height: 100%; object-fit: cover;" alt="<?= $item['event_name']; ?>">
+                                            </div>
+                                        <?php endforeach; ?>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
                         </div>
+
                         <div class="tab-pane fade" id="pills-kesma" role="tabpanel" aria-labelledby="pills-kesma-tab">
-                            <h1>Duplicate components from above.</h1>
+                            <?php foreach ($event_news_kesma as $item) : ?>
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h4><?= $item['event_name']; ?></h4>
+                                    </div>
+
+                                    <div class="col-12 owl-carousel news-carousel owl-theme">
+                                        <?php foreach ($item['event_photos'] as $photo) : ?>
+                                            <div style="height: 30vh;">
+                                                <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" style="height: 100%; object-fit: cover;" alt="<?= $item['event_name']; ?>">
+                                            </div>
+                                        <?php endforeach; ?>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
                         </div>
-                        <div class="tab-pane fade" id="pills-itdev" role="tabpanel" aria-labelledby="pills-itdev-tab">
-                            <h1>Duplicate components from above.</h1>
-                        </div>
+
                         <div class="tab-pane fade" id="pills-humaniora" role="tabpanel" aria-labelledby="pills-humaniora-tab">
-                            <h1>Duplicate components from above.</h1>
+                            <?php foreach ($event_news_humaniora as $item) : ?>
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h4><?= $item['event_name']; ?></h4>
+                                    </div>
+
+                                    <div class="col-12 owl-carousel news-carousel owl-theme">
+                                        <?php foreach ($item['event_photos'] as $photo) : ?>
+                                            <div style="height: 30vh;">
+                                                <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" style="height: 100%; object-fit: cover;" alt="<?= $item['event_name']; ?>">
+                                            </div>
+                                        <?php endforeach; ?>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-itdev" role="tabpanel" aria-labelledby="pills-itdev-tab">
+                            <?php foreach ($event_news_itdev as $item) : ?>
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h4><?= $item['event_name']; ?></h4>
+                                    </div>
+
+                                    <div class="col-12 owl-carousel news-carousel owl-theme">
+                                        <?php foreach ($item['event_photos'] as $photo) : ?>
+                                            <div style="height: 30vh;">
+                                                <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" style="height: 100%; object-fit: cover;" alt="<?= $item['event_name']; ?>">
+                                            </div>
+                                        <?php endforeach; ?>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>

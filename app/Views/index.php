@@ -5,42 +5,17 @@
 <main>
     <!-- Carousel -->
     <div class="owl-carousel owl-theme" id="landing-carousel">
-        <div>
-            <div class="carousel-img-container">
-                <img src="/assets/images/placeholder-1000x400.jpg" alt="event1">
+        <?php foreach ($events as $event) : ?>
+            <div>
+                <div class="carousel-img-container">
+                    <img src="/assets/images/event-poster/<?= $event['event_poster']; ?>" alt="Poster <?= $event['event_title']; ?>">
+                </div>
+                <div class="d-flex flex-wrap justify-content-between p-4">
+                    <p class="my-auto"><?= $event['event_title']; ?></p>
+                    <a class="btn btn-tertiary-custom rounded-pill" href="<?= $event['event_form_link']; ?>" target="_blank" rel="noopener noreferrer">Register Now</a>
+                </div>
             </div>
-            <div class="d-flex flex-wrap justify-content-between p-4">
-                <p class="my-auto">Nama & Keterangan Event</p>
-                <a class="btn btn-tertiary-custom rounded-pill" href="#">Register Now</a>
-            </div>
-        </div>
-        <div>
-            <div class="carousel-img-container">
-                <img src="/assets/images/placeholder-1000x400.jpg" alt="event1">
-            </div>
-            <div class="d-flex flex-wrap justify-content-between p-4">
-                <p class="my-auto">Nama & Keterangan Event</p>
-                <a class="btn btn-tertiary-custom rounded-pill" href="#">Register Now</a>
-            </div>
-        </div>
-        <div>
-            <div class="carousel-img-container">
-                <img src="/assets/images/placeholder-1000x400.jpg" alt="event1">
-            </div>
-            <div class="d-flex flex-wrap justify-content-between p-4">
-                <p class="my-auto">Nama & Keterangan Event</p>
-                <a class="btn btn-tertiary-custom rounded-pill" href="#">Register Now</a>
-            </div>
-        </div>
-        <div>
-            <div class="carousel-img-container">
-                <img src="/assets/images/placeholder-1000x400.jpg" alt="event1">
-            </div>
-            <div class="d-flex flex-wrap justify-content-between p-4">
-                <p class="my-auto">Nama & Keterangan Event</p>
-                <a class="btn btn-tertiary-custom rounded-pill" href="#">Register Now</a>
-            </div>
-        </div>
+        <?php endforeach; ?>
     </div>
     <!-- End of Carousel -->
 
