@@ -6,6 +6,8 @@ class Events extends BaseController
 {
     public function index()
     {
+        setlocale(LC_TIME, 'ID');
+
         $data = [
             'title' => "HMIF UMN | Events",
             'events' => $this->eventPostModel->getEvents(),
@@ -25,6 +27,8 @@ class Events extends BaseController
         if (empty($event)) {
             return redirect()->to('/events');
         }
+
+        setlocale(LC_TIME, 'ID');
 
         $data = [
             'title' => "HMIF UMN | Event - {$event['event_title']}",

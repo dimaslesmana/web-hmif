@@ -8,121 +8,52 @@
         <div class="container">
             <div class="row mb-4 text-center text-white-custom">
                 <div class="col">
-                    <h3>Event List</h3>
+                    <h3>Events</h3>
                     <hr>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <div class="event-card-container">
-                        <div class="card my-4" style="border-radius: 15px;">
-                            <div class="row no-gutters p-3">
-                                <div class="col-md-2">
-                                    <img src="/assets/images/placeholder.png" width="100%" alt="event poster">
-                                </div>
-                                <div class="col-md-10">
-                                    <div class="card-body">
-                                        <div class="row mb-4">
-                                            <div class="col-sm-6">
-                                                <h5 class="card-title">Event Title - Event ID</h5>
-                                            </div>
-                                            <div class="col-sm-6 text-right">
-                                                <h5>Category Name</h5>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <p class="card-text">Event Start Date:</p>
-                                                <p class="card-text">Event End Date:</p>
-                                            </div>
-                                        </div>
+                        <?php foreach ($events as $event) : ?>
+                            <div class="card my-4" style="border-radius: 15px;">
+                                <div class="row no-gutters p-3">
+                                    <div class="col-md-2">
+                                        <img src="/assets/images/event-poster/<?= $event['event_poster']; ?>" width="100%" alt="event poster">
                                     </div>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="row align-items-center p-2">
-                                    <div class="col-sm-6">
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    </div>
-                                    <div class="col-sm-6 text-right">
-                                        <button class="btn btn-primary-custom">Detail</button>
-                                        <button class="btn btn-tertiary-custom">Register</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card my-4" style="border-radius: 15px;">
-                            <div class="row no-gutters p-3">
-                                <div class="col-md-2">
-                                    <img src="/assets/images/placeholder.png" width="100%" alt="event poster">
-                                </div>
-                                <div class="col-md-10">
-                                    <div class="card-body">
-                                        <div class="row mb-4">
-                                            <div class="col-sm-6">
-                                                <h5 class="card-title">Event Title - Event ID</h5>
+                                    <div class="col-md-10">
+                                        <div class="card-body">
+                                            <div class="row mb-4">
+                                                <div class="col-sm-6">
+                                                    <h5 class="card-title"><?= $event['event_title']; ?></h5>
+                                                </div>
+                                                <div class="col-sm-6 text-right">
+                                                    <h5><?= $event['category_name']; ?></h5>
+                                                </div>
                                             </div>
-                                            <div class="col-sm-6 text-right">
-                                                <h5>Category Name</h5>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <p class="card-text">Event Start Date:</p>
-                                                <p class="card-text">Event End Date:</p>
+                                            <div class="row">
+                                                <div class="col">
+
+                                                    <p class="card-text">Event Start Date: <?= strftime("%A, %e %B %Y - %H:%M", strtotime($event['event_start_date'])); ?></p>
+                                                    <p class="card-text">Event End Date: <?= strftime("%A, %e %B %Y - %H:%M", strtotime($event['event_end_date'])); ?></p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="row align-items-center p-2">
-                                    <div class="col-sm-6">
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    </div>
-                                    <div class="col-sm-6 text-right">
-                                        <button class="btn btn-primary-custom">Detail</button>
-                                        <button class="btn btn-tertiary-custom">Register</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card my-4" style="border-radius: 15px;">
-                            <div class="row no-gutters p-3">
-                                <div class="col-md-2">
-                                    <img src="/assets/images/placeholder.png" width="100%" alt="event poster">
-                                </div>
-                                <div class="col-md-10">
-                                    <div class="card-body">
-                                        <div class="row mb-4">
-                                            <div class="col-sm-6">
-                                                <h5 class="card-title">Event Title - Event ID</h5>
-                                            </div>
-                                            <div class="col-sm-6 text-right">
-                                                <h5>Category Name</h5>
-                                            </div>
+                                <div class="card-footer">
+                                    <div class="row align-items-center p-2">
+                                        <div class="col-sm-6">
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <p class="card-text">Event Start Date:</p>
-                                                <p class="card-text">Event End Date:</p>
-                                            </div>
+                                        <div class="col-sm-6 text-right">
+                                            <a href="/events/<?= $event['event_id']; ?>" class="btn btn-primary-custom">Detail</a>
+                                            <a href="<?= $event['event_form_link']; ?>" target="_blank" rel="noopener noreferrer" class="btn btn-tertiary-custom">Register</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-footer">
-                                <div class="row align-items-center p-2">
-                                    <div class="col-sm-6">
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    </div>
-                                    <div class="col-sm-6 text-right">
-                                        <button class="btn btn-primary-custom">Detail</button>
-                                        <button class="btn btn-tertiary-custom">Register</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
