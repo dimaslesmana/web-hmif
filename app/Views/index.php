@@ -43,6 +43,8 @@
                                 <?php foreach ($events as $event) : ?>
                                     <li class="bg-tertiary-custom" data-horizontal-timeline='{"date": "<?= strftime("%d/%m/%YT%H:%M", strtotime($event['event_start_date'])); ?>", "customDisplay": "<?= strftime("%A<br>%e %B", strtotime($event['event_start_date'])); ?>"}'>
                                         <h2><?= $event['event_title']; ?></h2>
+                                        <p>Mulai : <?= strftime("%A, %e %B %Y - %H:%M", strtotime($event['event_start_date'])); ?></p>
+                                        <p>Selesai : <?= strftime("%A, %e %B %Y - %H:%M", strtotime($event['event_end_date'])); ?></p>
                                     </li>
                                 <?php endforeach; ?>
                             </ol>

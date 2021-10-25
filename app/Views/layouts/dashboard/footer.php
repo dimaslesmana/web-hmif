@@ -11,8 +11,6 @@
 <script src="/assets/vendors/jquery/jquery.min.js"></script>
 <!-- Bootstrap -->
 <script src="/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- SweetAlert2 -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
 <!-- DataTables -->
 <script src="/assets/vendors/datatables/js/datatables.min.js"></script>
 <!-- bs-custom-file-input -->
@@ -30,7 +28,7 @@
 <!-- AdminLTE -->
 <script src="/assets/js/adminlte.min.js"></script>
 <!-- Script JS -->
-<script src="/assets/js/dashboard.js"></script>
+<script src="/assets/js/dashboard/dashboard.js"></script>
 <!-- Custom Script -->
 <?php
 if (!empty($custom_js)) {

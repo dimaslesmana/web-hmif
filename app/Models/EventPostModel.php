@@ -37,6 +37,14 @@ class EventPostModel extends Model
             ->findAll();
     }
 
+    public function getEventsOrderByDate($orderType = 'asc')
+    {
+        return $this->select('event_posts.id, event_posts.event_id, event_title, event_categories.id AS event_category_id, event_categories.category_name, event_body, event_start_date, event_end_date, event_form_link, event_poster, updated_at')
+            ->join('event_categories', 'event_posts.event_category = event_categories.id')
+            ->orderBy('event_start_date', $orderType)
+            ->findAll();
+    }
+
     public function getEventById($eventId)
     {
         return $this->select('event_posts.id, event_posts.event_id, event_title, event_categories.id AS event_category_id, event_categories.category_name, event_body, event_start_date, event_end_date, event_form_link, event_poster, updated_at')

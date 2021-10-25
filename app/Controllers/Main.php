@@ -11,7 +11,7 @@ class Main extends BaseController
 		$data = [
 			'title' => "HMIF UMN",
 			'request' => $this->request,
-			'events' => $this->eventPostModel->getEvents(),
+			'events' => $this->eventPostModel->getEventsOrderByDate('asc'),
 		];
 
 		return view('index', $data);

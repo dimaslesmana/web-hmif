@@ -36,10 +36,8 @@
 <script src="/assets/vendors/jquery/jquery.min.js"></script>
 <!-- Bootstrap -->
 <script src="/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- SweetAlert2 -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
 <!-- OwlCarousel2 -->
-<script src="/assets/js/owl.carousel.min.js"></script>
+<script src="/assets/vendors/owl-carousel/js/owl.carousel.min.js"></script>
 <!-- Horizontal Timeline 2.0 -->
 <script src="https://cdn.jsdelivr.net/gh/ycodetech/horizontal-timeline-2.0@2/JavaScript/horizontal_timeline.2.0.min.js"></script>
 <!-- Script JS -->
