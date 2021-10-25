@@ -41,10 +41,12 @@
                         <div class="events-content">
                             <ol style="list-style: none;">
                                 <?php foreach ($events as $event) : ?>
-                                    <li class="bg-tertiary-custom" data-horizontal-timeline='{"date": "<?= strftime("%d/%m/%YT%H:%M", strtotime($event['event_start_date'])); ?>", "customDisplay": "<?= strftime("%A<br>%e %B", strtotime($event['event_start_date'])); ?>"}'>
+                                    <li class="bg-secondary-custom" data-horizontal-timeline='{"date": "<?= strftime("%d/%m/%YT%H:%M", strtotime($event['event_start_date'])); ?>", "customDisplay": "<?= strftime("%A<br>%e %B", strtotime($event['event_start_date'])); ?>"}'>
                                         <h2><?= $event['event_title']; ?></h2>
-                                        <p>Mulai : <?= strftime("%A, %e %B %Y - %H:%M", strtotime($event['event_start_date'])); ?></p>
-                                        <p>Selesai : <?= strftime("%A, %e %B %Y - %H:%M", strtotime($event['event_end_date'])); ?></p>
+                                        <div class="d-flex flex-column mb-3">
+                                            <small><strong>Mulai :</strong> <?= strftime("%A, %e %B %Y - %H:%M WIB", strtotime($event['event_start_date'])); ?></small>
+                                            <small><strong>Selesai :</strong> <?= strftime("%A, %e %B %Y - %H:%M WIB", strtotime($event['event_end_date'])); ?></small>
+                                        </div>
                                     </li>
                                 <?php endforeach; ?>
                             </ol>
