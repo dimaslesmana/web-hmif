@@ -20,7 +20,7 @@ class Contact extends BaseController
 		return view('contact', $data);
 	}
 
-	public function sendEmail()
+	public function send()
 	{
 		$formRules = [
 			'name' => [
@@ -54,57 +54,35 @@ class Contact extends BaseController
 			return redirect()->to('/contact')->withInput();
 		}
 
-		$senderName = htmlspecialchars($this->request->getPost('name'), ENT_QUOTES, 'UTF-8');
-		$senderEmail = htmlspecialchars($this->request->getPost('email'), ENT_QUOTES, 'UTF-8');
-		$emailSubject = htmlspecialchars($this->request->getPost('subject'), ENT_QUOTES, 'UTF-8');
-		$emailMessage = htmlspecialchars($this->request->getPost('message'), ENT_QUOTES, 'UTF-8');
-
-		$email = getenv('MAIL_SMTPUser');
-
-		$emailConfig = [
-			'protocol' => getenv('MAIL_PROTOCOL'),
-			'SMTPHost' => getenv('MAIL_SMTPHost'),
-			'SMTPUser' => getenv('MAIL_SMTPUser'),
-			'SMTPPass' => getenv('MAIL_SMTPPass'),
-			'SMTPPort' => getenv('MAIL_SMTPPort'),
-			'SMTPCrypto' => getenv('MAIL_SMTPCrypto'),
-			'mailType' => 'text',
-			'validate' => true,
+		$data = [
+			'name' => htmlspecialchars($this->request->getPost('name'), ENT_QUOTES, 'UTF-8'),
+			'email' => htmlspecialchars($this->request->getPost('email'), ENT_QUOTES, 'UTF-8'),
+			'subject' => htmlspecialchars($this->request->getPost('subject'), ENT_QUOTES, 'UTF-8'),
+			'message' => htmlspecialchars($this->request->getPost('message'), ENT_QUOTES, 'UTF-8'),
 		];
 
-		$this->email->initialize($emailConfig);
+		$url = getenv('SCRIPT_URL');
 
-		$this->email->setFrom($email, $senderName);
-		$this->email->setTo($email);
+		$ch = curl_init();
 
-		$this->email->setSubject("$emailSubject | $senderName");
-		$this->email->setMessage($emailMessage);
+		$headers = ["Content-Type: application/json"];
 
-		if ($this->email->send()) {
-			session()->setFlashdata('email-alert-success', 'Email berhasil dikirim.');
+		$query = http_build_query($data);
+
+		curl_setopt($ch, CURLOPT_URL, "$url?$query");
+		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+
+		$response = curl_exec($ch);
+
+		if ($response !== false) {
+			session()->setFlashdata('contact-alert-success', 'Pesan berhasil dikirim.');
 		} else {
-			session()->setFlashdata('email-alert-danger', 'Email gagal dikirim.');
-
-			// $data = $this->email->printDebugger(['headers']);
-			// print_r($data);
+			session()->setFlashdata('contact-alert-danger', 'Pesan gagal dikirim.');
 		}
 
-		// $to_email = $email;
-		// $subject = "$emailSubject | $senderName";
-		// $body = $emailMessage;
-		// $headers = "From: $senderName <$email>";
-
-		// if (mail($to_email, $subject, $body, $headers)) {
-		// 	session()->setFlashdata('email-alert-success', 'Email berhasil dikirim.');
-		// } else {
-		// 	session()->setFlashdata('email-alert-danger', 'Email gagal dikirim.');
-		// }
-
-		// d($senderName);
-		// d($senderEmail);
-		// d($emailSubject);
-		// d($emailMessage);
-		// d($targetEmail);
+		curl_close($ch);
 
 		return redirect()->to('/contact');
 	}

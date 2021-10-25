@@ -12,17 +12,17 @@
                 </div>
             </div>
 
-            <?php if (session()->getFlashdata('email-alert-success')) : ?>
+            <?php if (session()->getFlashdata('contact-alert-success')) : ?>
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <?= session()->getFlashdata('email-alert-success') ?>
+                    <?= session()->getFlashdata('contact-alert-success') ?>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
             <?php endif; ?>
-            <?php if (session()->getFlashdata('email-alert-danger')) : ?>
+            <?php if (session()->getFlashdata('contact-alert-danger')) : ?>
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    <?= session()->getFlashdata('email-alert-danger') ?>
+                    <?= session()->getFlashdata('contact-alert-danger') ?>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -63,7 +63,7 @@
                             </div>
                         </div>
                         <?= csrf_field(); ?>
-                        <button type="submit" class="btn btn-tertiary-custom float-right">Send Email</button>
+                        <button type="submit" class="btn btn-tertiary-custom float-right">Kirim</button>
                     </form>
                 </div>
             </div>

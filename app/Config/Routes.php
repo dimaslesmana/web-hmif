@@ -73,7 +73,7 @@ $routes->get('/events/(:num)', 'Events::details/$1');
 $routes->get('/events', 'Events::index');
 $routes->get('/about', 'About::index');
 $routes->get('/contact', 'Contact::index');
-$routes->post('/contact', 'Contact::sendEmail');
+$routes->post('/contact', 'Contact::send');
 
 $routes->get('/', 'Main::index');
 
