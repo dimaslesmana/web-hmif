@@ -21,7 +21,7 @@
                 <h1>Login</h1>
             </div>
             <div class="card-body">
-                <p class="login-box-msg">Lorem, ipsum dolor.</p>
+                <p class="login-box-msg">Welcome.</p>
                 <form action="" method="post" autocomplete="off">
                     <?= csrf_field(); ?>
                     <div class="input-group mb-3">
