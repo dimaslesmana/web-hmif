@@ -12,7 +12,7 @@ class Events extends BaseController
 
         $data = [
             'title' => "HMIF UMN | Events",
-            'events' => $this->eventPostModel->getEvents(),
+            'events' => $this->eventPostModel->getEventsOrderByDate('desc'),
             'request' => $this->request,
         ];
 
