@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="/assets/vendors/fontawesome-free/css/all.min.css">
-    <!-- SweetAlert2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
     <!-- OwlCarousel2 -->
     <link rel="stylesheet" href="/assets/vendors/owl-carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/assets/vendors/owl-carousel/css/owl.theme.default.min.css">

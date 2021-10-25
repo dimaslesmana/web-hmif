@@ -11,8 +11,6 @@
 <script src="/assets/vendors/jquery/jquery.min.js"></script>
 <!-- Bootstrap -->
 <script src="/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- SweetAlert2 -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
 <!-- DataTables -->
 <script src="/assets/vendors/datatables/js/datatables.min.js"></script>
 <!-- bs-custom-file-input -->

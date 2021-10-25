@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="/assets/vendors/fontawesome-free/css/all.min.css">
     <!-- IonIcons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- SweetAlert2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
     <!-- DataTables -->
     <link rel="stylesheet" href="/assets/vendors/datatables/css/datatables.min.css">
     <!-- flatpickr -->
