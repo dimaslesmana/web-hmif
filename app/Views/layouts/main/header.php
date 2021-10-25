@@ -14,8 +14,8 @@
     <!-- SweetAlert2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
     <!-- OwlCarousel2 -->
-    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/vendors/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/vendors/owl-carousel/css/owl.theme.default.min.css">
     <!-- Horizontal Timeline 2.0 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ycodetech/horizontal-timeline-2.0@2/css/horizontal_timeline.2.0.min.css">
     <!-- Custom CSS -->
