@@ -6,7 +6,7 @@
     <!-- Hero -->
     <div class="jumbotron jumbotron-fluid mb-0">
         <div class="container text-center">
-            <img src="/assets/images/logo.png" class="" width="300" alt="">
+            <img src="/assets/images/logo.png" class="" width="300" alt="HMIF">
             <h1 class="display-4">Welcome!</h1>
             <p class="lead">Himpunan Mahasiswa Informatika</p>
         </div>
@@ -19,7 +19,7 @@
             <div class="row mb-2 text-center text-white">
                 <div class="col">
                     <h3>News</h3>
-                    <hr>
+                    <hr class="toggle-hr-color">
                 </div>
             </div>
             <div class="row">
@@ -47,7 +47,7 @@
                                 <div class="row mb-4">
                                     <div class="col-12">
                                         <h4><?= $item['event_name']; ?></h4>
-                                        <hr style="width: 100%;">
+                                        <hr style="width: 100%;" class="toggle-hr-color">
                                     </div>
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
@@ -66,7 +66,7 @@
                                 <div class="row mb-4">
                                     <div class="col-12">
                                         <h4><?= $item['event_name']; ?></h4>
-                                        <hr style="width: 100%;">
+                                        <hr style="width: 100%;" class="toggle-hr-color">
                                     </div>
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
@@ -85,7 +85,7 @@
                                 <div class="row mb-4">
                                     <div class="col-12">
                                         <h4><?= $item['event_name']; ?></h4>
-                                        <hr style="width: 100%;">
+                                        <hr style="width: 100%;" class="toggle-hr-color">
                                     </div>
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
@@ -104,7 +104,7 @@
                                 <div class="row mb-4">
                                     <div class="col-12">
                                         <h4><?= $item['event_name']; ?></h4>
-                                        <hr style="width: 100%;">
+                                        <hr style="width: 100%;" class="toggle-hr-color">
                                     </div>
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
@@ -123,7 +123,7 @@
                                 <div class="row mb-4">
                                     <div class="col-12">
                                         <h4><?= $item['event_name']; ?></h4>
-                                        <hr style="width: 100%;">
+                                        <hr style="width: 100%;" class="toggle-hr-color">
                                     </div>
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">

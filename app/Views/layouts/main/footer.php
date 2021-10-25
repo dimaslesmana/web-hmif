@@ -6,16 +6,16 @@
                 <p>Sponsors, Seminars, Events, anything Interesting working with us?</p>
                 <ul>
                     <li>
-                        <a href="mailto:hmif@umn.ac.id" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                        <a href="mailto:hmif@umn.ac.id" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/hmif.umn/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/hmif.umn/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="https://liff.line.me/1645278921-kWRPP32q?accountId=682fnddg&openerPlatform=native&openerKey=home%3Arecommend" target="_blank"><i class="fab fa-line" aria-hidden="true"></i></a>
+                        <a href="https://liff.line.me/1645278921-kWRPP32q?accountId=682fnddg&openerPlatform=native&openerKey=home%3Arecommend" target="_blank" rel="noopener noreferrer"><i class="fab fa-line" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/hmif_umn/" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/hmif_umn/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter" aria-hidden="true"></i></a>
                     </li>
                 </ul>
             </div>

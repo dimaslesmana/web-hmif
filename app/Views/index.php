@@ -32,7 +32,7 @@
             <div class="row mb-2 text-center">
                 <div class="col">
                     <h3>Timeline</h3>
-                    <hr>
+                    <hr class="toggle-hr-color">
                 </div>
             </div>
             <div class="row mb-2">

@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use phpDocumentor\Reflection\Types\Null_;
+
 class Events extends BaseController
 {
     public function index()
@@ -13,6 +15,17 @@ class Events extends BaseController
             'events' => $this->eventPostModel->getEvents(),
             'request' => $this->request,
         ];
+
+        foreach ($data['events'] as $idx => $item) {
+            $startDate = date_create($item['event_start_date']);
+            $currentDate = date_create();
+
+            if ($currentDate >= $startDate) {
+                $data['events'][$idx]['event_remaining_days'] = "Selesai";
+            } else {
+                $data['events'][$idx]['event_remaining_days'] = date_diff($currentDate, $startDate)->format("%d hari %h jam %i menit");
+            }
+        }
 
         return view('events/index', $data);
     }

@@ -50,7 +50,7 @@
                             <div class="container pb-4">
                                 <div class="row mb-4 pt-5">
                                     <div class="col-lg-3">
-                                        <img src="/assets/images/serum-logo.png" width="200" alt="logo serum" style="margin-top: -32px;">
+                                        <img src="/assets/images/serum-logo.png" width="200" alt="Logo SERUM" style="margin-top: -32px;">
                                     </div>
                                     <div class="col-lg-9 text-justify">
                                         <h5 class="font-weight-bold">Tujuan</h5>
@@ -73,7 +73,7 @@
             <div class="row mb-2 text-center">
                 <div class="col">
                     <h3>Struktur Himpunan</h3>
-                    <hr>
+                    <hr class="toggle-hr-color">
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -95,7 +95,7 @@
                                         if ($m['division_name'] === 'Badan Pengurus Harian') : ?>
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
-                                                    <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(207, 71%, 45%);">
+                                                    <img src="/assets/images/anggota/<?= $m['member_image'] ?>" class="card-img" alt="<?= $m['member_name'] ?>'s photo" style="border: 4px solid hsl(207, 71%, 45%);">
                                                     <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
@@ -115,7 +115,7 @@
                                         if ($m['division_name'] === 'Badan Pengurus Harian') : ?>
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
-                                                    <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(226, 38%, 38%);">
+                                                    <img src="/assets/images/anggota/<?= $m['member_image'] ?>" class="card-img" alt="<?= $m['member_name'] ?>'s photo" style="border: 4px solid hsl(226, 38%, 38%);">
                                                     <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
@@ -141,7 +141,7 @@
                                         <?php if ($m['division_name'] === 'Public Relation') : ?>
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
-                                                    <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(207, 71%, 45%);">
+                                                    <img src="/assets/images/anggota/<?= $m['member_image'] ?>" class="card-img" alt="<?= $m['member_name'] ?>'s photo" style="border: 4px solid hsl(207, 71%, 45%);">
                                                     <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
@@ -161,7 +161,7 @@
                                         if ($m['division_name'] === 'Public Relation') : ?>
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
-                                                    <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(226, 38%, 38%);">
+                                                    <img src="/assets/images/anggota/<?= $m['member_image'] ?>" class="card-img" alt="<?= $m['member_name'] ?>'s photo" style="border: 4px solid hsl(226, 38%, 38%);">
                                                     <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
@@ -187,7 +187,7 @@
                                         <?php if ($m['division_name'] === 'Kesejahteraan Mahasiswa') : ?>
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
-                                                    <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(207, 71%, 45%);">
+                                                    <img src="/assets/images/anggota/<?= $m['member_image'] ?>" class="card-img" alt="<?= $m['member_name'] ?>'s photo" style="border: 4px solid hsl(207, 71%, 45%);">
                                                     <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
@@ -207,7 +207,7 @@
                                         if ($m['division_name'] === 'Kesejahteraan Mahasiswa') : ?>
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
-                                                    <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(226, 38%, 38%);">
+                                                    <img src="/assets/images/anggota/<?= $m['member_image'] ?>" class="card-img" alt="<?= $m['member_name'] ?>'s photo" style="border: 4px solid hsl(226, 38%, 38%);">
                                                     <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
@@ -233,7 +233,7 @@
                                         <?php if ($m['division_name'] === 'Humaniora') : ?>
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
-                                                    <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(207, 71%, 45%);">
+                                                    <img src="/assets/images/anggota/<?= $m['member_image'] ?>" class="card-img" alt="<?= $m['member_name'] ?>'s photo" style="border: 4px solid hsl(207, 71%, 45%);">
                                                     <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
@@ -253,7 +253,7 @@
                                         if ($m['division_name'] === 'Humaniora') : ?>
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
-                                                    <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(226, 38%, 38%);">
+                                                    <img src="/assets/images/anggota/<?= $m['member_image'] ?>" class="card-img" alt="<?= $m['member_name'] ?>'s photo" style="border: 4px solid hsl(226, 38%, 38%);">
                                                     <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
@@ -279,7 +279,7 @@
                                         <?php if ($m['division_name'] === 'IT Development') : ?>
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
-                                                    <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(207, 71%, 45%);">
+                                                    <img src="/assets/images/anggota/<?= $m['member_image'] ?>" class="card-img" alt="<?= $m['member_name'] ?>'s photo" style="border: 4px solid hsl(207, 71%, 45%);">
                                                     <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>
@@ -299,7 +299,7 @@
                                         if ($m['division_name'] === 'IT Development') : ?>
                                             <div class="card">
                                                 <div class="card-overlay bg-transparent text-white">
-                                                    <img src="/assets/images/<?= $m['member_image'] ?>" class="card-img" alt="profile1" style="border: 4px solid hsl(226, 38%, 38%);">
+                                                    <img src="/assets/images/anggota/<?= $m['member_image'] ?>" class="card-img" alt="<?= $m['member_name'] ?>'s photo" style="border: 4px solid hsl(226, 38%, 38%);">
                                                     <div class="card-img-overlay" data-member-name="<?= $m['member_name'] ?>" data-member-major="<?= $m['member_major'] ?>" data-member-year="<?= $m['member_year'] ?>" data-member-position="<?= $m['member_position'] ?>" data-member-type="<?= $m['member_type'] ?>" data-member-image="<?= $m['member_image'] ?>" data-toggle="modal" data-target="#memberModal">
                                                         <p class="card-title">Click to show detail</p>
                                                     </div>

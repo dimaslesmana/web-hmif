@@ -62,7 +62,8 @@ $(document).ready(function () {
     memberModal.find('#memberModalType').html(memberType);
     memberModal
       .find('#memberModalImage')
-      .attr('src', `/assets/images/${memberImage}`);
+      .attr('src', `/assets/images/anggota/${memberImage}`)
+      .attr('alt', `${memberName}'s photo`);
 
     $('.modal-header, .modal-footer').css(
       'background-color',
