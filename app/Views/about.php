@@ -67,12 +67,12 @@
     </section>
     <!-- End of About Us -->
 
-    <!-- Struktur Himpunan -->
-    <section id="struktur-himpunan" class="struktur-himpunan bg-primary-custom">
+    <!-- Members -->
+    <section id="members" class="members bg-primary-custom">
         <div class="container py-5">
             <div class="row mb-2 text-center">
                 <div class="col">
-                    <h3>Struktur Himpunan</h3>
+                    <h3>Members</h3>
                     <hr class="toggle-hr-color">
                 </div>
             </div>
@@ -323,7 +323,7 @@
             </div>
         </div>
     </section>
-    <!-- End of Struktur Himpunan -->
+    <!-- End of Members -->
 
     <!-- Member Detail -->
     <div class="modal fade" id="memberModal" data-backdrop="static" tabindex="-1" aria-labelledby="memberModalType" aria-hidden="true">

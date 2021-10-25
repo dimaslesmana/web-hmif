@@ -12,7 +12,7 @@
                 </div>
                 <div class="d-flex flex-wrap justify-content-between p-4">
                     <div>
-                        <div>
+                        <div class="mb-1">
                             <span class="badge bg-secondary-custom"><?= $event['category_name']; ?></span>
                         </div>
                         <p class="my-auto"><?= $event['event_title']; ?></p>

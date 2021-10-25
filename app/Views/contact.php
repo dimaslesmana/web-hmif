@@ -35,7 +35,7 @@
                         <div class="form-row">
                             <div class="form-group col-md-12">
                                 <label for="name">Nama</label>
-                                <input type="text" class="form-control<?= ($validation->hasError('name')) ? ' is-invalid' : ''; ?>" id="name" name="name" placeholder="Nama" required autofocus>
+                                <input type="text" class="form-control<?= ($validation->hasError('name')) ? ' is-invalid' : ''; ?>" id="name" name="name" placeholder="Masukkan Nama Anda" required autofocus>
                                 <div class="invalid-feedback">
                                     <?= $validation->getError('name'); ?>
                                 </div>
@@ -43,14 +43,14 @@
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control<?= ($validation->hasError('email')) ? ' is-invalid' : ''; ?>" id="email" name="email" placeholder="Email" required>
+                            <input type="email" class="form-control<?= ($validation->hasError('email')) ? ' is-invalid' : ''; ?>" id="email" name="email" placeholder="Masukkan Email Anda" required>
                             <div class="invalid-feedback">
                                 <?= $validation->getError('email'); ?>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="subject">Subjek</label>
-                            <input type="text" class="form-control<?= ($validation->hasError('subject')) ? ' is-invalid' : ''; ?>" id="subject" name="subject" placeholder="Subjek" required>
+                            <input type="text" class="form-control<?= ($validation->hasError('subject')) ? ' is-invalid' : ''; ?>" id="subject" name="subject" required>
                             <div class="invalid-feedback">
                                 <?= $validation->getError('subject'); ?>
                             </div>
@@ -63,7 +63,7 @@
                             </div>
                         </div>
                         <?= csrf_field(); ?>
-                        <button type="submit" class="btn btn-tertiary-custom float-right">Send Email</button>
+                        <button type="submit" class="btn btn-tertiary-custom rounded-pill float-right"><i class="fas fa-paper-plane"></i> Send Email</button>
                     </form>
                 </div>
             </div>

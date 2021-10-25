@@ -24,7 +24,7 @@
             </div>
             <div class="row">
                 <div class="col mb-4">
-                    <ul class="nav nav-pills flex-column flex-lg-row nav-justified nav-wrapper p-2 mb-3" id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills flex-column flex-lg-row nav-justified nav-wrapper p-2 mb-4" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <a class="nav-link active" id="pills-bph-tab" data-toggle="pill" href="#pills-bph" role="tab" aria-controls="pills-bph" aria-selected="true">BPH</a>
                         </li>
@@ -52,9 +52,7 @@
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
                                         <?php foreach ($item['event_photos'] as $photo) : ?>
-                                            <div style="height: 30vh;">
-                                                <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" style="height: 100%; object-fit: cover;" alt="<?= $item['event_name']; ?>">
-                                            </div>
+                                            <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" alt="<?= $item['event_name']; ?>">
                                         <?php endforeach; ?>
                                     </div>
                                 </div>
@@ -71,9 +69,7 @@
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
                                         <?php foreach ($item['event_photos'] as $photo) : ?>
-                                            <div style="height: 30vh;">
-                                                <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" style="height: 100%; object-fit: cover;" alt="<?= $item['event_name']; ?>">
-                                            </div>
+                                            <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" alt="<?= $item['event_name']; ?>">
                                         <?php endforeach; ?>
                                     </div>
                                 </div>
@@ -90,9 +86,7 @@
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
                                         <?php foreach ($item['event_photos'] as $photo) : ?>
-                                            <div style="height: 30vh;">
-                                                <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" style="height: 100%; object-fit: cover;" alt="<?= $item['event_name']; ?>">
-                                            </div>
+                                            <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" alt="<?= $item['event_name']; ?>">
                                         <?php endforeach; ?>
                                     </div>
                                 </div>
@@ -109,9 +103,7 @@
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
                                         <?php foreach ($item['event_photos'] as $photo) : ?>
-                                            <div style="height: 30vh;">
-                                                <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" style="height: 100%; object-fit: cover;" alt="<?= $item['event_name']; ?>">
-                                            </div>
+                                            <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" alt="<?= $item['event_name']; ?>">
                                         <?php endforeach; ?>
                                     </div>
                                 </div>
@@ -128,9 +120,7 @@
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
                                         <?php foreach ($item['event_photos'] as $photo) : ?>
-                                            <div style="height: 30vh;">
-                                                <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" style="height: 100%; object-fit: cover;" alt="<?= $item['event_name']; ?>">
-                                            </div>
+                                            <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" alt="<?= $item['event_name']; ?>">
                                         <?php endforeach; ?>
                                     </div>
                                 </div>
@@ -145,7 +135,7 @@
 
     <!-- Media Partner -->
     <section id="media-partner" class="media-partner">
-        <div class="container py-5">
+        <div class="container pt-5">
             <div class="row mb-2 text-center">
                 <div class="col">
                     <h3>Media Partners</h3>

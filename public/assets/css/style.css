@@ -166,7 +166,7 @@ a {
 .contact hr,
 .event hr,
 .timeline hr,
-.struktur-himpunan hr,
+.members hr,
 .event-detail hr {
   border-bottom: 3px solid var(--white);
   width: 310px;
@@ -307,45 +307,44 @@ a {
   transition: background-color 500ms;
 }
 
-.news .img-news-wrapper {
+/* .news .img-news-wrapper {
   display: flex;
   flex-wrap: nowrap;
   transform: translateZ(0);
   overflow: visible;
   border-radius: 10px;
-}
+} */
 
 /* ABOUT PAGE */
-.struktur-himpunan .content-wrapper {
+.members .content-wrapper {
   display: flex;
   flex-wrap: wrap;
   overflow-x: scroll;
 }
 
-/* .struktur-himpunan .content-wrapper::-webkit-scrollbar {
+/* .members .content-wrapper::-webkit-scrollbar {
   height: 8px;
 }
 
-.struktur-himpunan .content-wrapper::-webkit-scrollbar-track {
+.members .content-wrapper::-webkit-scrollbar-track {
   background: var(--light-second);
   border-radius: 5px;
 }
 
-.struktur-himpunan .content-wrapper::-webkit-scrollbar-thumb {
+.members .content-wrapper::-webkit-scrollbar-thumb {
   background: var(--tertiary);
   border-radius: 5px;
 } */
 
-.struktur-himpunan .card-wrapper {
+.members .card-wrapper {
   display: flex;
   flex-wrap: nowrap;
   transform: translateZ(0);
   overflow: visible;
   border-radius: 10px;
-  padding: 12px;
 }
 
-.struktur-himpunan .card {
+.members .card {
   border-radius: 18px;
   width: 300px;
   margin: 8px;
@@ -353,17 +352,17 @@ a {
   transition: background-color 500ms, transform 100ms;
 }
 
-.struktur-himpunan .card:hover {
-  transform: scale(1.05);
+.members .card:hover {
+  transform: scale(1.02);
 }
 
-.struktur-himpunan .card-overlay {
+.members .card-overlay {
   position: relative;
   transition: transform 0.1s ease-in-out;
   padding: 8px;
 }
 
-.struktur-himpunan .card-overlay img {
+.members .card-overlay img {
   opacity: 1;
   display: block;
   width: 100%;
@@ -372,7 +371,7 @@ a {
   border-radius: 12px;
 }
 
-.struktur-himpunan .card-overlay .card-img-overlay {
+.members .card-overlay .card-img-overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -385,12 +384,12 @@ a {
   border-radius: 18px;
 }
 
-.struktur-himpunan .card .card-img-overlay:hover {
+.members .card .card-img-overlay:hover {
   opacity: 1;
   cursor: pointer;
 }
 
-.struktur-himpunan .card-overlay .card-img-overlay .card-title {
+.members .card-overlay .card-img-overlay .card-title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -400,7 +399,7 @@ a {
   text-align: center;
 }
 
-.struktur-himpunan .card ul {
+.members .card ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -408,23 +407,29 @@ a {
   margin: 0;
 }
 
-.struktur-himpunan .card ul li {
+.members .card ul li {
   list-style: none;
 }
 
-.struktur-himpunan .card ul li a {
+.members .card ul li a {
   color: var(--light);
 }
 
-.struktur-himpunan .card ul li a .fab,
-.struktur-himpunan .card ul li a .far,
-.struktur-himpunan .card ul li a .fas {
+.members .card ul li a .fab,
+.members .card ul li a .far,
+.members .card ul li a .fas {
   font-size: 24px;
 }
 
-.struktur-himpunan .card ul li a:hover .fas,
-.struktur-himpunan .card ul li a:hover .fab {
+.members .card ul li a:hover .fas,
+.members .card ul li a:hover .fab {
   transform: scale(1.1);
+}
+
+.modal .modal-header,
+.modal .modal-footer {
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 /* EVENTS PAGE */
@@ -455,7 +460,22 @@ a {
 
 .event-card-container .card {
   background-color: var(--light);
-  transition: background-color 500ms;
+  transition: background-color 500ms, transform 100ms;
+  height: 100%;
+  border-radius: 18px;
+}
+
+.event-card-container .card:hover {
+  transform: scale(1.02);
+}
+
+.event-card-container .card img {
+  border-radius: 18px 18px 0 0;
+}
+
+/* EVENT DETAIL PAGE */
+.event-detail .detail p {
+  margin: 0;
 }
 
 /* FOOTER */
@@ -559,7 +579,7 @@ footer ul li:nth-child(4) a:hover .fab {
   }
 
   .bg-menu-dark {
-    background-color: rgba(44, 60, 70, 0.8) !important;
+    background-color: rgba(44, 60, 70, 0.9) !important;
   }
 
   .carousel-img-container {
@@ -577,7 +597,7 @@ footer ul li:nth-child(4) a:hover .fab {
     left: 50%;
     transform: translate(-50%);
     height: 5rem;
-    background-color: rgba(225, 227, 230, 0.8);
+    background-color: rgba(225, 227, 230, 0.9);
     backdrop-filter: blur(6px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     padding: 12px;

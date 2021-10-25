@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-6 my-auto">
                 <h3>Contact Us</h3>
-                <p>Sponsors, Seminars, Events, anything Interesting working with us?</p>
+                <p>Sponsors, Seminars, Events, or anything interesting working with us?</p>
                 <ul>
                     <li>
                         <a href="mailto:hmif@umn.ac.id" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope" aria-hidden="true"></i></a>
