@@ -30,7 +30,7 @@
 <!-- AdminLTE -->
 <script src="/assets/js/adminlte.min.js"></script>
 <!-- Script JS -->
-<script src="/assets/js/dashboard.js"></script>
+<script src="/assets/js/dashboard/dashboard.js"></script>
 <!-- Custom Script -->
 <?php
 if (!empty($custom_js)) {
