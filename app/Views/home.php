@@ -47,6 +47,7 @@
                                 <div class="row mb-4">
                                     <div class="col-12">
                                         <h4><?= $item['event_name']; ?></h4>
+                                        <hr style="width: 100%;">
                                     </div>
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
@@ -65,6 +66,7 @@
                                 <div class="row mb-4">
                                     <div class="col-12">
                                         <h4><?= $item['event_name']; ?></h4>
+                                        <hr style="width: 100%;">
                                     </div>
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
@@ -83,6 +85,7 @@
                                 <div class="row mb-4">
                                     <div class="col-12">
                                         <h4><?= $item['event_name']; ?></h4>
+                                        <hr style="width: 100%;">
                                     </div>
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
@@ -101,6 +104,7 @@
                                 <div class="row mb-4">
                                     <div class="col-12">
                                         <h4><?= $item['event_name']; ?></h4>
+                                        <hr style="width: 100%;">
                                     </div>
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
@@ -119,6 +123,7 @@
                                 <div class="row mb-4">
                                     <div class="col-12">
                                         <h4><?= $item['event_name']; ?></h4>
+                                        <hr style="width: 100%;">
                                     </div>
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
@@ -144,7 +149,7 @@
             <div class="row mb-2 text-center">
                 <div class="col">
                     <h3>Media Partners</h3>
-                    <hr>
+                    <hr class="toggle-hr-color">
                 </div>
             </div>
             <div class="row">

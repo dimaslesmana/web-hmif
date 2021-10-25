@@ -9,7 +9,7 @@
             <div class="row mb-4 pt-5 text-center">
                 <div class="col">
                     <h3>About Us</h3>
-                    <hr>
+                    <hr class="toggle-hr-color">
                 </div>
             </div>
             <div class="row mb-4">
@@ -26,13 +26,13 @@
                         <!-- HMIF -->
                         <div class="tab-pane fade show active" id="hmif" role="tabpanel" aria-labelledby="hmif-tab">
                             <div class="container pb-4">
-                                <div class="row mb-4 pt-5 text-justify">
-                                    <div class="col-lg-6">
+                                <div class="row pt-5 text-justify">
+                                    <div class="col-lg-6 mb-4">
                                         <h5 class="font-weight-bold text-center">Visi</h5>
                                         <p>Mahasiswa informatika Universitas Multimedia Nusantara diharapkan dapat menjadi suatu kesatuan yang utuh dalam mewujudkan solidaritas dan sinergi.</p>
                                         <p>Selain itu mahasiswa informatika UMN bisa menjadi pribadi yang lebih aktif, berkompeten, kreatif, inovatif, dan mandiri.</p>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 mb-4">
                                         <h5 class="font-weight-bold text-center">Misi</h5>
                                         <ul>
                                             <li>Menaungi mahasiswa informatika UMN agar dapat menjadi pribadi yang bermafaat bagi masyarakat.</li>

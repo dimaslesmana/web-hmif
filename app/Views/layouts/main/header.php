@@ -63,10 +63,6 @@
                             <i class="fas fa-bell"></i>
                             <small style="font-size: 1rem;">Events</small>
                         </a>
-                        <a class="btn <?php if ($request->uri->getSegment(1) === 'calendar') echo 'text-tertiary-custom'; ?>" href="/calendar">
-                            <i class="fas fa-bell"></i>
-                            <small style="font-size: 1rem;">Calendar</small>
-                        </a>
                     </div>
                     <?php if (session()->get('logged_in')) : ?>
                         <a class="btn" href="/dashboard"><i class="fas fa-wrench"></i></a>

@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-* {
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
 :root {
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
@@ -18,6 +13,12 @@
   --primary-second: hsl(207, 71%, 40%);
   --secondary-second: hsl(206, 91%, 82%);
   --tertiary-second: hsl(29, 98%, 45%);
+}
+
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -65,6 +66,7 @@ body {
 .bg-secondary-custom,
 .btn-secondary-custom {
   background-color: var(--secondary) !important;
+  color: var(--black) !important;
 }
 
 .bg-tertiary-custom,
@@ -82,6 +84,7 @@ body {
 .bg-light-custom,
 .btn-light-custom {
   background-color: var(--light) !important;
+  color: var(--black) !important;
 }
 
 .btn-primary-custom:hover {
@@ -91,6 +94,7 @@ body {
 
 .btn-secondary-custom:hover {
   background-color: var(--secondary-second) !important;
+  color: var(--black) !important;
 }
 
 .btn-tertiary-custom:hover {
@@ -105,6 +109,7 @@ body {
 
 .btn-light-custom:hover {
   background-color: var(--light-second) !important;
+  color: var(--black) !important;
 }
 
 .preloader {
@@ -157,6 +162,27 @@ a {
   transition: color 500ms;
 }
 
+.news hr,
+.contact hr,
+.event hr,
+.timeline hr,
+.struktur-himpunan hr,
+.event-detail hr {
+  border-bottom: 3px solid var(--white);
+  width: 310px;
+}
+
+.about hr,
+.media-partner hr {
+  border-bottom: 3px solid var(--dark);
+  width: 310px;
+}
+
+.border-color-dark {
+  border-bottom: 3px solid var(--white) !important;
+}
+
+/* HEADER */
 .navbar {
   background-color: var(--light);
   box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
@@ -219,6 +245,7 @@ a {
   transform: translateY(0%) rotateZ(0deg);
 }
 
+/* LANDING PAGE */
 .horizontal-timeline .filling-line {
   background-color: var(--secondary);
 }
@@ -240,26 +267,20 @@ a {
   box-shadow: 0 4px 1rem rgba(0, 0, 0, 0.3);
 }
 
-.modal .modal-header,
-.modal .modal-footer {
-  background-color: var(--primary);
-  color: var(--white);
+.horizontal-timeline .timeline {
+  padding-bottom: 0 !important;
 }
 
+.horizontal-timeline .timeline-navigation#leftNav,
+.horizontal-timeline .timeline-navigation#rightNav {
+  display: block !important;
+  top: 3px !important;
+}
+
+/* HOME PAGE */
 .jumbotron {
   padding: 15vh 0;
   transition: background-color 500ms;
-}
-
-.about hr,
-.news hr,
-.contact hr,
-.event hr,
-.timeline hr,
-.media-partner hr,
-.struktur-himpunan hr {
-  border-bottom: 3px solid;
-  width: 310px;
 }
 
 .nav-tabs {
@@ -294,13 +315,14 @@ a {
   border-radius: 10px;
 }
 
+/* ABOUT PAGE */
 .struktur-himpunan .content-wrapper {
   display: flex;
   flex-wrap: wrap;
   overflow-x: scroll;
 }
 
-.struktur-himpunan .content-wrapper::-webkit-scrollbar {
+/* .struktur-himpunan .content-wrapper::-webkit-scrollbar {
   height: 8px;
 }
 
@@ -312,7 +334,7 @@ a {
 .struktur-himpunan .content-wrapper::-webkit-scrollbar-thumb {
   background: var(--tertiary);
   border-radius: 5px;
-}
+} */
 
 .struktur-himpunan .card-wrapper {
   display: flex;
@@ -405,6 +427,7 @@ a {
   transform: scale(1.1);
 }
 
+/* EVENTS PAGE */
 .event {
   background-color: var(--primary);
 }
@@ -416,7 +439,7 @@ a {
   overflow-y: scroll;
 }
 
-.event-card-container::-webkit-scrollbar {
+/* .event-card-container::-webkit-scrollbar {
   width: 8px;
 }
 
@@ -428,13 +451,14 @@ a {
 .event-card-container::-webkit-scrollbar-thumb {
   background: var(--tertiary);
   border-radius: 5px;
-}
+} */
 
 .event-card-container .card {
   background-color: var(--light);
   transition: background-color 500ms;
 }
 
+/* FOOTER */
 footer hr {
   border-bottom: 1px solid;
 }
@@ -506,18 +530,7 @@ footer ul li:nth-child(4) a:hover .fab {
   border-right: 2px solid;
 }
 
-@media only screen and (max-width: 1100px) {
-  .horizontal-timeline .timeline {
-    padding-bottom: 0 !important;
-  }
-
-  .horizontal-timeline .timeline-navigation#leftNav,
-  .horizontal-timeline .timeline-navigation#rightNav {
-    display: block !important;
-    top: 3px !important;
-  }
-}
-
+/* -TABLET- */
 @media only screen and (max-width: 992px) {
   #serum .row {
     text-align: center;
@@ -532,6 +545,7 @@ footer ul li:nth-child(4) a:hover .fab {
   }
 }
 
+/* -MOBILE- */
 @media only screen and (max-width: 576px) {
   .navbar .nav-menu a {
     display: flex;
@@ -559,10 +573,10 @@ footer ul li:nth-child(4) a:hover .fab {
 
   .nav-menu {
     position: fixed;
-    bottom: 22px;
+    bottom: 18px;
     left: 50%;
     transform: translate(-50%);
-    height: 6rem;
+    height: 5rem;
     background-color: rgba(225, 227, 230, 0.8);
     backdrop-filter: blur(6px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
@@ -579,12 +593,7 @@ footer ul li:nth-child(4) a:hover .fab {
   }
 
   .nav-menu .btn {
-    font-size: 28px;
-  }
-
-  .event-card-container .card .row .col-sm-6 {
-    text-align: center !important;
-    margin-bottom: 12px;
+    font-size: 20px;
   }
 
   footer {

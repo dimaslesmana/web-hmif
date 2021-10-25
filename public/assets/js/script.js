@@ -10,19 +10,30 @@ $(document).ready(function () {
     loop: true,
     autoplay: true,
     autoplayTimeout: 4000,
-    autoplayHoverPause: true,
     dots: false,
   });
 
   // News Carousel
   $('.news-carousel').owlCarousel({
-    items: 4,
     margin: 10,
-    autoWidth: true,
     loop: true,
     autoplay: true,
     autoplayTimeout: 2000,
-    autoplayHoverPause: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 2,
+      },
+      768: {
+        items: 3,
+      },
+      992: {
+        items: 4,
+      },
+    },
   });
 
   // Timeline
@@ -67,6 +78,7 @@ $(document).ready(function () {
   const $background = $('body, .navbar, .jumbotron, .nav-wrapper, .card');
   const $hyperlink = $('a');
   const $menu = $('.nav-menu');
+  const $hr = $('.toggle-hr-color');
 
   if (localStorage.getItem('isDark') === 'true') {
     $button.addClass('btn-dark-mode');
@@ -75,6 +87,7 @@ $(document).ready(function () {
     $background.addClass('bg-dark-custom');
     $hyperlink.addClass('text-white-custom');
     $menu.addClass('bg-menu-dark');
+    $hr.addClass('border-color-dark');
   }
 
   $($switch).click(function () {
@@ -95,5 +108,8 @@ $(document).ready(function () {
 
     $menu.toggleClass('bg-menu-dark');
     localStorage.setItem('isDark', $menu.hasClass('bg-menu-dark'));
+
+    $hr.toggleClass('border-color-dark');
+    localStorage.setItem('isDark', $hr.hasClass('border-color-dark'));
   });
 });
