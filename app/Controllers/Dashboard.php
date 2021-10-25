@@ -6,13 +6,7 @@ class Dashboard extends BaseController
 {
     public function index()
     {
-        $data = [
-            'title' => 'HMIF - Dashboard',
-            'sidebar_title' => 'HMIF',
-            'request' => $this->request,
-        ];
-
-        return view('dashboard/index', $data);
+        return redirect()->to('/dashboard/member');
     }
 
     public function eventsView()
@@ -282,7 +276,7 @@ class Dashboard extends BaseController
     public function eventNewsView()
     {
         $data = [
-            'title' => 'HMIF - Dashboard | Event News',
+            'title' => 'HMIF - Dashboard | Daftar Event News',
             'sidebar_title' => 'HMIF',
             'validation' => $this->validation,
             'request' => $this->request,
