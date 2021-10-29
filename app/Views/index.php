@@ -11,15 +11,15 @@
                     <img src="/assets/images/event-poster/<?= $event['event_poster']; ?>" alt="Poster <?= $event['event_title']; ?>">
                 </div>
                 <div class="d-flex flex-wrap justify-content-between p-4">
-                    <div>
+                    <div class="my-1">
                         <div class="mb-1">
                             <span class="badge bg-secondary-custom"><?= $event['category_name']; ?></span>
                         </div>
                         <p class="my-auto"><?= $event['event_title']; ?></p>
                     </div>
                     <div class="my-auto">
-                        <a class="btn btn-tertiary-custom rounded-pill mr-1" href="<?= $event['event_form_link']; ?>" target="_blank" rel="noopener noreferrer"><i class="fas fa-edit"></i> Register Now</a>
-                        <a class="btn btn-primary-custom rounded-pill" href="<?= $event['event_form_link']; ?>" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i> Show Detail</a>
+                        <a class="btn btn-tertiary-custom rounded-pill mr-1" href="<?= $event['event_form_link']; ?>" target="_blank" rel="noopener noreferrer"><i class="fas fa-edit"></i> Register</a>
+                        <a class="btn btn-primary-custom rounded-pill" href="<?= $event['event_form_link']; ?>" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i> Detail</a>
                     </div>
                 </div>
             </div>

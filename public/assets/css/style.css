@@ -277,8 +277,12 @@ a {
   top: 3px !important;
 }
 
+.horizontal-timeline table {
+  font-size: 18px;
+}
+
 .horizontal-timeline table th {
-  width: 100px;
+  width: 80px;
 }
 
 /* HOME PAGE */
@@ -629,6 +633,14 @@ footer ul li:nth-child(4) a:hover .fab {
 
   .nav-menu .btn {
     font-size: 20px;
+  }
+
+  .horizontal-timeline table {
+    font-size: 14px;
+  }
+
+  .horizontal-timeline table th {
+    width: 60px;
   }
 
   footer {
