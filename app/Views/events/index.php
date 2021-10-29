@@ -24,7 +24,7 @@
                                             <div class="mb-2">
                                                 <span class="badge bg-secondary-custom"><?= $event['category_name']; ?></span>
                                             </div>
-                                            <h5 class="card-title mb-2"><a href="/events/<?= $event['event_id']; ?>"><?= $event['event_title']; ?></a></h5>
+                                            <h5 class="card-title mb-2"><strong><a href="/events/<?= $event['event_id']; ?>"><?= $event['event_title']; ?></a></strong></h5>
                                             <small class="card-text"><?= ellipsize(htmlspecialchars_decode($event['event_body']), 128); ?></small>
                                         </div>
                                         <div class="card-footer">

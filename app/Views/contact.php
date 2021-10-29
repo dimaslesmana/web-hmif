@@ -63,7 +63,7 @@
                             </div>
                         </div>
                         <?= csrf_field(); ?>
-                        <button type="submit" class="btn btn-tertiary-custom rounded-pill float-right"><i class="fas fa-paper-plane"></i> Kirim</button>
+                        <button type="submit" class="btn btn-tertiary-custom rounded-pill float-right"><i class="fas fa-paper-plane"></i> Kirim Pesan</button>
                     </form>
                 </div>
             </div>

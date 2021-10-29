@@ -277,6 +277,10 @@ a {
   top: 3px !important;
 }
 
+.horizontal-timeline table th {
+  width: 100px;
+}
+
 /* HOME PAGE */
 .jumbotron {
   padding: 15vh 0;
@@ -307,13 +311,13 @@ a {
   transition: background-color 500ms;
 }
 
-/* .news .img-news-wrapper {
+.news .img-news-wrapper {
   display: flex;
   flex-wrap: nowrap;
   transform: translateZ(0);
   overflow: visible;
   border-radius: 10px;
-} */
+}
 
 /* ABOUT PAGE */
 .members .content-wrapper {
@@ -322,7 +326,7 @@ a {
   overflow-x: scroll;
 }
 
-/* .members .content-wrapper::-webkit-scrollbar {
+.members .content-wrapper::-webkit-scrollbar {
   height: 8px;
 }
 
@@ -334,7 +338,7 @@ a {
 .members .content-wrapper::-webkit-scrollbar-thumb {
   background: var(--tertiary);
   border-radius: 5px;
-} */
+}
 
 .members .card-wrapper {
   display: flex;
@@ -346,7 +350,6 @@ a {
 
 .members .card {
   border-radius: 18px;
-  width: 300px;
   margin: 8px;
   background-color: var(--light);
   transition: background-color 500ms, transform 100ms;
@@ -360,15 +363,18 @@ a {
   position: relative;
   transition: transform 0.1s ease-in-out;
   padding: 8px;
+  width: 300px;
+  height: 300px;
 }
 
 .members .card-overlay img {
   opacity: 1;
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   backface-visibility: hidden;
   border-radius: 12px;
+  object-fit: cover;
 }
 
 .members .card-overlay .card-img-overlay {
@@ -432,6 +438,15 @@ a {
   color: var(--white);
 }
 
+.modal table {
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+.modal table th {
+  width: 102px;
+}
+
 /* EVENTS PAGE */
 .event {
   background-color: var(--primary);
@@ -444,7 +459,7 @@ a {
   overflow-y: scroll;
 }
 
-/* .event-card-container::-webkit-scrollbar {
+.event-card-container::-webkit-scrollbar {
   width: 8px;
 }
 
@@ -456,7 +471,7 @@ a {
 .event-card-container::-webkit-scrollbar-thumb {
   background: var(--tertiary);
   border-radius: 5px;
-} */
+}
 
 .event-card-container .card {
   background-color: var(--light);
@@ -474,8 +489,8 @@ a {
 }
 
 /* EVENT DETAIL PAGE */
-.event-detail .detail p {
-  margin: 0;
+.event-detail table th {
+  width: 80px;
 }
 
 /* FOOTER */

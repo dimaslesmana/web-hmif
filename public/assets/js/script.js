@@ -54,11 +54,11 @@ $(document).ready(function () {
     const memberImage = $(e.relatedTarget).data('member-image');
 
     const memberModal = $(e.currentTarget);
-    memberModal.find('#memberModalName').html(memberName);
-    memberModal.find('#memberModalMajor').html(memberMajor);
-    memberModal.find('#memberModalYear').html(memberYear);
-    memberModal.find('#memberModalPosition').html(memberPosition);
     memberModal.find('#memberModalType').html(memberType);
+    memberModal.find('#memberModalName').html(`: ${memberName}`);
+    memberModal.find('#memberModalMajor').html(`: ${memberMajor}`);
+    memberModal.find('#memberModalYear').html(`: ${memberYear}`);
+    memberModal.find('#memberModalPosition').html(`: ${memberPosition}`);
     memberModal
       .find('#memberModalImage')
       .attr('src', `/assets/images/anggota/${memberImage}`)

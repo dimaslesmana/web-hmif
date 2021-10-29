@@ -11,30 +11,24 @@
                 </div>
             </div>
             <div class="row mb-4">
-                <div class="col-md-3 image">
+                <div class="col-md-3">
                     <img class="img-thumbnail mb-3" src="/assets/images/event-poster/<?= $event['event_poster']; ?>" width="100%" alt="Poster Event">
                 </div>
-                <div class="col-md-9 detail">
-                    <div class="mb-2">
+                <div class="col-md-9">
+                    <div>
                         <span class="badge bg-secondary-custom"><?= $event['category_name']; ?></span>
                     </div>
-                    <h1 class="mb-3"><?= $event['event_title']; ?></h1>
-                    <div class="row">
-                        <div class="col-2">
-                            <p>Mulai</p>
-                        </div>
-                        <div class="col-10">
-                            <p>: <?= strftime("%A, %e %B %Y @ %H:%M", strtotime($event['event_start_date'])); ?></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2">
-                            <p>Selesai</p>
-                        </div>
-                        <div class="col-10">
-                            <p>: <?= strftime("%A, %e %B %Y @ %H:%M", strtotime($event['event_end_date'])); ?></p>
-                        </div>
-                    </div>
+                    <h1 class="mb-2"><?= $event['event_title']; ?></h1>
+                    <table>
+                        <tr>
+                            <th>Mulai</th>
+                            <td>: <?= strftime("%A, %e %B %Y - %H:%M", strtotime($event['event_start_date'])); ?></td>
+                        </tr>
+                        <tr>
+                            <th>Selesai</th>
+                            <td>: <?= strftime("%A, %e %B %Y - %H:%M", strtotime($event['event_end_date'])); ?></td>
+                        </tr>
+                    </table>
                     <a href="<?= $event['event_form_link']; ?>" target="_blank" rel="noopener noreferrer" class="btn btn-tertiary-custom btn-block rounded-pill mt-3"><i class="fas fa-edit"></i> Register</a>
                 </div>
             </div>

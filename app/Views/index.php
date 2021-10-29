@@ -18,7 +18,8 @@
                         <p class="my-auto"><?= $event['event_title']; ?></p>
                     </div>
                     <div class="my-auto">
-                        <a class="btn btn-tertiary-custom rounded-pill" href="<?= $event['event_form_link']; ?>" target="_blank" rel="noopener noreferrer"><i class="fas fa-edit"></i> Register Now</a>
+                        <a class="btn btn-tertiary-custom rounded-pill mr-1" href="<?= $event['event_form_link']; ?>" target="_blank" rel="noopener noreferrer"><i class="fas fa-edit"></i> Register Now</a>
+                        <a class="btn btn-primary-custom rounded-pill" href="<?= $event['event_form_link']; ?>" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i> Show Detail</a>
                     </div>
                 </div>
             </div>
@@ -43,10 +44,18 @@
                                 <?php foreach ($events as $event) : ?>
                                     <li class="bg-secondary-custom" data-horizontal-timeline='{"date": "<?= strftime("%d/%m/%YT%H:%M", strtotime($event['event_start_date'])); ?>", "customDisplay": "<?= strftime("%A<br>%e %B", strtotime($event['event_start_date'])); ?>"}'>
                                         <h2><?= $event['event_title']; ?></h2>
-                                        <div class="d-flex flex-column mb-3">
-                                            <small><strong>Mulai :</strong> <?= strftime("%A, %e %B %Y - %H:%M WIB", strtotime($event['event_start_date'])); ?></small>
-                                            <small><strong>Selesai :</strong> <?= strftime("%A, %e %B %Y - %H:%M WIB", strtotime($event['event_end_date'])); ?></small>
-                                        </div>
+                                        <table class="text-left mx-auto">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Mulai</th>
+                                                    <td>: <?= strftime("%A, %e %B %Y - %H:%M WIB", strtotime($event['event_start_date'])); ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Selesai</th>
+                                                    <td>: <?= strftime("%A, %e %B %Y - %H:%M WIB", strtotime($event['event_end_date'])); ?></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </li>
                                 <?php endforeach; ?>
                             </ol>

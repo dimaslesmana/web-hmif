@@ -333,15 +333,29 @@
                     <h5 class="modal-title" id="memberModalType"></h5>
                 </div>
                 <div class="modal-body bg-dark-custom text-center">
-                    <img id="memberModalImage" class="img-thumbnail my-4" src="" alt="" width="50%">
-                    <h5>Nama</h5>
-                    <p id="memberModalName"></p>
-                    <h5>Jabatan</h5>
-                    <p id="memberModalPosition"></p>
-                    <h5>Jurusan</h5>
-                    <p id="memberModalMajor"></p>
-                    <h5>Angkatan</h5>
-                    <p id="memberModalYear"></p>
+                    <figure class="mt-4">
+                        <img id="memberModalImage" class="img-thumbnail" alt="Member Photo" width="70%">
+                    </figure>
+                    <table class="mx-auto my-3 text-left">
+                        <tbody>
+                            <tr>
+                                <th>Nama</th>
+                                <td id="memberModalName"></td>
+                            </tr>
+                            <tr>
+                                <th>Jabatan</th>
+                                <td id="memberModalPosition"></td>
+                            </tr>
+                            <tr>
+                                <th>Jurusan</th>
+                                <td id="memberModalMajor"></td>
+                            </tr>
+                            <tr>
+                                <th>Angkatan</th>
+                                <td id="memberModalYear"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-light-custom" data-dismiss="modal">Close</button>
