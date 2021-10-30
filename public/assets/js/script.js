@@ -19,6 +19,7 @@ $(document).ready(function () {
     loop: true,
     autoplay: true,
     autoplayTimeout: 2000,
+    dots: false,
     responsive: {
       0: {
         items: 1.5,
