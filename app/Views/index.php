@@ -19,7 +19,7 @@
                     </div>
                     <div class="my-auto">
                         <a class="btn btn-tertiary-custom rounded-pill mr-1" href="<?= $event['event_form_link']; ?>" target="_blank" rel="noopener noreferrer"><i class="fas fa-edit"></i> Register</a>
-                        <a class="btn btn-primary-custom rounded-pill" href="<?= $event['event_form_link']; ?>" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i> Detail</a>
+                        <a class="btn btn-primary-custom rounded-pill" href="/events/<?= $event['event_id']; ?>"><i class="fas fa-info-circle"></i> Detail</a>
                     </div>
                 </div>
             </div>
