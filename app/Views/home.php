@@ -52,7 +52,9 @@
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
                                         <?php foreach ($item['event_photos'] as $photo) : ?>
-                                            <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" alt="<?= $item['event_name']; ?>">
+                                            <a href="/assets/images/event-news/<?= $photo; ?>" data-toggle="lightbox">
+                                                <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" alt="<?= $item['event_name']; ?>">
+                                            </a>
                                         <?php endforeach; ?>
                                     </div>
                                 </div>
@@ -69,7 +71,9 @@
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
                                         <?php foreach ($item['event_photos'] as $photo) : ?>
-                                            <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" alt="<?= $item['event_name']; ?>">
+                                            <a href="/assets/images/event-news/<?= $photo; ?>" data-toggle="lightbox">
+                                                <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" alt="<?= $item['event_name']; ?>">
+                                            </a>
                                         <?php endforeach; ?>
                                     </div>
                                 </div>
@@ -86,7 +90,9 @@
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
                                         <?php foreach ($item['event_photos'] as $photo) : ?>
-                                            <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" alt="<?= $item['event_name']; ?>">
+                                            <a href="/assets/images/event-news/<?= $photo; ?>" data-toggle="lightbox">
+                                                <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" alt="<?= $item['event_name']; ?>">
+                                            </a>
                                         <?php endforeach; ?>
                                     </div>
                                 </div>
@@ -103,7 +109,9 @@
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
                                         <?php foreach ($item['event_photos'] as $photo) : ?>
-                                            <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" alt="<?= $item['event_name']; ?>">
+                                            <a href="/assets/images/event-news/<?= $photo; ?>" data-toggle="lightbox">
+                                                <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" alt="<?= $item['event_name']; ?>">
+                                            </a>
                                         <?php endforeach; ?>
                                     </div>
                                 </div>
@@ -120,7 +128,9 @@
 
                                     <div class="col-12 owl-carousel news-carousel owl-theme">
                                         <?php foreach ($item['event_photos'] as $photo) : ?>
-                                            <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" alt="<?= $item['event_name']; ?>">
+                                            <a href="/assets/images/event-news/<?= $photo; ?>" data-toggle="lightbox">
+                                                <img class="img-thumbnail" src="/assets/images/event-news/<?= $photo; ?>" alt="<?= $item['event_name']; ?>">
+                                            </a>
                                         <?php endforeach; ?>
                                     </div>
                                 </div>

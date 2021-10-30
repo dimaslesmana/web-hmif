@@ -44,6 +44,12 @@ $(document).ready(function () {
     useScrollBtns: false,
   });
 
+  // Ekko-Lightbox
+  $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
+
   // Member Modal
   $('#memberModal').on('shown.bs.modal', function (e) {
     const memberName = $(e.relatedTarget).data('member-name');
