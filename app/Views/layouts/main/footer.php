@@ -40,6 +40,8 @@
 <script src="/assets/vendors/owl-carousel/js/owl.carousel.min.js"></script>
 <!-- Horizontal Timeline 2.0 -->
 <script src="https://cdn.jsdelivr.net/gh/ycodetech/horizontal-timeline-2.0@2/JavaScript/horizontal_timeline.2.0.min.js"></script>
+<!-- ekko-lightbox -->
+<script src="/assets/vendors/ekko-lightbox/js/ekko-lightbox.min.js"></script>
 <!-- Script JS -->
 <script src="/assets/js/script.js"></script>
 <?php
