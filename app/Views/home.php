@@ -6,7 +6,7 @@
     <!-- Hero -->
     <div class="jumbotron jumbotron-fluid mb-0">
         <div class="container text-center">
-            <img src="/assets/images/logo.png" class="" width="300" alt="HMIF">
+            <img src="/assets/images/logo.png" width="300" alt="HMIF">
             <h1 class="display-4">Welcome!</h1>
             <p class="lead">Himpunan Mahasiswa Informatika</p>
         </div>

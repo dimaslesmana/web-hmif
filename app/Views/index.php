@@ -6,20 +6,18 @@
     <!-- Carousel -->
     <div class="owl-carousel owl-theme" id="landing-carousel">
         <?php foreach ($events as $event) : ?>
-            <div>
-                <div class="carousel-img-container">
-                    <img src="/assets/images/event-poster/<?= $event['event_poster']; ?>" alt="Poster <?= $event['event_title']; ?>">
-                </div>
-                <div class="d-flex flex-wrap justify-content-between p-4">
+            <div class="landing-carousel mt-3 mb-2 mx-2">
+                <img src="/assets/images/event-poster/<?= $event['event_poster']; ?>" alt="Poster <?= $event['event_title']; ?>" style="border-radius: 8px 8px 0 0;">
+                <div class=" p-4">
                     <div class="my-1">
                         <div class="mb-1">
                             <span class="badge bg-secondary-custom"><?= $event['category_name']; ?></span>
                         </div>
-                        <p class="my-auto"><?= $event['event_title']; ?></p>
+                        <p><?= $event['event_title']; ?></p>
                     </div>
-                    <div class="my-auto">
-                        <a class="btn btn-tertiary-custom rounded-pill mr-1" href="<?= $event['event_form_link']; ?>" target="_blank" rel="noopener noreferrer"><i class="fas fa-edit"></i> Register</a>
-                        <a class="btn btn-primary-custom rounded-pill" href="/events/<?= $event['event_id']; ?>"><i class="fas fa-info-circle"></i> Detail</a>
+                    <div class="d-flex">
+                        <a class="btn btn-tertiary-custom rounded-pill flex-grow-1 mr-1" href="<?= $event['event_form_link']; ?>" target="_blank" rel="noopener noreferrer"><i class="fas fa-edit"></i> Register</a>
+                        <a class="btn btn-primary-custom rounded-pill flex-grow-1 ml-1" href="/events/<?= $event['event_id']; ?>"><i class="fas fa-info-circle"></i> Detail</a>
                     </div>
                 </div>
             </div>
@@ -48,11 +46,13 @@
                                             <tbody>
                                                 <tr>
                                                     <th>Mulai</th>
-                                                    <td>: <?= strftime("%A, %e %B %Y - %H:%M WIB", strtotime($event['event_start_date'])); ?></td>
+                                                    <td>:&nbsp;</td>
+                                                    <td><?= strftime("%A, %e %B %Y - %H:%M WIB", strtotime($event['event_start_date'])); ?></td>
                                                 </tr>
                                                 <tr>
                                                     <th>Selesai</th>
-                                                    <td>: <?= strftime("%A, %e %B %Y - %H:%M WIB", strtotime($event['event_end_date'])); ?></td>
+                                                    <td>:&nbsp;</td>
+                                                    <td><?= strftime("%A, %e %B %Y - %H:%M WIB", strtotime($event['event_end_date'])); ?></td>
                                                 </tr>
                                             </tbody>
                                         </table>

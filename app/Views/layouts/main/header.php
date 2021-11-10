@@ -45,7 +45,7 @@
                 <a class="navbar-brand" href="/">
                     <img src="/assets/images/logo.png" width="100" alt="HMIF">
                 </a>
-                <div class="d-flex" id="navbarNav">
+                <div class="d-flex flex-nowrap" id="navbarNav">
                     <div class="nav-menu pr-2 mr-2">
                         <a class="btn <?php if ($request->uri->getSegment(1) === 'home') echo 'text-tertiary-custom'; ?>" href="/home">
                             <i class="fas fa-home"></i>
