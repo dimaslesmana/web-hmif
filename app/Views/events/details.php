@@ -12,7 +12,9 @@
             </div>
             <div class="row card flex-row mx-1 px-2 pt-4 pb-2">
                 <div class="col-md-3">
-                    <img class="img-thumbnail mb-3" src="/assets/images/event-poster/<?= $event['event_poster']; ?>" width="100%" alt="Poster Event">
+                    <a href="/assets/images/event-poster/<?= $event['event_poster']; ?>" data-toggle="lightbox" data-gallery="<?= $event['event_title']; ?>">
+                        <img class="img-thumbnail mb-3" src="/assets/images/event-poster/<?= $event['event_poster']; ?>" width="100%" alt="Poster Event">
+                    </a>
                 </div>
                 <div class="col-md-9">
                     <div class="mb-1">
