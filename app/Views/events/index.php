@@ -19,7 +19,9 @@
                             <?php foreach ($events as $event) : ?>
                                 <div class="col-lg-4 col-md-6 my-2">
                                     <div class="card">
-                                        <img class="card-img-top" src="/assets/images/event-poster/<?= $event['event_poster']; ?>" alt="Poster Event">
+                                        <a href="/events/<?= $event['event_id']; ?>">
+                                            <img class="card-img-top" src="/assets/images/event-poster/<?= $event['event_poster']; ?>" alt="Poster Event">
+                                        </a>
                                         <div class="card-body">
                                             <div class="mb-2">
                                                 <span class="badge bg-secondary-custom"><?= $event['category_name']; ?></span>
