@@ -166,14 +166,14 @@ a {
 .contact hr,
 .event hr,
 .timeline hr,
-.members hr,
-.event-detail hr {
+.members hr {
   border-bottom: 3px solid var(--white);
   width: 310px;
 }
 
 .about hr,
-.media-partner hr {
+.media-partner hr,
+.event-detail hr {
   border-bottom: 3px solid var(--dark);
   width: 310px;
 }
@@ -246,6 +246,11 @@ a {
 }
 
 /* LANDING PAGE */
+.landing-carousel {
+  border: 3px solid var(--primary);
+  border-radius: 10px;
+}
+
 .horizontal-timeline .filling-line {
   background-color: var(--secondary);
 }
@@ -321,6 +326,11 @@ a {
   transform: translateZ(0);
   overflow: visible;
   border-radius: 10px;
+}
+
+.news .news-carousel img {
+  height: 180px;
+  object-fit: cover;
 }
 
 /* ABOUT PAGE */
@@ -493,7 +503,17 @@ a {
 }
 
 /* EVENT DETAIL PAGE */
-.event-detail table th {
+.event-detail {
+  background-color: var(--primary);
+}
+
+.event-detail .card {
+  border-radius: 10px;
+  transition: background-color 500ms, transform 100ms;
+  background-color: var(--light);
+}
+
+.event-detail .card table th {
   width: 80px;
 }
 
@@ -584,8 +604,7 @@ footer ul li:nth-child(4) a:hover .fab {
   }
 }
 
-/* -MOBILE- */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   .navbar .nav-menu a {
     display: flex;
     flex-direction: column;
@@ -599,15 +618,6 @@ footer ul li:nth-child(4) a:hover .fab {
 
   .bg-menu-dark {
     background-color: rgba(44, 60, 70, 0.9) !important;
-  }
-
-  .carousel-img-container {
-    height: 50vh;
-  }
-
-  .carousel-img-container img {
-    height: 100%;
-    object-fit: cover;
   }
 
   .nav-menu {
@@ -634,13 +644,24 @@ footer ul li:nth-child(4) a:hover .fab {
   .nav-menu .btn {
     font-size: 20px;
   }
+}
 
+/* -MOBILE- */
+@media only screen and (max-width: 576px) {
   .horizontal-timeline table {
     font-size: 14px;
   }
 
   .horizontal-timeline table th {
     width: 60px;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 3.25rem;
+  }
+
+  .jumbotron .lead {
+    font-size: 1rem;
   }
 
   footer {

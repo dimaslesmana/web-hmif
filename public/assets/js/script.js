@@ -4,13 +4,24 @@ $(document).ready(function () {
 
   // Landing Carousel
   $('#landing-carousel').owlCarousel({
-    items: 1,
-    margin: 10,
-    autoHeight: true,
     loop: true,
     autoplay: true,
-    autoplayTimeout: 4000,
+    autoplayTimeout: 3000,
     dots: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 2,
+      },
+      768: {
+        items: 2,
+      },
+      992: {
+        items: 3,
+      },
+    },
   });
 
   // News Carousel
