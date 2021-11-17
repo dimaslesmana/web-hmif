@@ -32,6 +32,8 @@
     </div>
 </footer>
 
+<a href="#" id="back-to-top" class="btn btn-tertiary-custom btn-lg back-to-top"><i class="fas fa-chevron-up"></i></a>
+
 <!-- jQuery -->
 <script src="/assets/vendors/jquery/jquery.min.js"></script>
 <!-- Bootstrap -->

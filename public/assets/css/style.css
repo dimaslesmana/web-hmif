@@ -589,7 +589,15 @@ footer ul li:nth-child(4) a:hover .fab {
   border-right: 2px solid;
 }
 
-/* -TABLET- */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
 @media only screen and (max-width: 992px) {
   #serum .row {
     text-align: center;
@@ -644,9 +652,12 @@ footer ul li:nth-child(4) a:hover .fab {
   .nav-menu .btn {
     font-size: 20px;
   }
+
+  .back-to-top {
+    display: none !important;
+  }
 }
 
-/* -MOBILE- */
 @media only screen and (max-width: 576px) {
   .horizontal-timeline table {
     font-size: 14px;

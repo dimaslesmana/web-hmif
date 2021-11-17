@@ -2,6 +2,25 @@ $(document).ready(function () {
   // Preloader
   $('.preloader').fadeOut('slow');
 
+  // Back to Top Button
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+      $('#back-to-top').fadeIn();
+    } else {
+      $('#back-to-top').fadeOut();
+    }
+  });
+
+  $('#back-to-top').click(function () {
+    $('html, body').animate(
+      {
+        scrollTop: 0,
+      },
+      400
+    );
+    return false;
+  });
+
   // Landing Carousel
   $('#landing-carousel').owlCarousel({
     loop: true,
