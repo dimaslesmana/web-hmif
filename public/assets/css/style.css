@@ -419,33 +419,6 @@ a {
   text-align: center;
 }
 
-.members .card ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-
-.members .card ul li {
-  list-style: none;
-}
-
-.members .card ul li a {
-  color: var(--light);
-}
-
-.members .card ul li a .fab,
-.members .card ul li a .far,
-.members .card ul li a .fas {
-  font-size: 24px;
-}
-
-.members .card ul li a:hover .fas,
-.members .card ul li a:hover .fab {
-  transform: scale(1.1);
-}
-
 .modal .modal-header,
 .modal .modal-footer {
   background-color: var(--primary);
