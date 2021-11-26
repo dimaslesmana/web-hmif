@@ -144,7 +144,7 @@
     <!-- End of News -->
 
     <!-- Media Partner -->
-    <section id="media-partner" class="media-partner">
+    <!-- <section id="media-partner" class="media-partner">
         <div class="container pt-5">
             <div class="row mb-2 text-center">
                 <div class="col">
@@ -162,7 +162,7 @@
                     <img class="m-2" src="/assets/images/placeholder.png" style="max-width: 120px;" alt="">
                 </div>
             </div>
-    </section>
+    </section> -->
     <!-- End of Media Partner -->
 </main>
 
